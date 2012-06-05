@@ -1,4 +1,9 @@
-figlet.js
-=========
+___________.___  ________.__          __          __        
+\_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
+ |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
+ |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \ 
+ \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  >
+     \/                \/          \/     \/ \______|    \/ 
 
-A FIG Driver written in JavaScript which aims to fully implement the FIGfont spec.
+This project aims to fully implement the FIGfont spec in JavaScript
+
