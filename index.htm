@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIGlet Example</title>
+</head>
+<body>
+    
+<!--
+    By Patrick Gillespie (patorjk@gmail.com)
+    License: MIT
+    
+    This is an example file to show how one might use the figlet.js file.
+    
+    Official FIGlet fonts are maintained here:
+
+    ftp://ftp.figlet.org/pub/figlet/fonts/
+
+    JavE also maintains a list of FIGlet fonts which can be obtained here:
+
+    http://www.jave.de/figlet/fonts.html
+-->
+    
+    <textarea id="inputText" style="height:100px;width:200px;"></textarea>
+    <div id="outputFigDisplay"></div>
+    
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="figloader.js"></script>
+    <script type="text/javascript" src="figlet.js"></script>
+    
+<script>
+
+var myFiglet = new Figlet();
+var isLoaded = false;
+FigletLoader.load(myFiglet, "Doom.flf", function(data) {
+    myFiglet.load(data); // myFiglet is ready after this point
+});
+    
+document.getElementById("inputText").onkeyup = function(evt) {
+    evt = evt || window.event;
+    if (myFiglet.isReady()) { // don't run unless there is a font loaded
+        var inputTxt = document.getElementById("inputText");
+        var output = document.getElementById("outputFigDisplay");
+        output.innerHTML = "<pre>" + myFiglet.getText(inputTxt.value) + "</pre>";
+    }
+}
+    
+</script>
+    
+</body>
+</html>
