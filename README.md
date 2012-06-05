@@ -9,3 +9,6 @@ ___________.___  ________.__          __          __
 </pre>
 This project aims to fully implement the FIGfont spec in JavaScript
 
+If you're looking for FIGlet fonts, a repo of them is maintained here:
+
+https://github.com/cmatsuoka/figlet-fonts
