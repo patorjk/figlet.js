@@ -2,7 +2,7 @@
     FIGlet.js (a FIGDriver for FIGlet fonts)
     By Patrick Gillespie (patorjk@gmail.com)
     Originally Written For: http://patorjk.com/software/taag/
-    License: MIT
+    License: MIT (with this header staying intact)
     
     This JavaScript code aims to fully implement the FIGlet spec.
     Full FIGlet spec: http://patorjk.com/software/taag/docs/figfont.txt
@@ -683,29 +683,58 @@ var Figlet = Figlet || (function() {
                 figChars.numChars++;
             }
             
-            me.getComment = function() {
-                return comment;   
-            }
-            
-            me.getText = function(txt) {
-                txt = txt.replace(/\r\n/g,"\n").replace(/\r/g,"\n");
-                var lines = txt.split("\n");
-                var figLines = [];
-                var ii, len, output;
-                len = lines.length;
-                for (ii = 0; ii < len; ii++) {
-                    figLines.push( generateFigTextLine(lines[ii], figChars, opts) );
-                }
-                len = figLines.length;
-                output = figLines[0];
-                for (ii = 1; ii < len; ii++) {
-                    output = smushVerticalFigLines(output, figLines[ii], opts);
+            // load any extra characters
+            while (lines.length > 0) {
+                cNum = lines.splice(0,1)[0].split(" ")[0];
+                if ( /^0[xX][0-9a-fA-F]+$/.test(cNum) ) {
+                    cNum = parseInt(cNum, 16);
+                } else if ( /^0[0-7]+$/.test(cNum) ) {
+                    cNum = parseInt(cNum, 8);
+                } else if ( /^[0-9]+$/.test(cNum) ) {
+                    cNum = parseInt(cNum, 10);
+                } else {
+                    if (cNum === "") {break;}
+                    // something's wrong
+                    //console.log("Invalid data:"+cNum);
+                    break;
                 }
                 
-                return output.join("\n");
-            };
+                figChars[cNum] = lines.splice(0,opts.height);
+                // remove end sub-chars
+                for (ii = 0; ii < opts.height; ii++) {
+                    if (typeof figChars[cNum][ii] === "undefined") {
+                        figChars[cNum][ii] = "";
+                    } else {
+                        endCharRegEx = new RegExp("\\"+figChars[cNum][ii].substr(figChars[cNum][ii].length-1,1)+"+$");
+                        figChars[cNum][ii] = figChars[cNum][ii].replace(endCharRegEx,"");
+                    }
+                }
+                figChars.numChars++;
+            }
             
             isFontLoaded = true;
+        };
+        
+        me.getComment = function() {
+            return comment;   
+        };
+        
+        me.getText = function(txt) {
+            txt = txt.replace(/\r\n/g,"\n").replace(/\r/g,"\n");
+            var lines = txt.split("\n");
+            var figLines = [];
+            var ii, len, output;
+            len = lines.length;
+            for (ii = 0; ii < len; ii++) {
+                figLines.push( generateFigTextLine(lines[ii], figChars, opts) );
+            }
+            len = figLines.length;
+            output = figLines[0];
+            for (ii = 1; ii < len; ii++) {
+                output = smushVerticalFigLines(output, figLines[ii], opts);
+            }
+            
+            return output.join("\n");
         };
     };
 })();
