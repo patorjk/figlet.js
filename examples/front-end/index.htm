@@ -30,9 +30,10 @@
 <script>
 
 var myFiglet = new Figlet();
-var isLoaded = false;
+
 FigletLoader.load(myFiglet, "../../fonts/Doom.flf", function(data) {
-    myFiglet.load(data); // myFiglet is ready after this point
+    myFiglet.load(data); 
+    console.log( myFiglet.getText("Hello World!") );
 });
     
 document.getElementById("inputText").onkeyup = function(evt) {
