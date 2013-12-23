@@ -1,4 +1,4 @@
-<pre>
+```
 ___________.___  ________.__          __          __        
 \_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
  |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
@@ -6,7 +6,7 @@ ___________.___  ________.__          __          __
  \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  >
      \/                \/          \/     \/ \______|    \/ 
 
-</pre>
+```
 This project aims to fully implement the FIGfont spec in JavaScript.
 
 You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application)
