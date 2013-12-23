@@ -25,13 +25,13 @@
     
     <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="figloader.js"></script>
-    <script type="text/javascript" src="../figlet.js"></script>
+    <script type="text/javascript" src="../../lib/figlet.js"></script>
     
 <script>
 
 var myFiglet = new Figlet();
 var isLoaded = false;
-FigletLoader.load(myFiglet, "Doom.flf", function(data) {
+FigletLoader.load(myFiglet, "../../fonts/Doom.flf", function(data) {
     myFiglet.load(data); // myFiglet is ready after this point
 });
     

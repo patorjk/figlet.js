@@ -1,0 +1,35 @@
+{
+    "name": "figlet",
+    "version": "1.0.1",
+    "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
+    "keywords": ["figlet", "ascii", "art", "banner", "ansi"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/patorjk/figlet.js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/patorjk/figlet.js/issues"
+    },
+    "author": {
+        "name": "Patrick Gillespie",
+        "email": "patorjk@gmail.com",
+        "url": "http://patorjk.com/"
+    },
+    "licenses": [ {
+        "type": "MIT",
+        "url": "http://www.opensource.org/licenses/MIT" 
+    } ],
+    "main": "./lib/node-figlet.js",
+    "dependencies": {
+    
+    },
+    "devDependencies": {
+        
+    },
+    "scripts": {
+        
+    },
+    "engines": { 
+        "node": ">= 0.4.0" 
+    }
+}
