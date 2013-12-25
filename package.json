@@ -1,6 +1,6 @@
 {
     "name": "figlet",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
     "keywords": ["figlet", "ascii", "art", "banner", "ansi"],
     "repository": {
@@ -21,7 +21,7 @@
     } ],
     "main": "./lib/node-figlet.js",
     "dependencies": {
-    
+        
     },
     "devDependencies": {
         
