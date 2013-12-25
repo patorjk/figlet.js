@@ -53,7 +53,7 @@ There are 3 main functions on the figlet object.
 
 Calling the figlet object as a function is shorthand for calling the text function. This method allows you to create ASCII Art from text. It takes in 3 parameters:
 
-* Font Name - A string of text to turn into ASCII Art.
+* Input Text - A string of text to turn into ASCII Art.
 * Font Options - Either a string indicating the font name or an options object (description below).
 * Callback - A function to execute with the generated ASCII Art.
 
@@ -90,11 +90,11 @@ That will print out:
 
 #### Font Options
 
-There are 3 options you can set that will effect the ASCII Art output:
+The font options object has 3 parameters which you can set:
 
-* font - A string indicating the name of the font.
-* horizontalLayout - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing" 
-* verticalLayout - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing"
+* _font_ - A string indicating the name of the font.
+* _horizontalLayout_ - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing" 
+* _verticalLayout_ - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing"
 
 The layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full".
 
@@ -166,11 +166,7 @@ Example usage:
     
 <script>
 
-    figlet(inputText, {
-        font: fontName,
-        horizontalLayout: hLayout,
-        verticalLayout: vLayout
-    }, function(err, text) {
+    figlet(inputText, 'Standard', function(err, text) {
         if (err) {
             console.log('something went wrong...');
             console.dir(err);
@@ -182,4 +178,4 @@ Example usage:
 </script>
 ```
 
-The doc/figfont.txt file in this project contains the FIGlet FIGfont spec.
+See the examples folder for a more robust front-end example.
