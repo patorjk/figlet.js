@@ -92,9 +92,9 @@ That will print out:
 
 The font options object has 3 parameters which you can set:
 
-* *font* - A string indicating the name of the font.
-* *horizontalLayout* - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing" 
-* *verticalLayout* - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing"
+* **font** - A string indicating the name of the font.
+* **horizontalLayout** - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing" 
+* **verticalLayout** - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing"
 
 The layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full".
 
