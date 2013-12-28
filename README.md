@@ -92,9 +92,25 @@ That will print out:
 
 The font options object has 3 parameters which you can set:
 
-* **font** - A string indicating the name of the font.
-* **horizontalLayout** - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing" 
-* **verticalLayout** - One of the following strings: "default", "full", "fitted", "controlled smushing", "universal smushing"
+##### font
+Type: `String`
+Default value: `'Standard'`
+
+A string value that indicates the FIGlet font to use.
+
+##### horizontalLayout
+Type: `String`
+Default value: `'default'`
+
+A string value that indicates the horizontal layout to use. FIGlet fonts have 5 possible values for this: "default", full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+
+##### verticalLayout
+Type: `String`
+Default value: `'default'`
+
+A string value that indicates the vertical layout to use. FIGlet fonts have 5 possible values for this: "default", full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+
+#### kerning
 
 The layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full".
 
@@ -119,7 +135,7 @@ The layout options allow you to override a font's default "kerning". Below you c
                                            |___/ 
 ```
 
-In most cases you'll either use the default setting or the "fitted" setting. You'll probably never want to use the smushing options, but they are included out of completeness (see the FIGlet spec in the doc folder for information on smushing).
+In most cases you'll either use the default setting or the "fitted" setting. Most fonts don't support vertical kerning, but a hand full fo them do (like the "Standard" font).
 
 ### metadata
 
@@ -179,3 +195,6 @@ Example usage:
 ```
 
 See the examples folder for a more robust front-end example.
+
+## Release History
+* 2013.28.12 v1.0.7 README update and minor tweaks.
