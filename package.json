@@ -20,8 +20,11 @@
         "url": "http://www.opensource.org/licenses/MIT" 
     } ],
     "main": "./lib/node-figlet.js",
+    "bin": {
+        "figlet": "bin/cmd.js"
+    },
     "dependencies": {
-        
+        "optimist": "~0.6.0"
     },
     "devDependencies": {
         
