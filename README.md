@@ -196,5 +196,23 @@ Example usage:
 
 See the examples folder for a more robust front-end example.
 
+Getting Started - Command Line
+-------------------------
+
+To use figlet.js on the command line, install figlet-cli:
+
+```shell
+npm install -g figlet-cli
+```
+
+And then you should be able run from the command line. Example:
+
+```shell
+figlet -f "Dancing Font" "Hi"
+```
+
+For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli). 
+
 ## Release History
-* 2013.28.12 v1.0.7 README update and minor tweaks.
+* 2013.01.02 v1.0.8 Added tests and command line info.
+* 2013.12.28 v1.0.7 README update and minor tweaks.

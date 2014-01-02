@@ -1,6 +1,6 @@
 {
     "name": "figlet",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
     "keywords": ["figlet", "ascii", "art", "banner", "ansi"],
     "repository": {
@@ -20,14 +20,15 @@
         "url": "http://www.opensource.org/licenses/MIT" 
     } ],
     "main": "./lib/node-figlet.js",
-    "bin": {
-        "figlet": "bin/cmd.js"
-    },
     "dependencies": {
         "optimist": "~0.6.0"
     },
     "devDependencies": {
-        
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt": "~0.4.2"
     },
     "scripts": {
         
