@@ -37,8 +37,6 @@ exports.figlet = {
             font: 'Standard',
             verticalLayout: 'fitted'
         }, function(err, actual) {
-            console.log('reu');
-
             var expected = grunt.file.read('test/expected/standard');
             test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
 
