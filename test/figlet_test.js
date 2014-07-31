@@ -3,7 +3,9 @@
 'use strict';
 
 var figlet = require('../lib/node-figlet'),
-    grunt = require('grunt');
+    grunt = require('grunt'),
+    fs = require('fs'),
+    async = require('async');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -68,6 +70,34 @@ exports.figlet = {
             test.equal(actual, expected, 'Dancing Font with a horizontal layout of "full".');
 
             test.done();
+        });
+    },
+    /*
+        This test ensures that all fonts will load without error
+    */
+    loadAll: function(test) {
+        var errCount = 0;
+        test.expect(1);
+
+        figlet.fonts(function(err, fonts) {
+            if (err) {
+                errCount++;
+                return;
+            }
+
+            async.eachSeries(fonts, function(font, next) {
+                figlet.text('abc ABC ...', {
+                    font: font
+                }, function(err, data) {
+                    if (err) {
+                        errCount++;
+                    }
+                    next();
+                });
+            }, function(err) {
+                test.equal(errCount, 0, 'A problem occurred while testing one of the fonts.');
+                test.done();
+            });
         });
     },
 };

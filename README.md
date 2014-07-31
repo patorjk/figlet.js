@@ -216,3 +216,4 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 ## Release History
 * 2013.01.02 v1.0.8 Added tests and command line info.
 * 2013.12.28 v1.0.7 README update and minor tweaks.
+* 2013.12.28 v1.0.10 Bug fixes.
