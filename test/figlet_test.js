@@ -34,7 +34,7 @@ exports.figlet = {
     },
     standard: function(test) {
         test.expect(1);
-        
+
         figlet('FIGlet\nFONTS', {
             font: 'Standard',
             verticalLayout: 'fitted'
@@ -44,6 +44,15 @@ exports.figlet = {
 
             test.done();
         });
+    },
+    standardSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/standard');
+        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'Standard', verticlaLayout: 'fitted'});
+        test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
+
+        test.done();
     },
     graffiti: function(test) {
         test.expect(1);
@@ -58,6 +67,15 @@ exports.figlet = {
             test.done();
         });
     },
+    graffitiSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/graffiti');
+        var actual = figlet.textSync('ABC.123', {font: 'Graffiti', horizontalLayout: 'fitted'});
+        test.equal(actual, expected, 'Graffiti font with a horizontal layout of "fitted".');
+
+        test.done();
+    },
     dancingFont: function(test) {
         test.expect(1);
 
@@ -71,6 +89,15 @@ exports.figlet = {
 
             test.done();
         });
+    },
+    dancingFontSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/dancingFont');
+        var actual = figlet.textSync('pizzapie', {font: 'Dancing Font', horizontalLayout: 'full'});
+        test.equal(actual, expected, 'Dancing Font with a horizontal layout of "full".');
+
+        test.done();
     },
     /*
         This test ensures that all fonts will load without error
