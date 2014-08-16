@@ -47,7 +47,7 @@ That should print out:
 Basic Usage - Node.js
 -------------------------
 
-There are 3 main functions on the figlet object.
+There are 5 main functions on the figlet object.
 
 ### text
 
@@ -86,6 +86,37 @@ That will print out:
  | |  \  |  \ |  | |  |  \ |  | |  |`--'  
  | '--'  /   `'  '-'  '   `'  '-'  '.--.  
  `------'      `-----'      `-----' '--' 
+```
+
+### textSync
+
+This method is the synchronous version of the method above.
+
+* Input Text - A string of text to turn into ASCII Art.
+* Font Options - Either a string indicating the font name or an options object (description below).
+
+Example:
+
+```
+console.log( figlet.textSync('Boo!', {
+    font: 'Ghost',
+    horizontalLayout: 'default',
+    verticalLayout: 'default'
+});
+```
+
+That will print out:
+
+```
+.-. .-')                            ,---.
+\  ( OO )                           |   |
+ ;-----.\  .-'),-----.  .-'),-----. |   |
+ | .-.  | ( OO'  .-.  '( OO'  .-.  '|   |
+ | '-' /_)/   |  | |  |/   |  | |  ||   |
+ | .-. `. \_) |  |\|  |\_) |  |\|  ||  .'
+ | |  \  |  \ |  | |  |  \ |  | |  |`--'
+ | '--'  /   `'  '-'  '   `'  '-'  '.--.
+ `------'      `-----'      `-----' '--'
 ```
 
 #### Font Options
@@ -153,7 +184,15 @@ figlet.metadata('Standard', function(err, options, headerComment) {
 });
 ```
 
-### fonts
+### fontsSync
+
+The synchronous version of the fonts method
+
+```
+console.log(figlet.fontsSync());
+```
+
+### fontsSync
 
 The fonts function allows you to get a list of all of the available fonts. Example usage:
 
@@ -167,7 +206,6 @@ figlet.fonts(function(err, fonts) {
     console.dir(fonts);
 });
 ```
-
 
 Getting Started - The Browser
 -------------------------
