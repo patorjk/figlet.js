@@ -49,7 +49,8 @@ exports.figlet = {
         test.expect(1);
 
         var expected = grunt.file.read('test/expected/standard');
-        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'Standard', verticlaLayout: 'fitted'});
+        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'Standard', verticalLayout: 'fitted'});
+
         test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
 
         test.done();
@@ -126,5 +127,5 @@ exports.figlet = {
                 test.done();
             });
         });
-    },
+    }
 };

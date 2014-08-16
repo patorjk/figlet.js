@@ -102,7 +102,7 @@ console.log( figlet.textSync('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
     verticalLayout: 'default'
-});
+}));
 ```
 
 That will print out:
