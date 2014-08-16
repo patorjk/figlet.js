@@ -98,7 +98,7 @@ This method is the synchronous version of the method above.
 Example:
 
 ```
-console.log( figlet.textSync('Boo!', {
+console.log(figlet.textSync('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
     verticalLayout: 'default'
@@ -184,15 +184,7 @@ figlet.metadata('Standard', function(err, options, headerComment) {
 });
 ```
 
-### fontsSync
-
-The synchronous version of the fonts method
-
-```
-console.log(figlet.fontsSync());
-```
-
-### fontsSync
+### fonts
 
 The fonts function allows you to get a list of all of the available fonts. Example usage:
 
@@ -205,6 +197,14 @@ figlet.fonts(function(err, fonts) {
     }
     console.dir(fonts);
 });
+```
+
+### fontsSync
+
+The synchronous version of the fonts method
+
+```
+console.log(figlet.fontsSync());
 ```
 
 Getting Started - The Browser
