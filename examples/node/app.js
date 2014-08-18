@@ -2,8 +2,7 @@
     Example
 */
 
-var figlet = require('../../lib/node-figlet.js'),
-    jQuery = require('jquery');
+var figlet = require('../../lib/node-figlet.js');
 
 /*
     Once this has been run:
