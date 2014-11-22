@@ -100,6 +100,21 @@ exports.figlet = {
 
         test.done();
     },
+    printDirection: function(test) {
+        test.expect(1);
+
+        figlet.text('pizzapie', {
+            font: 'Dancing Font',
+            horizontalLayout: 'full',
+            printDirection: 1
+        }, function(err, actual) {
+
+            var expected = grunt.file.read('test/expected/dancingFontReverse');
+            test.equal(actual, expected, 'Dancing Font with a reversed print direction.');
+
+            test.done();
+        });
+    },
     /*
         This test ensures that all fonts will load without error
     */
