@@ -15,13 +15,13 @@ Quick Start - Node.js
 
 Install:
 
-```
+```sh
 npm install figlet
 ```
 
 Simple usage:
 
-```
+```js
 var figlet = require('figlet');
 
 figlet('Hello World!!', function(err, data) {
@@ -59,7 +59,7 @@ Calling the figlet object as a function is shorthand for calling the text functi
 
 Example:
 
-```
+```js
 figlet.text('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
@@ -97,7 +97,7 @@ This method is the synchronous version of the method above.
 
 Example:
 
-```
+```js
 console.log(figlet.textSync('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
@@ -172,7 +172,7 @@ In most cases you'll either use the default setting or the "fitted" setting. Mos
 
 The metadata function allows you to retrieve a font's default options and header comment. Example usage:
 
-```
+```js
 figlet.metadata('Standard', function(err, options, headerComment) {
     if (err) {
         console.log('something went wrong...');
@@ -188,7 +188,7 @@ figlet.metadata('Standard', function(err, options, headerComment) {
 
 The fonts function allows you to get a list of all of the available fonts. Example usage:
 
-```
+```js
 figlet.fonts(function(err, fonts) {
     if (err) {
         console.log('something went wrong...');
@@ -203,7 +203,7 @@ figlet.fonts(function(err, fonts) {
 
 The synchronous version of the fonts method
 
-```
+```js
 console.log(figlet.fontsSync());
 ```
 
@@ -214,7 +214,7 @@ The browser API is the same as the Node API with the exception of the "fonts" me
 
 Example usage:
 
-```
+```html
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="figlet.js"></script>
     
@@ -239,13 +239,13 @@ Getting Started - Command Line
 
 To use figlet.js on the command line, install figlet-cli:
 
-```shell
+```sh
 npm install -g figlet-cli
 ```
 
 And then you should be able run from the command line. Example:
 
-```shell
+```sh
 figlet -f "Dancing Font" "Hi"
 ```
 
