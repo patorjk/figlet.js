@@ -29,7 +29,7 @@
         "grunt": "~0.4.2"
     },
     "scripts": {
-        
+      "test": "grunt test"
     },
     "engines": { 
         "node": ">= 0.4.0" 
