@@ -2,9 +2,9 @@
 ___________.___  ________.__          __          __        
 \_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
  |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
- |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \ 
+ |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \
  \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  >
-     \/                \/          \/     \/ \______|    \/ 
+     \/                \/          \/     \/ \______|    \/
 
 ```
 [![Build Status](https://travis-ci.org/patorjk/figlet.js.svg)](https://travis-ci.org/patorjk/figlet.js)
@@ -38,7 +38,7 @@ figlet('Hello World!!', function(err, data) {
 That should print out:
 
 ```
-  _   _      _ _        __        __         _     _ _ _ 
+  _   _      _ _        __        __         _     _ _ _
  | | | | ___| | | ___   \ \      / /__  _ __| | __| | | |
  | |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _` | | |
  |  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|_|
@@ -78,15 +78,15 @@ figlet.text('Boo!', {
 That will print out:
 
 ```
-.-. .-')                            ,---. 
-\  ( OO )                           |   | 
- ;-----.\  .-'),-----.  .-'),-----. |   | 
- | .-.  | ( OO'  .-.  '( OO'  .-.  '|   | 
- | '-' /_)/   |  | |  |/   |  | |  ||   | 
- | .-. `. \_) |  |\|  |\_) |  |\|  ||  .' 
+.-. .-')                            ,---.
+\  ( OO )                           |   |
+ ;-----.\  .-'),-----.  .-'),-----. |   |
+ | .-.  | ( OO'  .-.  '( OO'  .-.  '|   |
+ | '-' /_)/   |  | |  |/   |  | |  ||   |
+ | .-. `. \_) |  |\|  |\_) |  |\|  ||  .'
  | |  \  |  \ |  | |  |  \ |  | |  |`--'  
  | '--'  /   `'  '-'  '   `'  '-'  '.--.  
- `------'      `-----'      `-----' '--' 
+ `------'      `-----'      `-----' '--'
 ```
 
 ### textSync
@@ -148,23 +148,23 @@ The layout options allow you to override a font's default "kerning". Below you c
 
 ```
   _  __               _             
- | |/ /___ _ __ _ __ (_)_ __   __ _ 
+ | |/ /___ _ __ _ __ (_)_ __   __ _
  | ' // _ \ '__| '_ \| | '_ \ / _` |
  | . \  __/ |  | | | | | | | | (_| |
  |_|\_\___|_|  |_| |_|_|_| |_|\__, |
-                              |___/ 
+                              |___/
   _  __                   _               
- | |/ / ___  _ __  _ __  (_) _ __    __ _ 
+ | |/ / ___  _ __  _ __  (_) _ __    __ _
  | ' / / _ \| '__|| '_ \ | || '_ \  / _` |
  | . \|  __/| |   | | | || || | | || (_| |
  |_|\_\\___||_|   |_| |_||_||_| |_| \__, |
-                                    |___/ 
+                                    |___/
   _  __                        _                 
- | |/ /   ___   _ __   _ __   (_)  _ __     __ _ 
+ | |/ /   ___   _ __   _ __   (_)  _ __     __ _
  | ' /   / _ \ | '__| | '_ \  | | | '_ \   / _` |
  | . \  |  __/ | |    | | | | | | | | | | | (_| |
  |_|\_\  \___| |_|    |_| |_| |_| |_| |_|  \__, |
-                                           |___/ 
+                                           |___/
 ```
 
 In most cases you'll either use the default setting or the "fitted" setting. Most fonts don't support vertical kerning, but a hand full fo them do (like the "Standard" font).
@@ -218,7 +218,7 @@ Example usage:
 ```html
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="figlet.js"></script>
-    
+
 <script>
 
     figlet(inputText, 'Standard', function(err, text) {
@@ -231,6 +231,45 @@ Example usage:
     });
 
 </script>
+```
+
+### textSync
+
+The browser API supports a synchronous mode so long as fonts used are preloaded.
+
+Example:
+
+```js
+figlet.defaults({fontPath: "assets/fonts"});
+
+figlet.preloadFonts(["Standard", "Ghost"], ready);
+
+function ready(){
+  console.log(figlet.textSync("ASCII"));
+  console.log(figlet.textSync("Art", "Ghost"));
+}
+
+```
+
+That will print out:
+
+```
+     _     ____    ____  ___  ___
+    / \   / ___|  / ___||_ _||_ _|
+   / _ \  \___ \ | |     | |  | |
+  / ___ \  ___) || |___  | |  | |
+ /_/   \_\|____/  \____||___||___|
+
+   ('-.     _  .-')   .-') _    
+  ( OO ).-.( \( -O ) (  OO) )   
+  / . --. / ,------. /     '._  
+  | \-.  \  |   /`. '|'--...__)
+.-'-'  |  | |  /  | |'--.  .--'
+ \| |_.'  | |  |_.' |   |  |    
+  |  .-.  | |  .  '.'   |  |    
+  |  | |  | |  |\  \    |  |    
+  `--' `--' `--' '--'   `--'    
+
 ```
 
 See the examples folder for a more robust front-end example.
@@ -250,7 +289,7 @@ And then you should be able run from the command line. Example:
 figlet -f "Dancing Font" "Hi"
 ```
 
-For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli). 
+For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
 * 2013.01.02 v1.0.8 Added tests and command line info.
