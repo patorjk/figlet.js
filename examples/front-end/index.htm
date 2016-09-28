@@ -55,7 +55,9 @@
     
 <script>
 
-if (window.location.protocol === 'file:) alert('fetch APi does not support file: protocol.');
+if (window.location.protocol === 'file:') {
+    alert('fetch APi does not support file: protocol.');
+}
     
 figlet.defaults({
     fontPath: '../../fonts'
