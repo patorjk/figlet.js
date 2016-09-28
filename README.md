@@ -211,12 +211,12 @@ console.log(figlet.fontsSync());
 Getting Started - The Browser
 -------------------------
 
-The browser API is the same as the Node API with the exception of the "fonts" method not being available. The browser version also requires jQuery (any version should work as it only utilizes the ajax method for its loadFont function).
+The browser API is the same as the Node API with the exception of the "fonts" method not being available. The browser version also requires [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) (or a [shim](https://github.com/github/fetch)) for its loadFont function.
 
 Example usage:
 
 ```html
-<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
 <script type="text/javascript" src="figlet.js"></script>
 
 <script>
