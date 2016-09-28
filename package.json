@@ -17,6 +17,7 @@
     },
     "license": "MIT",
     "main": "./lib/node-figlet.js",
+    "browser": "./lib/figlet.js",
     "dependencies": {
 
     },
