@@ -5,6 +5,7 @@
 var figlet = require('../lib/node-figlet'),
     grunt = require('grunt'),
     fs = require('fs'),
+    path = require('path'),
     async = require('async');
 
 /*
@@ -52,6 +53,18 @@ exports.figlet = {
         var actual = figlet.textSync('FIGlet\nFONTS', {font: 'Standard', verticalLayout: 'fitted'});
 
         test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
+
+        test.done();
+    },
+    standardParse: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/standard');
+        var data = fs.readFileSync(path.join(__dirname, '../fonts/Standard.flf'), 'utf8');
+        var font = figlet.parseFont('StandardParseFontName', data);
+        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'StandardParseFontName', verticalLayout: 'fitted'});
+
+        test.equal(actual, expected, 'Standard font with a vertical layout of "fitted" loaded using parseFont().');
 
         test.done();
     },

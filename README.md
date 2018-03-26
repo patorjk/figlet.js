@@ -208,6 +208,19 @@ The synchronous version of the fonts method
 console.log(figlet.fontsSync());
 ```
 
+### parseFont
+
+Allows you to use a font from another source.
+
+```js
+const fs = require('fs');
+const path = require('path');
+
+let data = fs.readFileSync(path.join(__dirname, 'myfont.flf'), 'utf8');
+figlet.parseFont('myfont', data);
+console.log(figlet.textSync('myfont!', 'myfont'));
+```
+
 Getting Started - The Browser
 -------------------------
 
