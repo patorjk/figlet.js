@@ -305,6 +305,7 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
+* 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
 * 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
 * 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
 * 2013.01.02 v1.0.8 Added tests and command line info.
