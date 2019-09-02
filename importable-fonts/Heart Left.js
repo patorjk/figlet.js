@@ -252,7 +252,7 @@ modifier's name is placed on a comment line.
  '.(   
        
  .-.-. 
-( \ .' 
+( \\ .' 
  '.(   
        
  .-.-. 

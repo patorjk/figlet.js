@@ -40,7 +40,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    _  @
   | | @
  / __)@
- \__ \@
+ \\__ \\@
  (   /@
   |_| @@
   _  __@
@@ -51,9 +51,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @@
    ___   @
   ( _ )  @
-  / _ \/\@
+  / _ \\/\\@
  | (_>  <@
-  \___/\/@
+  \\___/\\/@
          @@
   _ @
  ( )@
@@ -66,18 +66,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | @
  | | @
  | | @
-  \_\@@
+  \\_\\@@
  __  @
- \ \ @
+ \\ \\ @
   | |@
   | |@
   | |@
  /_/ @@
        @
- __/\__@
- \    /@
- /_  _\@
-   \/  @
+ __/\\__@
+ \\    /@
+ /_  _\\@
+   \\/  @
        @@
         @
     _   @
@@ -110,10 +110,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  /_/   @
        @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _ @
  / |@
@@ -122,14 +122,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |_|@
     @@
   ____  @
- |___ \ @
+ |___ \\ @
    __) |@
   / __/ @
  |_____|@
         @@
   _____ @
  |___ / @
-   |_ \ @
+   |_ \\ @
   ___) |@
  |____/ @
         @@
@@ -141,15 +141,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @@
   ____  @
  | ___| @
- |___ \ @
+ |___ \\ @
   ___) |@
  |____/ @
         @@
    __   @
   / /_  @
- | '_ \ @
+ | '_ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
   _____ @
  |___  |@
@@ -159,14 +159,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
    ___  @
   ( _ ) @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \__, |@
+  \\__, |@
     /_/ @
         @@
     @
@@ -184,8 +184,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __@
   / /@
  / / @
- \ \ @
-  \_\@
+ \\ \\ @
+  \\_\\@
      @@
         @
   _____ @
@@ -194,32 +194,32 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     $   @
         @@
  __  @
- \ \ @
-  \ \@
+ \\ \\ @
+  \\ \\@
   / /@
  /_/ @
      @@
   ___ @
- |__ \@
+ |__ \\@
    / /@
   |_| @
   (_) @
       @@
     ____  @
-   / __ \ @
+   / __ \\ @
   / / _\` |@
  | | (_| |@
-  \ \__,_|@
-   \____/ @@
+  \\ \\__,_|@
+   \\____/ @@
      _    @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @@
   ____  @
  | __ ) @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |____/ @
         @@
@@ -227,10 +227,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   / ___|@
  | |    @
  | |___ @
-  \____|@
+  \\____|@
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | | | |@
  | |_| |@
  |____/ @
@@ -251,7 +251,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
         @@
   _   _ @
  | | | |@
@@ -269,13 +269,13 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
      | |@
   _  | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _  __@
  | |/ /@
  | ' / @
- | . \ @
- |_|\_\@
+ | . \\ @
+ |_|\\_\\@
        @@
   _     @
  | |    @
@@ -284,44 +284,44 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |_____|@
         @@
   __  __ @
- |  \/  |@
- | |\/| |@
+ |  \\/  |@
+ | |\\/| |@
  | |  | |@
  |_|  |_|@
          @@
   _   _ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  __/ @
  |_|    @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \__\_\@
+  \\__\\_\\@
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  _ < @
- |_| \_\@
+ |_| \\_\\@
         @@
   ____  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
         @@
@@ -335,29 +335,29 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
  __     __@
- \ \   / /@
-  \ \ / / @
-   \ V /  @
-    \_/   @
+ \\ \\   / /@
+  \\ \\ / / @
+   \\ V /  @
+    \\_/   @
           @@
  __        __@
- \ \      / /@
-  \ \ /\ / / @
-   \ V  V /  @
-    \_/\_/   @
+ \\ \\      / /@
+  \\ \\ /\\ / / @
+   \\ V  V /  @
+    \\_/\\_/   @
              @@
  __  __@
- \ \/ /@
-  \  / @
-  /  \ @
- /_/\_\@
+ \\ \\/ /@
+  \\  / @
+  /  \\ @
+ /_/\\_\\@
        @@
  __   __@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    | |  @
    |_|  @
         @@
@@ -374,10 +374,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | @
  |__|@@
  __    @
- \ \   @
-  \ \  @
-   \ \ @
-    \_\@
+ \\ \\   @
+  \\ \\  @
+   \\ \\ @
+    \\_\\@
        @@
   __ @
  |_ |@
@@ -385,8 +385,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   | |@
   | |@
  |__|@@
-  /\ @
- |/\|@
+  /\\ @
+ |/\\|@
    $ @
    $ @
    $ @
@@ -399,7 +399,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |_____|@@
   _ @
  ( )@
-  \|@
+  \\|@
   $ @
   $ @
     @@
@@ -407,11 +407,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
   _     @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  |_.__/ @
         @@
@@ -419,19 +419,19 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
       _ @
    __| |@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
        @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
    __ @
   / _|@
@@ -443,11 +443,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
   _     @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
@@ -467,7 +467,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | __@
  | |/ /@
  |   < @
- |_|\_\@
+ |_|\\_\\@
        @@
   _ @
  | |@
@@ -477,25 +477,25 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     @@
             @
   _ __ ___  @
- | '_ \` _ \ @
+ | '_ \` _ \\ @
  | | | | | |@
  |_| |_| |_|@
             @@
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
         @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  | .__/ @
  |_|    @@
@@ -503,7 +503,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
      |_|@@
        @
   _ __ @
@@ -514,44 +514,44 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @
   ___ @
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @@
   _   @
  | |_ @
  | __|@
  | |_ @
-  \__|@
+  \\__|@
       @@
         @
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
         @
  __   __@
- \ \ / /@
-  \ V / @
-   \_/  @
+ \\ \\ / /@
+  \\ V / @
+   \\_/  @
         @@
            @
  __      __@
- \ \ /\ / /@
-  \ V  V / @
-   \_/\_/  @
+ \\ \\ /\\ / /@
+  \\ V  V / @
+   \\_/\\_/  @
            @@
        @
  __  __@
- \ \/ /@
+ \\ \\/ /@
   >  < @
- /_/\_\@
+ /_/\\_\\@
        @@
         @
   _   _ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
       @
   ____@
@@ -564,7 +564,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   | | @
  < <  @
   | | @
-   \_\@@
+   \\_\\@@
   _ @
  | |@
  | |@
@@ -572,57 +572,57 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | |@
  |_|@@
  __   @
- \ \  @
+ \\ \\  @
   | | @
    > >@
   | | @
  /_/  @@
-  /\/|@
- |/\/ @
+  /\\/|@
+ |/\\/ @
    $  @
    $  @
    $  @
       @@
   _   _ @
  (_)_(_)@
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_)_(_)@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
    ___ @
-  / _ \@
+  / _ \\@
  | |/ /@
- | |\ \@
+ | |\\ \\@
  | ||_/@
  |_|   @@
 160  NO-BREAK SPACE
@@ -642,29 +642,29 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 196  LATIN CAPITAL LETTER A WITH DIAERESIS
   _   _ @
  (_)_(_)@
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 214  LATIN CAPITAL LETTER O WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 220  LATIN CAPITAL LETTER U WITH DIAERESIS
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 223  LATIN SMALL LETTER SHARP S
    ___ @
-  / _ \@
+  / _ \\@
  | |/ /@
- | |\ \@
+ | |\\ \\@
  | ||_/@
  |_|   @@
 228  LATIN SMALL LETTER A WITH DIAERESIS
@@ -672,28 +672,28 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  (_)_(_)@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 246  LATIN SMALL LETTER O WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 252  LATIN SMALL LETTER U WITH DIAERESIS
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x05D0  HEBREW LETTER ALEF
  __   __@
- \ \ / /@
+ \\ \\ / /@
  |  V / @
- | |\ \ @
- |_| \_\@
+ | |\\ \\ @
+ |_| \\_\\@
         @@
 0x05D1  HEBREW LETTER BET
    ______  @
@@ -707,7 +707,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    |__  | @
       | | @
   ____| | @
- /____/\_\@
+ /____/\\_\\@
           @@
 0x05D3  HEBREW LETTER DALET
   _______ @
@@ -732,7 +732,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
 0x05D6  HEBREW LETTER ZAYIN
  ________ @
- \__   __\@
+ \\__   __\\@
     | |   @
     | |   @
     |_|   @
@@ -767,7 +767,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       |_| @@
 0x05DB  HEBREW LETTER KAF
   _____  @
- |____ \ @
+ |____ \\ @
       | |@
   ____| |@
  |_____/ @
@@ -816,9 +816,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
           @@
 0x05E2  HEBREW LETTER AYIN
   __   _ @
-  \ \ | |@
-   \ \| |@
-  __\ \` |@
+  \\ \\ | |@
+   \\ \\| |@
+  __\\ \` |@
  |______|@
          @@
 0x05E3  HEBREW LETTER FINAL PE
@@ -831,7 +831,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 0x05E4  HEBREW LETTER PE
   _______ @
  |  ___  |@
-  \_\  | |@
+  \\_\\  | |@
   _____| |@
  |_______|@
           @@
@@ -844,9 +844,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   |_|    @@
 0x05E6  HEBREW LETTER TSADI
    __   __.@
-   \ \ / / @
-    \ V /  @
-  ___\  \  @
+   \\ \\ / / @
+    \\ V /  @
+  ___\\  \\  @
  |______|  @
            @@
 0x05E7  HEBREW LETTER QOF
@@ -879,10 +879,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
            @@
 0x2721  STAR OF DAVID
        @
- __/\__@
- \    /@
- /_  _\@
-   \/  @
+ __/\\__@
+ \\    /@
+ /_  _\\@
+   \\/  @
        @@
 -0x0002  
 aleph = t, bet/vet = c, gimel = d, dalet = s, he = v, vav = u, zayin = z  @

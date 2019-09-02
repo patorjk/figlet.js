@@ -191,7 +191,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |[|@
  +-+@@
  +-+@
- |\|@
+ |\\|@
  +-+@@
  +-+@
  |]|@

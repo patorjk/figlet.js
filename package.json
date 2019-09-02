@@ -1,6 +1,6 @@
 {
     "name": "figlet",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
     "keywords": [
         "figlet",

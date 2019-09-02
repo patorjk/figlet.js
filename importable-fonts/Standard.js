@@ -39,7 +39,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    _  @
   | | @
  / __)@
- \__ \@
+ \\__ \\@
  (   /@
   |_| @@
   _  __@
@@ -50,9 +50,9 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
        @@
    ___   @
   ( _ )  @
-  / _ \/\@
+  / _ \\/\\@
  | (_>  <@
-  \___/\/@
+  \\___/\\/@
          @@
   _ @
  ( )@
@@ -65,18 +65,18 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | | @
  | | @
  | | @
-  \_\@@
+  \\_\\@@
  __  @
- \ \ @
+ \\ \\ @
   | |@
   | |@
   | |@
  /_/ @@
        @
- __/\__@
- \    /@
- /_  _\@
-   \/  @
+ __/\\__@
+ \\    /@
+ /_  _\\@
+   \\/  @
        @@
         @
     _   @
@@ -109,10 +109,10 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  /_/   @
        @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _ @
  / |@
@@ -121,14 +121,14 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_|@
     @@
   ____  @
- |___ \ @
+ |___ \\ @
    __) |@
   / __/ @
  |_____|@
         @@
   _____ @
  |___ / @
-   |_ \ @
+   |_ \\ @
   ___) |@
  |____/ @
         @@
@@ -140,15 +140,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
          @@
   ____  @
  | ___| @
- |___ \ @
+ |___ \\ @
   ___) |@
  |____/ @
         @@
    __   @
   / /_  @
- | '_ \ @
+ | '_ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
   _____ @
  |___  |@
@@ -158,14 +158,14 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
    ___  @
   ( _ ) @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \__, |@
+  \\__, |@
     /_/ @
         @@
     @
@@ -183,8 +183,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    __@
   / /@
  / / @
- \ \ @
-  \_\@
+ \\ \\ @
+  \\_\\@
      @@
         @
   _____ @
@@ -193,32 +193,32 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
     $   @
         @@
  __  @
- \ \ @
-  \ \@
+ \\ \\ @
+  \\ \\@
   / /@
  /_/ @
      @@
   ___ @
- |__ \@
+ |__ \\@
    / /@
   |_| @
   (_) @
       @@
     ____  @
-   / __ \ @
+   / __ \\ @
   / / _\` |@
  | | (_| |@
-  \ \__,_|@
-   \____/ @@
+  \\ \\__,_|@
+   \\____/ @@
      _    @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @@
   ____  @
  | __ ) @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |____/ @
         @@
@@ -226,10 +226,10 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   / ___|@
  | |    @
  | |___ @
-  \____|@
+  \\____|@
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | | | |@
  | |_| |@
  |____/ @
@@ -250,7 +250,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
         @@
   _   _ @
  | | | |@
@@ -268,13 +268,13 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
      | |@
   _  | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _  __@
  | |/ /@
  | ' / @
- | . \ @
- |_|\_\@
+ | . \\ @
+ |_|\\_\\@
        @@
   _     @
  | |    @
@@ -283,44 +283,44 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_____|@
         @@
   __  __ @
- |  \/  |@
- | |\/| |@
+ |  \\/  |@
+ | |\\/| |@
  | |  | |@
  |_|  |_|@
          @@
   _   _ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  __/ @
  |_|    @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \__\_\@
+  \\__\\_\\@
         @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  _ < @
- |_| \_\@
+ |_| \\_\\@
         @@
   ____  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
         @@
@@ -334,29 +334,29 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
  __     __@
- \ \   / /@
-  \ \ / / @
-   \ V /  @
-    \_/   @
+ \\ \\   / /@
+  \\ \\ / / @
+   \\ V /  @
+    \\_/   @
           @@
  __        __@
- \ \      / /@
-  \ \ /\ / / @
-   \ V  V /  @
-    \_/\_/   @
+ \\ \\      / /@
+  \\ \\ /\\ / / @
+   \\ V  V /  @
+    \\_/\\_/   @
              @@
  __  __@
- \ \/ /@
-  \  / @
-  /  \ @
- /_/\_\@
+ \\ \\/ /@
+  \\  / @
+  /  \\ @
+ /_/\\_\\@
        @@
  __   __@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    | |  @
    |_|  @
         @@
@@ -373,10 +373,10 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | | @
  |__|@@
  __    @
- \ \   @
-  \ \  @
-   \ \ @
-    \_\@
+ \\ \\   @
+  \\ \\  @
+   \\ \\ @
+    \\_\\@
        @@
   __ @
  |_ |@
@@ -384,8 +384,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   | |@
   | |@
  |__|@@
-  /\ @
- |/\|@
+  /\\ @
+ |/\\|@
    $ @
    $ @
    $ @
@@ -398,7 +398,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_____|@@
   _ @
  ( )@
-  \|@
+  \\|@
   $ @
   $ @
     @@
@@ -406,11 +406,11 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
   _     @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  |_.__/ @
         @@
@@ -418,19 +418,19 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
       _ @
    __| |@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
        @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
    __ @
   / _|@
@@ -442,11 +442,11 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
   _     @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
@@ -466,7 +466,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | | __@
  | |/ /@
  |   < @
- |_|\_\@
+ |_|\\_\\@
        @@
   _ @
  | |@
@@ -476,25 +476,25 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
     @@
             @
   _ __ ___  @
- | '_ \` _ \ @
+ | '_ \` _ \\ @
  | | | | | |@
  |_| |_| |_|@
             @@
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
         @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  | .__/ @
  |_|    @@
@@ -502,7 +502,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
      |_|@@
        @
   _ __ @
@@ -513,44 +513,44 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
       @
   ___ @
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @@
   _   @
  | |_ @
  | __|@
  | |_ @
-  \__|@
+  \\__|@
       @@
         @
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
         @
  __   __@
- \ \ / /@
-  \ V / @
-   \_/  @
+ \\ \\ / /@
+  \\ V / @
+   \\_/  @
         @@
            @
  __      __@
- \ \ /\ / /@
-  \ V  V / @
-   \_/\_/  @
+ \\ \\ /\\ / /@
+  \\ V  V / @
+   \\_/\\_/  @
            @@
        @
  __  __@
- \ \/ /@
+ \\ \\/ /@
   >  < @
- /_/\_\@
+ /_/\\_\\@
        @@
         @
   _   _ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
       @
   ____@
@@ -563,7 +563,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   | | @
  < <  @
   | | @
-   \_\@@
+   \\_\\@@
   _ @
  | |@
  | |@
@@ -571,57 +571,57 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | |@
  |_|@@
  __   @
- \ \  @
+ \\ \\  @
   | | @
    > >@
   | | @
  /_/  @@
-  /\/|@
- |/\/ @
+  /\\/|@
+ |/\\/ @
    $  @
    $  @
    $  @
       @@
   _   _ @
  (_)_(_)@
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_)_(_)@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
    ___ @
-  / _ \@
+  / _ \\@
  | |/ /@
- | |\ \@
+ | |\\ \\@
  | ||_/@
  |_|   @@
 160  NO-BREAK SPACE
@@ -643,25 +643,25 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    | | @
   / __)@
  | (__ @
-  \   )@
+  \\   )@
    |_| @@
 163  POUND SIGN
     ___  @
-   / ,_\ @
+   / ,_\\ @
  _| |_   @
   | |___ @
  (_,____|@
          @@
 164  CURRENCY SIGN
- /\___/\@
- \  _  /@
+ /\\___/\\@
+ \\  _  /@
  | (_) |@
- / ___ \@
- \/   \/@
+ / ___ \\@
+ \\/   \\/@
         @@
 165  YEN SIGN
   __ __ @
-  \ V / @
+  \\ V / @
  |__ __|@
  |__ __|@
    |_|  @
@@ -676,9 +676,9 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 167  SECTION SIGN
     __ @
   _/ _)@
- / \ \ @
- \ \\ \@
-  \ \_/@
+ / \\ \\ @
+ \\ \\\\ \\@
+  \\ \\_/@
  (__/  @@
 168  DIAERESIS
   _   _ @
@@ -689,15 +689,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
 169  COPYRIGHT SIGN
     _____   @
-   / ___ \  @
-  / / __| \ @
+   / ___ \\  @
+  / / __| \\ @
  | | (__   |@
-  \ \___| / @
-   \_____/  @@
+  \\ \\___| / @
+   \\_____/  @@
 170  FEMININE ORDINAL INDICATOR
   __ _ @
  / _\` |@
- \__,_|@
+ \\__,_|@
  |____|@
     $  @
        @@
@@ -705,8 +705,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    ____@
   / / /@
  / / / @
- \ \ \ @
-  \_\_\@
+ \\ \\ \\ @
+  \\_\\_\\@
        @@
 172  NOT SIGN
         @
@@ -724,11 +724,11 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
        @@
 174  REGISTERED SIGN
     _____   @
-   / ___ \  @
-  / | _ \ \ @
+   / ___ \\  @
+  / | _ \\ \\ @
  |  |   /  |@
-  \ |_|_\ / @
-   \_____/  @@
+  \\ |_|_\\ / @
+   \\_____/  @@
 175  MACRON
   _____ @
  |_____|@
@@ -738,9 +738,9 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
 176  DEGREE SIGN
    __  @
-  /  \ @
+  /  \\ @
  | () |@
-  \__/ @
+  \\__/ @
     $  @
        @@
 177  PLUS-MINUS SIGN
@@ -760,7 +760,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 179  SUPERSCRIPT THREE
   ____@
  |__ /@
-  |_ \@
+  |_ \\@
  |___/@
    $  @
       @@
@@ -782,7 +782,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    _____ @
   /     |@
  | (| | |@
-  \__ | |@
+  \\__ | |@
     |_|_|@
          @@
 183  MIDDLE DOT
@@ -808,15 +808,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
     @@
 186  MASCULINE ORDINAL INDICATOR
   ___ @
- / _ \@
- \___/@
+ / _ \\@
+ \\___/@
  |___|@
    $  @
       @@
 187  RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
  ____  @
- \ \ \ @
-  \ \ \@
+ \\ \\ \\ @
+  \\ \\ \\@
   / / /@
  /_/_/ @
        @@
@@ -837,7 +837,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 190  VULGAR FRACTION THREE QUARTERS
   ____  __    @
  |__ / / / _  @
-  |_ \/ / | | @
+  |_ \\/ / | | @
  |___/ /|_  _|@
     /_/   |_| @
               @@
@@ -846,49 +846,49 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   (_) @
   | | @
  / /_ @
- \___|@
+ \\___|@
       @@
 192  LATIN CAPITAL LETTER A WITH GRAVE
    __   @
-   \_\  @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   \\_\\  @
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 193  LATIN CAPITAL LETTER A WITH ACUTE
     __  @
    /_/  @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 194  LATIN CAPITAL LETTER A WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   //\\  @
+  |/_\\| @
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 195  LATIN CAPITAL LETTER A WITH TILDE
-   /\/| @
-  |/\/  @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /\\/| @
+  |/\\/  @
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 196  LATIN CAPITAL LETTER A WITH DIAERESIS
   _   _ @
  (_)_(_)@
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 197  LATIN CAPITAL LETTER A WITH RING ABOVE
     _   @
    (o)  @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 198  LATIN CAPITAL LETTER AE
      ______ @
@@ -902,11 +902,11 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   / ___|@
  | |    @
  | |___ @
-  \____|@
+  \\____|@
     )_) @@
 200  LATIN CAPITAL LETTER E WITH GRAVE
    __   @
-  _\_\_ @
+  _\\_\\_ @
  | ____|@
  |  _|_ @
  |_____|@
@@ -919,8 +919,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_____|@
         @@
 202  LATIN CAPITAL LETTER E WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
+   //\\  @
+  |/_\\| @
  | ____|@
  |  _|_ @
  |_____|@
@@ -934,7 +934,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
 204  LATIN CAPITAL LETTER I WITH GRAVE
   __  @
-  \_\ @
+  \\_\\ @
  |_ _|@
   | | @
  |___|@
@@ -947,8 +947,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |___|@
       @@
 206  LATIN CAPITAL LETTER I WITH CIRCUMFLEX
-  //\ @
- |/_\|@
+  //\\ @
+ |/_\\|@
  |_ _|@
   | | @
  |___|@
@@ -962,59 +962,59 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
 208  LATIN CAPITAL LETTER ETH
     ____  @
-   |  _ \ @
+   |  _ \\ @
   _| |_| |@
  |__ __| |@
    |____/ @
           @@
 209  LATIN CAPITAL LETTER N WITH TILDE
-   /\/|@
-  |/\/ @
- | \| |@
+   /\\/|@
+  |/\\/ @
+ | \\| |@
  | .\` |@
- |_|\_|@
+ |_|\\_|@
        @@
 210  LATIN CAPITAL LETTER O WITH GRAVE
    __   @
-   \_\  @
-  / _ \ @
+   \\_\\  @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 211  LATIN CAPITAL LETTER O WITH ACUTE
     __  @
    /_/  @
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 212  LATIN CAPITAL LETTER O WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
-  / _ \ @
+   //\\  @
+  |/_\\| @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 213  LATIN CAPITAL LETTER O WITH TILDE
-   /\/| @
-  |/\/  @
-  / _ \ @
+   /\\/| @
+  |/\\/  @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 214  LATIN CAPITAL LETTER O WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 215  MULTIPLICATION SIGN
      @
      @
- /\/\@
+ /\\/\\@
  >  <@
- \/\/@
+ \\/\\/@
      @@
 216  LATIN CAPITAL LETTER O WITH STROKE
    ____ @
@@ -1025,140 +1025,140 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
         @@
 217  LATIN CAPITAL LETTER U WITH GRAVE
    __   @
-  _\_\_ @
+  _\\_\\_ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 218  LATIN CAPITAL LETTER U WITH ACUTE
     __  @
   _/_/_ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 219  LATIN CAPITAL LETTER U WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 220  LATIN CAPITAL LETTER U WITH DIAERESIS
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 221  LATIN CAPITAL LETTER Y WITH ACUTE
     __  @
  __/_/__@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    |_|  @
         @@
 222  LATIN CAPITAL LETTER THORN
   _     @
  | |___ @
- |  __ \@
+ |  __ \\@
  |  ___/@
  |_|    @
         @@
 223  LATIN SMALL LETTER SHARP S
    ___ @
-  / _ \@
+  / _ \\@
  | |/ /@
- | |\ \@
+ | |\\ \\@
  | ||_/@
  |_|   @@
 224  LATIN SMALL LETTER A WITH GRAVE
    __   @
-   \_\_ @
+   \\_\\_ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 225  LATIN SMALL LETTER A WITH ACUTE
     __  @
    /_/_ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 226  LATIN SMALL LETTER A WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
+   //\\  @
+  |/_\\| @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 227  LATIN SMALL LETTER A WITH TILDE
-   /\/| @
-  |/\/_ @
+   /\\/| @
+  |/\\/_ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 228  LATIN SMALL LETTER A WITH DIAERESIS
   _   _ @
  (_)_(_)@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 229  LATIN SMALL LETTER A WITH RING ABOVE
     __  @
    (()) @
   / _ '|@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 230  LATIN SMALL LETTER AE
            @
    __ ____ @
-  / _\`  _ \@
+  / _\`  _ \\@
  | (_|  __/@
-  \__,____|@
+  \\__,____|@
            @@
 231  LATIN SMALL LETTER C WITH CEDILLA
        @
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
    )_) @@
 232  LATIN SMALL LETTER E WITH GRAVE
    __  @
-   \_\ @
-  / _ \@
+   \\_\\ @
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
 233  LATIN SMALL LETTER E WITH ACUTE
     __ @
    /_/ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
 234  LATIN SMALL LETTER E WITH CIRCUMFLEX
-   //\ @
-  |/_\|@
-  / _ \@
+   //\\ @
+  |/_\\|@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
 235  LATIN SMALL LETTER E WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  |  __/ @
-  \___| @
+  \\___| @
         @@
 236  LATIN SMALL LETTER I WITH GRAVE
  __ @
- \_\@
+ \\_\\@
  | |@
  | |@
  |_|@
@@ -1171,8 +1171,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_|@
     @@
 238  LATIN SMALL LETTER I WITH CIRCUMFLEX
-  //\ @
- |/_\|@
+  //\\ @
+ |/_\\|@
   | | @
   | | @
   |_| @
@@ -1185,53 +1185,53 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    |_|  @
         @@
 240  LATIN SMALL LETTER ETH
-   /\/\ @
+   /\\/\\ @
    >  < @
-  _\/\ |@
+  _\\/\\ |@
  / __\` |@
- \____/ @
+ \\____/ @
         @@
 241  LATIN SMALL LETTER N WITH TILDE
-   /\/| @
-  |/\/  @
- | '_ \ @
+   /\\/| @
+  |/\\/  @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
 242  LATIN SMALL LETTER O WITH GRAVE
    __   @
-   \_\  @
-  / _ \ @
+   \\_\\  @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 243  LATIN SMALL LETTER O WITH ACUTE
     __  @
    /_/  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 244  LATIN SMALL LETTER O WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
-  / _ \ @
+   //\\  @
+  |/_\\| @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 245  LATIN SMALL LETTER O WITH TILDE
-   /\/| @
-  |/\/  @
-  / _ \ @
+   /\\/| @
+  |/\\/  @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 246  LATIN SMALL LETTER O WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 247  DIVISION SIGN
         @
@@ -1243,49 +1243,49 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 248  LATIN SMALL LETTER O WITH STROKE
          @
    ____  @
-  / _//\ @
+  / _//\\ @
  | (//) |@
-  \//__/ @
+  \\//__/ @
          @@
 249  LATIN SMALL LETTER U WITH GRAVE
    __   @
-  _\_\_ @
+  _\\_\\_ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 250  LATIN SMALL LETTER U WITH ACUTE
     __  @
   _/_/_ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 251  LATIN SMALL LETTER U WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 252  LATIN SMALL LETTER U WITH DIAERESIS
   _   _ @
  (_) (_)@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 253  LATIN SMALL LETTER Y WITH ACUTE
     __  @
   _/_/_ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 254  LATIN SMALL LETTER THORN
   _     @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  | .__/ @
  |_|    @@
@@ -1294,123 +1294,123 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  (_) (_)@
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 0x0100  LATIN CAPITAL LETTER A WITH MACRON
    ____ @
   /___/ @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 0x0101  LATIN SMALL LETTER A WITH MACRON
     ___ @
    /_ _/@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0102  LATIN CAPITAL LETTER A WITH BREVE
   _   _ @
-  \\_// @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+  \\\\_// @
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
         @@
 0x0103  LATIN SMALL LETTER A WITH BREVE
-   \_/  @
+   \\_/  @
    ___  @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0104  LATIN CAPITAL LETTER A WITH OGONEK
         @
     _   @
-   /_\  @
-  / _ \ @
- /_/ \_\@
+   /_\\  @
+  / _ \\ @
+ /_/ \\_\\@
      (_(@@
 0x0105  LATIN SMALL LETTER A WITH OGONEK
         @
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
      (_(@@
 0x0106  LATIN CAPITAL LETTER C WITH ACUTE
      __ @
    _/_/ @
   / ___|@
  | |___ @
-  \____|@
+  \\____|@
         @@
 0x0107  LATIN SMALL LETTER C WITH ACUTE
     __ @
    /__/@
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
 0x0108  LATIN CAPITAL LETTER C WITH CIRCUMFLEX
-     /\ @
-   _//\\@
+     /\\ @
+   _//\\\\@
   / ___|@
  | |___ @
-  \____|@
+  \\____|@
         @@
 0x0109  LATIN SMALL LETTER C WITH CIRCUMFLEX
-    /\ @
-   /_\ @
+    /\\ @
+   /_\\ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
 0x010A  LATIN CAPITAL LETTER C WITH DOT ABOVE
     []  @
    ____ @
   / ___|@
  | |___ @
-  \____|@
+  \\____|@
         @@
 0x010B  LATIN SMALL LETTER C WITH DOT ABOVE
    []  @
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
 0x010C  LATIN CAPITAL LETTER C WITH CARON
-   \\// @
-   _\/_ @
+   \\\\// @
+   _\\/_ @
   / ___|@
  | |___ @
-  \____|@
+  \\____|@
         @@
 0x010D  LATIN SMALL LETTER C WITH CARON
-   \\//@
-   _\/ @
+   \\\\//@
+   _\\/ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @@
 0x010E  LATIN CAPITAL LETTER D WITH CARON
-   \\// @
-  __\/  @
- |  _ \ @
+   \\\\// @
+  __\\/  @
+ |  _ \\ @
  | |_| |@
  |____/ @
         @@
 0x010F  LATIN SMALL LETTER D WITH CARON
-  \/  _ @
+  \\/  _ @
    __| |@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0110  LATIN CAPITAL LETTER D WITH STROKE
    ____   @
-  |_ __ \ @
+  |_ __ \\ @
  /| |/ | |@
  /|_|/_| |@
   |_____/ @
@@ -1420,7 +1420,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    __| |@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0112  LATIN CAPITAL LETTER E WITH MACRON
    ____ @
@@ -1432,23 +1432,23 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x0113  LATIN SMALL LETTER E WITH MACRON
     ____@
    /_ _/@
-  / _ \ @
+  / _ \\ @
  |  __/ @
-  \___| @
+  \\___| @
         @@
 0x0114  LATIN CAPITAL LETTER E WITH BREVE
   _   _ @
-  \\_// @
+  \\\\_// @
  | ____|@
  |  _|_ @
  |_____|@
         @@
 0x0115  LATIN SMALL LETTER E WITH BREVE
-  \\  //@
+  \\\\  //@
     --  @
-  / _ \ @
+  / _ \\ @
  |  __/ @
-  \___| @
+  \\___| @
         @@
 0x0116  LATIN CAPITAL LETTER E WITH DOT ABOVE
     []  @
@@ -1460,9 +1460,9 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x0117  LATIN SMALL LETTER E WITH DOT ABOVE
     [] @
     __ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
 0x0118  LATIN CAPITAL LETTER E WITH OGONEK
         @
@@ -1474,91 +1474,91 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x0119  LATIN SMALL LETTER E WITH OGONEK
        @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
     (_(@@
 0x011A  LATIN CAPITAL LETTER E WITH CARON
-   \\// @
-  __\/_ @
+   \\\\// @
+  __\\/_ @
  | ____|@
  |  _|_ @
  |_____|@
         @@
 0x011B  LATIN SMALL LETTER E WITH CARON
-   \\//@
-    \/ @
-  / _ \@
+   \\\\//@
+    \\/ @
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @@
 0x011C  LATIN CAPITAL LETTER G WITH CIRCUMFLEX
-   _/\_ @
+   _/\\_ @
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
         @@
 0x011D  LATIN SMALL LETTER G WITH CIRCUMFLEX
-     /\ @
-   _/_ \@
+     /\\ @
+   _/_ \\@
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 0x011E  LATIN CAPITAL LETTER G WITH BREVE
-   _\/_ @
+   _\\/_ @
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
         @@
 0x011F  LATIN SMALL LETTER G WITH BREVE
-  \___/ @
+  \\___/ @
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 0x0120  LATIN CAPITAL LETTER G WITH DOT ABOVE
    _[]_ @
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
         @@
 0x0121  LATIN SMALL LETTER G WITH DOT ABOVE
    []   @
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 0x0122  LATIN CAPITAL LETTER G WITH CEDILLA
    ____ @
   / ___|@
  | |  _ @
  | |_| |@
-  \____|@
+  \\____|@
    )__) @@
 0x0123  LATIN SMALL LETTER G WITH CEDILLA
         @
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
   |_))))@@
 0x0124  LATIN CAPITAL LETTER H WITH CIRCUMFLEX
-  _/ \_ @
- | / \ |@
+  _/ \\_ @
+ | / \\ |@
  | |_| |@
  |  _  |@
  |_| |_|@
         @@
 0x0125  LATIN SMALL LETTER H WITH CIRCUMFLEX
-  _  /\ @
- | |//\ @
- | '_ \ @
+  _  /\\ @
+ | |//\\ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
@@ -1572,12 +1572,12 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x0127  LATIN SMALL LETTER H WITH STROKE
   _     @
  |=|__  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
 0x0128  LATIN CAPITAL LETTER I WITH TILDE
-  /\//@
+  /\\//@
  |_ _|@
   | | @
   | | @
@@ -1585,7 +1585,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
       @@
 0x0129  LATIN SMALL LETTER I WITH TILDE
     @
- /\/@
+ /\\/@
  | |@
  | |@
  |_|@
@@ -1605,7 +1605,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   |_| @
       @@
 0x012C  LATIN CAPITAL LETTER I WITH BREVE
-  \__/@
+  \\__/@
  |_ _|@
   | | @
   | | @
@@ -1613,7 +1613,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
       @@
 0x012D  LATIN SMALL LETTER I WITH BREVE
     @
- \_/@
+ \\_/@
  | |@
  | |@
  |_|@
@@ -1661,15 +1661,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_|_/ |@
    |__/ @@
 0x0134  LATIN CAPITAL LETTER J WITH CIRCUMFLEX
-      /\ @
-     /_\|@
+      /\\ @
+     /_\\|@
   _  | | @
  | |_| | @
-  \___/  @
+  \\___/  @
          @@
 0x0135  LATIN SMALL LETTER J WITH CIRCUMFLEX
-    /\@
-   /_\@
+    /\\@
+   /_\\@
    | |@
    | |@
   _/ |@
@@ -1678,22 +1678,22 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
   _  _  @
  | |/ / @
  | ' /  @
- | . \  @
- |_|\_\ @
+ | . \\  @
+ |_|\\_\\ @
     )__)@@
 0x0137  LATIN SMALL LETTER K WITH CEDILLA
   _    @
  | | __@
  | |/ /@
  |   < @
- |_|\_\@
+ |_|\\_\\@
     )_)@@
 0x0138  LATIN SMALL LETTER KRA
        @
   _ __ @
- | |/ \@
+ | |/ \\@
  |   < @
- |_|\_\@
+ |_|\\_\\@
        @@
 0x0139  LATIN CAPITAL LETTER L WITH ACUTE
   _   //@
@@ -1724,15 +1724,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_|  @
    )_)@@
 0x013D  LATIN CAPITAL LETTER L WITH CARON
-  _ \\//@
- | | \/ @
+  _ \\\\//@
+ | | \\/ @
  | |    @
  | |___ @
  |_____|@
         @@
 0x013E  LATIN SMALL LETTER L WITH CARON
-  _ \\//@
- | | \/ @
+  _ \\\\//@
+ | | \\/ @
  | |    @
  | |    @
  |_|    @
@@ -1767,63 +1767,63 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
     @@
 0x0143  LATIN CAPITAL LETTER N WITH ACUTE
   _/ /_ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
         @@
 0x0144  LATIN SMALL LETTER N WITH ACUTE
      _  @
   _ /_/ @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
 0x0145  LATIN CAPITAL LETTER N WITH CEDILLA
   _   _ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
  )_)    @@
 0x0146  LATIN SMALL LETTER N WITH CEDILLA
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
  )_)    @@
 0x0147  LATIN CAPITAL LETTER N WITH CARON
-  _\/ _ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+  _\\/ _ @
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
         @@
 0x0148  LATIN SMALL LETTER N WITH CARON
-  \\//  @
-  _\/_  @
- | '_ \ @
+  \\\\//  @
+  _\\/_  @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @@
 0x0149  LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
           @
   _  __   @
- ( )| '_\ @
+ ( )| '_\\ @
  |/| | | |@
    |_| |_|@
           @@
 0x014A  LATIN CAPITAL LETTER ENG
   _   _ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \ |@
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\ |@
      )_)@@
 0x014B  LATIN SMALL LETTER ENG
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| | |@
      | |@
@@ -1831,65 +1831,65 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x014C  LATIN CAPITAL LETTER O WITH MACRON
    ____ @
   /_ _/ @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 0x014D  LATIN SMALL LETTER O WITH MACRON
    ____ @
   /_ _/ @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @@
 0x014E  LATIN CAPITAL LETTER O WITH BREVE
-  \   / @
+  \\   / @
    _-_  @
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x014F  LATIN SMALL LETTER O WITH BREVE
-  \   / @
+  \\   / @
    _-_  @
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x0150  LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
     ___ @
    /_/_/@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
     ___ @
    /_/_/@
-  / _ \ @
+  / _ \\ @
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x0152  LATIN CAPITAL LIGATURE OE
    ___  ___ @
-  / _ \| __|@
+  / _ \\| __|@
  | | | |  | @
  | |_| | |__@
-  \___/|____@
+  \\___/|____@
             @@
 0x0153  LATIN SMALL LIGATURE OE
              @
    ___   ___ @
-  / _ \ / _ \@
+  / _ \\ / _ \\@
  | (_) |  __/@
-  \___/ \___|@
+  \\___/ \\___|@
              @@
 0x0154  LATIN CAPITAL LETTER R WITH ACUTE
   _/_/  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  _ < @
- |_| \_\@
+ |_| \\_\\@
         @@
 0x0155  LATIN SMALL LETTER R WITH ACUTE
      __@
@@ -1900,10 +1900,10 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
        @@
 0x0156  LATIN CAPITAL LETTER R WITH CEDILLA
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  _ < @
- |_| \_\@
+ |_| \\_\\@
  )_)    @@
 0x0157  LATIN SMALL LETTER R WITH CEDILLA
        @
@@ -1913,15 +1913,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  |_|   @
    )_) @@
 0x0158  LATIN CAPITAL LETTER R WITH CARON
-  _\_/  @
- |  _ \ @
+  _\\_/  @
+ |  _ \\ @
  | |_) |@
  |  _ < @
- |_| \_\@
+ |_| \\_\\@
         @@
 0x0159  LATIN SMALL LETTER R WITH CARON
-  \\// @
-  _\/_ @
+  \\\\// @
+  _\\/_ @
  | '__|@
  | |   @
  |_|   @
@@ -1929,7 +1929,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0x015A  LATIN CAPITAL LETTER S WITH ACUTE
   _/_/  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
         @@
@@ -1937,27 +1937,27 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
     __@
   _/_/@
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @@
 0x015C  LATIN CAPITAL LETTER S WITH CIRCUMFLEX
-  _/\_  @
+  _/\\_  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
         @@
 0x015D  LATIN SMALL LETTER S WITH CIRCUMFLEX
       @
-  /_\_@
+  /_\\_@
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @@
 0x015E  LATIN CAPITAL LETTER S WITH CEDILLA
   ____  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
     )__)@@
@@ -1965,21 +1965,21 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
       @
   ___ @
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
    )_)@@
 0x0160  LATIN CAPITAL LETTER S WITH CARON
-  _\_/  @
+  _\\_/  @
  / ___| @
- \___ \ @
+ \\___ \\ @
   ___) |@
  |____/ @
         @@
 0x0161  LATIN SMALL LETTER S WITH CARON
-  \\//@
-  _\/ @
+  \\\\//@
+  _\\/ @
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @@
 0x0162  LATIN CAPITAL LETTER T WITH CEDILLA
@@ -1994,7 +1994,7 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | |_ @
  | __|@
  | |_ @
-  \__|@
+  \\__|@
    )_)@@
 0x0164  LATIN CAPITAL LETTER T WITH CARON
   _____ @
@@ -2004,11 +2004,11 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    |_|  @
         @@
 0x0165  LATIN SMALL LETTER T WITH CARON
-  \/  @
+  \\/  @
  | |_ @
  | __|@
  | |_ @
-  \__|@
+  \\__|@
       @@
 0x0166  LATIN CAPITAL LETTER T WITH STROKE
   _____ @
@@ -2022,125 +2022,125 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | |_ @
  | __|@
  |-|_ @
-  \__|@
+  \\__|@
       @@
 0x0168  LATIN CAPITAL LETTER U WITH TILDE
         @
-  _/\/_ @
+  _/\\/_ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x0169  LATIN SMALL LETTER U WITH TILDE
         @
-  _/\/_ @
+  _/\\/_ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x016A  LATIN CAPITAL LETTER U WITH MACRON
    ____ @
   /__ _/@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x016B  LATIN SMALL LETTER U WITH MACRON
    ____ @
   / _  /@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x016C  LATIN CAPITAL LETTER U WITH BREVE
         @
-   \_/_ @
+   \\_/_ @
  | | | |@
  | |_| |@
-  \____|@
+  \\____|@
         @@
 0x016D  LATIN SMALL LETTER U WITH BREVE
         @
-   \_/_ @
+   \\_/_ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x016E  LATIN CAPITAL LETTER U WITH RING ABOVE
     O   @
   __  _ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x016F  LATIN SMALL LETTER U WITH RING ABOVE
     O   @
   __ __ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0170  LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
    -- --@
   /_//_/@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @@
 0x0171  LATIN SMALL LETTER U WITH DOUBLE ACUTE
     ____@
   _/_/_/@
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @@
 0x0172  LATIN CAPITAL LETTER U WITH OGONEK
   _   _ @
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
     (__(@@
 0x0173  LATIN SMALL LETTER U WITH OGONEK
         @
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
      (_(@@
 0x0174  LATIN CAPITAL LETTER W WITH CIRCUMFLEX
- __    /\  __@
- \ \  //\\/ /@
-  \ \ /\ / / @
-   \ V  V /  @
-    \_/\_/   @
+ __    /\\  __@
+ \\ \\  //\\\\/ /@
+  \\ \\ /\\ / / @
+   \\ V  V /  @
+    \\_/\\_/   @
              @@
 0x0175  LATIN SMALL LETTER W WITH CIRCUMFLEX
-      /\   @
- __  //\\__@
- \ \ /\ / /@
-  \ V  V / @
-   \_/\_/  @
+      /\\   @
+ __  //\\\\__@
+ \\ \\ /\\ / /@
+  \\ V  V / @
+   \\_/\\_/  @
            @@
 0x0176  LATIN CAPITAL LETTER Y WITH CIRCUMFLEX
-    /\  @
- __//\\ @
- \ \ / /@
-  \ V / @
+    /\\  @
+ __//\\\\ @
+ \\ \\ / /@
+  \\ V / @
    |_|  @
         @@
 0x0177  LATIN SMALL LETTER Y WITH CIRCUMFLEX
-    /\  @
-   //\\ @
+    /\\  @
+   //\\\\ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
   |___/ @@
 0x0178  LATIN CAPITAL LETTER Y WITH DIAERESIS
   []  []@
  __    _@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    |_|  @
         @@
 0x0179  LATIN CAPITAL LETTER Z WITH ACUTE
@@ -2172,15 +2172,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  /___|@
       @@
 0x017D  LATIN CAPITAL LETTER Z WITH CARON
-  _\_/_@
+  _\\_/_@
  |__  /@
    / / @
   / /_ @
  /____|@
        @@
 0x017E  LATIN SMALL LETTER Z WITH CARON
-  \\//@
-  _\/_@
+  \\\\//@
+  _\\/_@
  |_  /@
   / / @
  /___|@
@@ -2193,15 +2193,15 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
    |_|  @
         @@
 0x02C7  CARON
- \\//@
-  \/ @
+ \\\\//@
+  \\/ @
     $@
     $@
     $@
     $@@
 0x02D8  BREVE
- \\_//@
-  \_/ @
+ \\\\_//@
+  \\_/ @
      $@
      $@
      $@
@@ -2230,8 +2230,8 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
 0xCA0  KANNADA LETTER TTHA
    _____)@
   /_ ___/@
-  / _ \  @
+  / _ \\  @
  | (_) | @
- $\___/$ @
+ $\\___/$ @
          @@
          `

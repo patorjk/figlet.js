@@ -185,7 +185,7 @@ S%%%S @
 SSSSSSSSSs. @
 S SSS SSSSS @
 S  SS SSSSS @
-S..SS\SSSSS @
+S..SS\\SSSSS @
 S:::S SSSSS @
 S;;;S SSSSS @
 S%%%S SSSSS @

@@ -35,7 +35,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @@
    _|$   @
    _| _|$@
- \____|$ @
+ \\____|$ @
          @@
   )$@
  /$ @
@@ -44,14 +44,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    /$@
   |$ @
   |$ @
- \_\$@@
- \ \$ @
+ \\_\\$@@
+ \\ \\$ @
     |$@
     |$@
   _/$ @@
- \ \ /$ @
+ \\ \\ /$ @
  _   _|$@
- _/ _\$ @
+ _/ _\\$ @
         @@
     |$  @
  __ __|$@
@@ -73,9 +73,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    /$ @
  _/$  @
       @@
-    \$ @
+    \\$ @
   (  |$@
- \__/$ @
+ \\__/$ @
        @@
  _ |$@
    |$@
@@ -86,7 +86,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  ___|$@
       @@
  __ /$@
-  _ \$@
+  _ \\$@
  ___/$@
       @@
   | |$ @
@@ -94,23 +94,23 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    _|$ @
        @@
   __|$@
- __ \$@
+ __ \\$@
  ___/$@
       @@
    /$  @
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
  __  /$@
     /$ @
   _/$  @
        @@
    _ )$@
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
-   _ \$@
- \_  /$@
+   _ \\$@
+ \\_  /$@
    _/$ @
        @@
  _)$@
@@ -123,37 +123,37 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  /$ @@
     /$@
  < <$ @
-  \_\$@
+  \\_\\$@
       @@
        @
  ____|$@
  ____|$@
        @@
- \ \$ @
+ \\ \\$ @
   > >$@
   _/$ @
       @@
- __ \$@
+ __ \\$@
    _/$@
   _)$ @
       @@
-   __ \$ @
+   __ \\$ @
   / _\` |$@
-  \__,_|$@
- \____/$ @@
-    \$  @
-   _ \$ @
- _/  _\$@
+  \\__,_|$@
+ \\____/$ @@
+    \\$  @
+   _ \\$ @
+ _/  _\\$@
         @@
   _ )$@
-  _ \$@
+  _ \\$@
  ___/$@
       @@
    __|$@
   ($   @
- \___|$@
+ \\___|$@
        @@
-  _ \$ @
+  _ \\$ @
   |  |$@
  ___/$ @
        @@
@@ -167,7 +167,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
    __|$@
   (_ |$@
- \___|$@
+ \\___|$@
        @@
   |  |$@
   __ |$@
@@ -178,43 +178,43 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  ___|$@
       @@
      |$@
-  \  |$@
- \__/$ @
+  \\  |$@
+ \\__/$ @
        @@
   |  /$@
   . <$ @
- _|\_\$@
+ _|\\_\\$@
        @@
   |$   @
   |$   @
  ____|$@
        @@
-   \  |$@
-  |\/ |$@
+   \\  |$@
+  |\\/ |$@
  _|  _|$@
         @@
-   \ |$@
+   \\ |$@
   .  |$@
- _|\_|$@
+ _|\\_|$@
        @@
-   _ \$ @
+   _ \\$ @
   (   |$@
- \___/$ @
+ \\___/$ @
         @@
-  _ \$@
+  _ \\$@
   __/$@
  _|$  @
       @@
-   _ \$ @
+   _ \\$ @
   (   |$@
- \__\_\$@
+ \\__\\_\\$@
         @@
-  _ \$@
+  _ \\$@
     /$@
- _|_\$@
+ _|_\\$@
       @@
    __|$@
- \__ \$@
+ \\__ \\$@
  ____/$@
        @@
  __ __|$@
@@ -223,22 +223,22 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
   |  |$@
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
- \ \   /$@
-  \ \ /$ @
-   \_/$  @
+ \\ \\   /$@
+  \\ \\ /$ @
+   \\_/$  @
          @@
- \ \      /$@
-  \ \ \  /$ @
-   \_/\_/$  @
+ \\ \\      /$@
+  \\ \\ \\  /$ @
+   \\_/\\_/$  @
             @@
- \ \  /$@
+ \\ \\  /$@
   >  <$ @
-  _/\_\$@
+  _/\\_\\$@
         @@
- \ \  /$@
-  \  /$ @
+ \\ \\  /$@
+  \\  /$ @
    _|$  @
         @@
  __  /$@
@@ -249,16 +249,16 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   |$ @
   |$ @
  __|$@@
- \ \$  @
-  \ \$ @
-   \_\$@
+ \\ \\$  @
+  \\ \\$ @
+   \\_\\$@
        @@
  _ |$@
    |$@
    |$@
  __|$@@
-  \$ @
- /\|$@
+  \\$ @
+ /\\|$@
      @
      @@
        @
@@ -266,28 +266,28 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @
  ____|$@@
   )$@
- \|$@
+ \\|$@
     @
     @@
         @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
   |$   @
-   _ \$@
+   _ \\$@
  _.__/$@
        @@
       @
    _|$@
- \__|$@
+ \\__|$@
       @@
       |$@
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
        @
    -_)$@
- \___|$@
+ \\___|$@
        @@
    _|$@
    _|$@
@@ -295,10 +295,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
         @
    _\` |$@
- \__, |$@
+ \\__, |$@
  ____/$ @@
   |$   @
-    \$ @
+    \\$ @
  _| _|$@
        @@
  _)$@
@@ -311,31 +311,31 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  __/$ @@
   |$  @
   | /$@
- _\_\$@
+ _\\_\\$@
       @@
   |$@
   |$@
  _|$@
     @@
         @
-   \` \$ @
+   \` \\$ @
  _|_|_|$@
         @@
        @
-    \$ @
+    \\$ @
  _| _|$@
        @@
        @
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
        @
-   _ \$@
+   _ \\$@
   .__/$@
  _|$   @@
         @
    _\` |$@
- \__, |$@
+ \\__, |$@
      _|$@@
       @
    _|$@
@@ -347,27 +347,27 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
   |$  @
    _|$@
- \__|$@
+ \\__|$@
       @@
        @
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
        @
- \ \ /$@
-  \_/$ @
+ \\ \\ /$@
+  \\_/$ @
        @@
           @
- \ \  \ /$@
-  \_/\_/$ @
+ \\ \\  \\ /$@
+  \\_/\\_/$ @
           @@
        @
- \ \ /$@
-  _\_\$@
+ \\ \\ /$@
+  _\\_\\$@
        @@
        @
   |  |$@
- \_, |$@
+ \\_, |$@
  ___/$ @@
       @
  _  /$@
@@ -376,44 +376,44 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     /$@
  _ |$ @
    |$ @
-  \_\$@@
+  \\_\\$@@
   |$@
   |$@
   |$@
  _|$@@
- \ \$  @
+ \\ \\$  @
     |_$@
     |$ @
   _/$  @@
-  \ |$@
- /\/$ @
+  \\ |$@
+ /\\/$ @
       @
       @@
- _) \_)$@
-   _ \$ @
-  /  _\$@
+ _) \\_)$@
+   _ \\$ @
+  /  _\\$@
         @@
  _)  _)$@
-   __ \$@
- \____/$@
+   __ \\$@
+ \\____/$@
         @@
  _) _)$@
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
  _)  _)$@
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
  _) _)$@
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
  _) _)$@
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
-   _ \$@
+   _ \\$@
   |< <$@
   |__/$@
  _|$   @@
@@ -430,20 +430,20 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 162  CENT SIGN
    |$ @
    _)$@
- \ _)$@
+ \\ _)$@
    |$ @@
 163  POUND SIGN
-    _\$ @
+    _\\$ @
  _ _|$  @
  _,___|$@
         @@
 164  CURRENCY SIGN
- \ . /$@
-   _ \$@
- \/  /$@
+ \\ . /$@
+   _ \\$@
+ \\/  /$@
        @@
 165  YEN SIGN
- \ \ /$ @
+ \\ \\ /$ @
  __ __|$@
  __ __|$@
    _|$  @@
@@ -454,8 +454,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  _|$@@
 167  SECTION SIGN
     _)$@
-  \ \$ @
- \ \/$ @
+  \\ \\$ @
+ \\ \\/$ @
  __/$  @@
 168  DIAERESIS
  _) _)$@
@@ -463,19 +463,19 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @
        @@
 169  COPYRIGHT SIGN
-       \$ @
-     _| \$@
- \ \__| /$@
-  \____/$ @@
+       \\$ @
+     _| \\$@
+ \\ \\__| /$@
+  \\____/$ @@
 170  FEMININE ORDINAL INDICATOR
    _\` |$@
- \__,_|$@
+ \\__,_|$@
  _____|$@
         @@
 171  LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
     / /$@
  < < <$ @
-  \_\_\$@
+  \\_\\_\\$@
         @@
 172  NOT SIGN
  ____ |$@
@@ -488,18 +488,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @
       @@
 174  REGISTERED SIGN
-       \$ @
-     -) \$@
- \  |\\ /$@
-  \____/$ @@
+       \\$ @
+     -) \\$@
+ \\  |\\\\ /$@
+  \\____/$ @@
 175  MACRON
  ___|$@
       @
       @
       @@
 176  DEGREE SIGN
-  .\$@
- \_/$@
+  .\\$@
+ \\_/$@
      @
      @@
 177  PLUS-MINUS SIGN
@@ -529,7 +529,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  _|$   @@
 182  PILCROW SIGN
       |$@
- \_ | |$@
+ \\_ | |$@
    _|_|$@
         @@
 183  MIDDLE DOT
@@ -548,12 +548,12 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
      @
      @@
 186  MASCULINE ORDINAL INDICATOR
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
  ____|$@
        @@
 187  RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
- \ \ \$ @
+ \\ \\ \\$ @
   > > >$@
   _/_/$ @
         @@
@@ -575,37 +575,37 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 191  INVERTED QUESTION MARK
    _)$ @
    /$  @
- \___|$@
+ \\___|$@
        @@
 192  LATIN CAPITAL LETTER A WITH GRAVE
- \_\$  @
-  --\$ @
- _/\_\$@
+ \\_\\$  @
+  --\\$ @
+ _/\\_\\$@
        @@
 193  LATIN CAPITAL LETTER A WITH ACUTE
    _/$ @
-  --\$ @
- _/\_\$@
+  --\\$ @
+ _/\\_\\$@
        @@
 194  LATIN CAPITAL LETTER A WITH CIRCUMFLEX
-  /\\$ @
-  --\$ @
- _/\_\$@
+  /\\\\$ @
+  --\\$ @
+ _/\\_\\$@
        @@
 195  LATIN CAPITAL LETTER A WITH TILDE
  / _/$ @
-  --\$ @
- _/\_\$@
+  --\\$ @
+ _/\\_\\$@
        @@
 196  LATIN CAPITAL LETTER A WITH DIAERESIS
- _) \_)$@
-   _ \$ @
-  /  _\$@
+ _) \\_)$@
+   _ \\$ @
+  /  _\\$@
         @@
 197  LATIN CAPITAL LETTER A WITH RING ABOVE
    ( )$ @
-   _ \$ @
- _/  _\$@
+   _ \\$ @
+ _/  _\\$@
         @@
 198  LATIN CAPITAL LETTER AE
    , __|$@
@@ -615,10 +615,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 199  LATIN CAPITAL LETTER C WITH CEDILLA
      |$@
   ($   @
- \___|$@
+ \\___|$@
    _)$ @@
 200  LATIN CAPITAL LETTER E WITH GRAVE
- \_\$@
+ \\_\\$@
   -<$@
  __<$@
      @@
@@ -628,7 +628,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  __<$@
      @@
 202  LATIN CAPITAL LETTER E WITH CIRCUMFLEX
- /\\$@
+ /\\\\$@
   -<$@
  __<$@
      @@
@@ -638,7 +638,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   __<$ @
        @@
 204  LATIN CAPITAL LETTER I WITH GRAVE
- \_\$ @
+ \\_\\$ @
  _ _|$@
  ___|$@
       @@
@@ -648,7 +648,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  ___|$@
       @@
 206  LATIN CAPITAL LETTER I WITH CIRCUMFLEX
- /\\$ @
+ /\\\\$ @
  _ _|$@
  ___|$@
       @@
@@ -658,73 +658,73 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   ___|$ @
         @@
 208  LATIN CAPITAL LETTER ETH
-   _ \$ @
+   _ \\$ @
  _ _| |$@
   ___/$ @
         @@
 209  LATIN CAPITAL LETTER N WITH TILDE
   / _/$@
-   \ |$@
- _|\_|$@
+   \\ |$@
+ _|\\_|$@
        @@
 210  LATIN CAPITAL LETTER O WITH GRAVE
-  \_\$  @
-   __ \$@
- \____/$@
+  \\_\\$  @
+   __ \\$@
+ \\____/$@
         @@
 211  LATIN CAPITAL LETTER O WITH ACUTE
     _/$ @
-   __ \$@
- \____/$@
+   __ \\$@
+ \\____/$@
         @@
 212  LATIN CAPITAL LETTER O WITH CIRCUMFLEX
-   /\\$ @
-   __ \$@
- \____/$@
+   /\\\\$ @
+   __ \\$@
+ \\____/$@
         @@
 213  LATIN CAPITAL LETTER O WITH TILDE
   / _/$ @
-   __ \$@
- \____/$@
+   __ \\$@
+ \\____/$@
         @@
 214  LATIN CAPITAL LETTER O WITH DIAERESIS
  _)  _)$@
-   __ \$@
- \____/$@
+   __ \\$@
+ \\____/$@
         @@
 215  MULTIPLICATION SIGN
-  \ \$@
+  \\ \\$@
  ,  '$@
- \/\/$@
+ \\/\\/$@
       @@
 216  LATIN CAPITAL LETTER O WITH STROKE
-   _ /\$ @
+   _ /\\$ @
   ( /  |$@
- \_/__/$ @
+ \\_/__/$ @
          @@
 217  LATIN CAPITAL LETTER U WITH GRAVE
- \_\$  @
+ \\_\\$  @
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
 218  LATIN CAPITAL LETTER U WITH ACUTE
    _/$ @
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
 219  LATIN CAPITAL LETTER U WITH CIRCUMFLEX
-  /\\$ @
+  /\\\\$ @
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
 220  LATIN CAPITAL LETTER U WITH DIAERESIS
  _) _)$@
   |  |$@
- \__/$ @
+ \\__/$ @
        @@
 221  LATIN CAPITAL LETTER Y WITH ACUTE
    _/$ @
- \ \ /$@
+ \\ \\ /$@
    _|$ @
        @@
 222  LATIN CAPITAL LETTER THORN
@@ -733,72 +733,72 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  _|$  @
       @@
 223  LATIN SMALL LETTER SHARP S
-   _ \$@
+   _ \\$@
   |< <$@
   |__/$@
  _|$   @@
 224  LATIN SMALL LETTER A WITH GRAVE
-  \_\$  @
+  \\_\\$  @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 225  LATIN SMALL LETTER A WITH ACUTE
     _/$ @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 226  LATIN SMALL LETTER A WITH CIRCUMFLEX
-   /\\$ @
+   /\\\\$ @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 227  LATIN SMALL LETTER A WITH TILDE
   / _/$ @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 228  LATIN SMALL LETTER A WITH DIAERESIS
  _)  _)$@
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 229  LATIN SMALL LETTER A WITH RING ABOVE
    ( )$ @
    _\` |$@
- \__,_|$@
+ \\__,_|$@
         @@
 230  LATIN SMALL LETTER AE
           @
    _\` -_)$@
- \__,___|$@
+ \\__,___|$@
           @@
 231  LATIN SMALL LETTER C WITH CEDILLA
       @
    _|$@
- \__|$@
+ \\__|$@
    _)$@@
 232  LATIN SMALL LETTER E WITH GRAVE
-  \_\$ @
+  \\_\\$ @
    -_)$@
- \___|$@
+ \\___|$@
        @@
 233  LATIN SMALL LETTER E WITH ACUTE
    _/$ @
    -_)$@
- \___|$@
+ \\___|$@
        @@
 234  LATIN SMALL LETTER E WITH CIRCUMFLEX
-  /\\$ @
+  /\\\\$ @
    -_)$@
- \___|$@
+ \\___|$@
        @@
 235  LATIN SMALL LETTER E WITH DIAERESIS
  _)  _)$@
    -_)$ @
- \___|$ @
+ \\___|$ @
         @@
 236  LATIN SMALL LETTER I WITH GRAVE
- \_\$@
+ \\_\\$@
    |$@
   _|$@
      @@
@@ -808,7 +808,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  _|$@
     @@
 238  LATIN SMALL LETTER I WITH CIRCUMFLEX
- /\\$@
+ /\\\\$@
   |$ @
  _|$ @
      @@
@@ -818,39 +818,39 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    _|$  @
         @@
 240  LATIN SMALL LETTER ETH
-   , \'$@
+   , \\'$@
    _\` |$@
- \___/$ @
+ \\___/$ @
         @@
 241  LATIN SMALL LETTER N WITH TILDE
  / _/$ @
-  ' \$ @
+  ' \\$ @
  _| _|$@
        @@
 242  LATIN SMALL LETTER O WITH GRAVE
-  \_\$ @
-   _ \$@
- \___/$@
+  \\_\\$ @
+   _ \\$@
+ \\___/$@
        @@
 243  LATIN SMALL LETTER O WITH ACUTE
    _/$ @
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
 244  LATIN SMALL LETTER O WITH CIRCUMFLEX
-  /\\$ @
-   _ \$@
- \___/$@
+  /\\\\$ @
+   _ \\$@
+ \\___/$@
        @@
 245  LATIN SMALL LETTER O WITH TILDE
   / _/$@
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
 246  LATIN SMALL LETTER O WITH DIAERESIS
  _) _)$@
-   _ \$@
- \___/$@
+   _ \\$@
+ \\___/$@
        @@
 247  DIVISION SIGN
   _)$ @
@@ -859,42 +859,42 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
 248  LATIN SMALL LETTER O WITH STROKE
        @
-    /\$@
- \_/_/$@
+    /\\$@
+ \\_/_/$@
        @@
 249  LATIN SMALL LETTER U WITH GRAVE
- \_\$  @
+ \\_\\$  @
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
 250  LATIN SMALL LETTER U WITH ACUTE
    _/$ @
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
 251  LATIN SMALL LETTER U WITH CIRCUMFLEX
-  /\\$ @
+  /\\\\$ @
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
 252  LATIN SMALL LETTER U WITH DIAERESIS
  _) _)$@
   |  |$@
- \_,_|$@
+ \\_,_|$@
        @@
 253  LATIN SMALL LETTER Y WITH ACUTE
    _/$ @
   |  |$@
- \_, |$@
+ \\_, |$@
  ___/$ @@
 254  LATIN SMALL LETTER THORN
   |$   @
-  '_ \$@
+  '_ \\$@
   .__/$@
  _|$   @@
 255  LATIN SMALL LETTER Y WITH DIAERESIS
  _) _)$@
   |  |$@
- \_, |$@
+ \\_, |$@
  ___/$ @@
 `

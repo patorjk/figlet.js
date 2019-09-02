@@ -2487,7 +2487,7 @@ n-v                                                 @
 a-a, b-b, v-v, g-g, d-d, e-e, zh-j, z-z, i-i@
 short i->, k-k, l-l, m-m, n-n, o-o, p-p, r-r@
 s-s, t-t, u-u, f-f, kh-h, ts-q, ch-c, sh-w  @
-shch-x, hard-\, yeru-|, soft-/, reverse e-~ @
+shch-x, hard-\\, yeru-|, soft-/, reverse e-~ @
 yu-\`, ya-y                                  @
 Capitals use Latin capital letters, except: @
 Reverse E-<, Yu-@                           @

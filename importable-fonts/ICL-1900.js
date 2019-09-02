@@ -8,7 +8,7 @@ Some of us have seen FRTRAN code stored on this things.
 I thought, it may be fun to have some. 
 Special remarks:
 ^ stands for "up arrow" char, not in ASCII
-\ stands for "left arrow" char, not in ASCII
+\\ stands for "left arrow" char, not in ASCII
 | stands for "Pound" char, also not in ASCII
 Codes for capital and small letters are doubled for 
 convenience.
@@ -797,7 +797,7 @@ Z\`
  \`
 *\`
  \`\`
-\\`
+\\\`
  \`
  \`
 *\`

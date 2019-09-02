@@ -44,14 +44,14 @@ $$@@
     @
   /$@
  |$ @
-  \$@@
+  \\$@@
     @
- \$ @
+ \\$ @
   |$@
  /$ @@
      @
- \|/$@
- /|\$@
+ \\|/$@
+ /|\\$@
      @@
      @
  _|_$@
@@ -74,8 +74,8 @@ $$@@
  /$ @
     @@
   _$ @
- / \$@
- \_/$@
+ / \\$@
+ \\_/$@
      @@
     @
  /|$@
@@ -123,14 +123,14 @@ $$@@
  /$@@
    @
  /$@
- \$@
+ \\$@
    @@
     @
  --$@
  --$@
     @@
    @
- \$@
+ \\$@
  /$@
    @@
  _$ @
@@ -138,12 +138,12 @@ $$@@
  o$ @
     @@
    __$ @
-  /  \$@
+  /  \\$@
  | (|/$@
-  \__$ @@
+  \\__$ @@
       @
-  /\$ @
- /--\$@
+  /\\$ @
+ /--\\$@
       @@
   _$ @
  |_)$@
@@ -151,10 +151,10 @@ $$@@
      @@
   _$@
  /$ @
- \_$@
+ \\_$@
     @@
   _$ @
- | \$@
+ | \\$@
  |_/$@
      @@
   _$@
@@ -167,7 +167,7 @@ $$@@
     @@
   __$@
  /__$@
- \_|$@
+ \\_|$@
      @@
      @
  |_|$@
@@ -179,39 +179,39 @@ $$@@
      @@
      @
    |$@
- \_|$@
+ \\_|$@
      @@
     @
  |/$@
- |\$@
+ |\\$@
     @@
     @
  |$ @
  |_$@
     @@
       @
- |\/|$@
+ |\\/|$@
  |  |$@
       @@
       @
- |\ |$@
- | \|$@
+ |\\ |$@
+ | \\|$@
       @@
   _$ @
- / \$@
- \_/$@
+ / \\$@
+ \\_/$@
      @@
   _$ @
  |_)$@
  |$  @
      @@
   _$ @
- / \$@
- \_X$@
+ / \\$@
+ \\_X$@
      @@
   _$ @
  |_)$@
- | \$@
+ | \\$@
      @@
   __$@
  (_$ @
@@ -226,19 +226,19 @@ $$@@
  |_|$@
      @@
       @
- \  /$@
-  \/$ @
+ \\  /$@
+  \\/$ @
       @@
         @
- \    /$@
-  \/\/$ @
+ \\    /$@
+  \\/\\/$ @
         @@
     @
- \/$@
- /\$@
+ \\/$@
+ /\\$@
     @@
      @
- \_/$@
+ \\_/$@
   |$ @
      @@
  __$@
@@ -250,14 +250,14 @@ $$@@
  |_$@
     @@
     @
- \$ @
-  \$@
+ \\$ @
+  \\$@
     @@
  _$ @
   |$@
  _|$@
     @@
- /\$@
+ /\\$@
     @
     @
     @@
@@ -266,7 +266,7 @@ $$@@
     @
  __$@@
    @
- \$@
+ \\$@
    @
    @@
      @
@@ -355,11 +355,11 @@ $$@@
      @@
     @
     @
- \/$@
+ \\/$@
     @@
       @
       @
- \/\/$@
+ \\/\\/$@
       @@
     @
     @
@@ -367,7 +367,7 @@ $$@@
     @@
     @
     @
- \/$@
+ \\/$@
  /$ @@
     @
  _$ @
@@ -385,17 +385,17 @@ $$@@
   |_$@
   |$ @
  -'$ @@
- /\/$@
+ /\\/$@
      @
      @
      @@
  o  o$@
-  /\$ @
- /--\$@
+  /\\$ @
+ /--\\$@
       @@
  o_o$@
- / \$@
- \_/$@
+ / \\$@
+ \\_/$@
      @@
  o o$@
  | |$@
@@ -444,7 +444,7 @@ $$@@
      @@
 165  YEN SIGN
        @
- _\_/_$@
+ _\\_/_$@
  --|--$@
        @@
 166  BROKEN BAR
@@ -475,7 +475,7 @@ $$@@
 171  LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
     @
  //$@
- \\$@
+ \\\\$@
     @@
 172  NOT SIGN
      @
@@ -554,7 +554,7 @@ $$@@
      @@
 187  RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
     @
- \\$@
+ \\\\$@
  //$@
     @@
 188  VULGAR FRACTION ONE QUARTER
@@ -578,34 +578,34 @@ $$@@
  (_$@
     @@
 192  LATIN CAPITAL LETTER A WITH GRAVE
-   \$ @
-  /\$ @
- /--\$@
+   \\$ @
+  /\\$ @
+ /--\\$@
       @@
 193  LATIN CAPITAL LETTER A WITH ACUTE
   /$  @
-  /\$ @
- /--\$@
+  /\\$ @
+ /--\\$@
       @@
 194  LATIN CAPITAL LETTER A WITH CIRCUMFLEX
-  /\$ @
-  /\$ @
- /--\$@
+  /\\$ @
+  /\\$ @
+ /--\\$@
       @@
 195  LATIN CAPITAL LETTER A WITH TILDE
-  /\/$@
-  /\$ @
- /--\$@
+  /\\/$@
+  /\\$ @
+ /--\\$@
       @@
 196  LATIN CAPITAL LETTER A WITH DIAERESIS
  o  o$@
-  /\$ @
- /--\$@
+  /\\$ @
+ /--\\$@
       @@
 197  LATIN CAPITAL LETTER A WITH RING ABOVE
    O$  @
-  / \$ @
- /---\$@
+  / \\$ @
+ /---\\$@
        @@
 198  LATIN CAPITAL LETTER AE
     _$@
@@ -615,10 +615,10 @@ $$@@
 199  LATIN CAPITAL LETTER C WITH CEDILLA
   _$@
  /$ @
- \_$@
+ \\_$@
   S$@@
 200  LATIN CAPITAL LETTER E WITH GRAVE
- \_$@
+ \\_$@
  |_$@
  |_$@
     @@
@@ -628,7 +628,7 @@ $$@@
  |_$ @
      @@
 202  LATIN CAPITAL LETTER E WITH CIRCUMFLEX
-  /\$@
+  /\\$@
  |_$ @
  |_$ @
      @@
@@ -638,7 +638,7 @@ $$@@
  |_$ @
      @@
 204  LATIN CAPITAL LETTER I WITH GRAVE
- \__$@
+ \\__$@
   |$ @
  _|_$@
      @@
@@ -648,7 +648,7 @@ $$@@
  _|_$@
      @@
 206  LATIN CAPITAL LETTER I WITH CIRCUMFLEX
-  /\$@
+  /\\$@
  ___$@
  _|_$@
      @@
@@ -659,38 +659,38 @@ $$@@
      @@
 208  LATIN CAPITAL LETTER ETH
    _$ @
- _|_\$@
+ _|_\\$@
   |_/$@
       @@
 209  LATIN CAPITAL LETTER N WITH TILDE
-  /\/$@
- |\ |$@
- | \|$@
+  /\\/$@
+ |\\ |$@
+ | \\|$@
       @@
 210  LATIN CAPITAL LETTER O WITH GRAVE
-  \$ @
- / \$@
- \_/$@
+  \\$ @
+ / \\$@
+ \\_/$@
      @@
 211  LATIN CAPITAL LETTER O WITH ACUTE
   /$ @
- / \$@
- \_/$@
+ / \\$@
+ \\_/$@
      @@
 212  LATIN CAPITAL LETTER O WITH CIRCUMFLEX
-  /\$@
- / \$@
- \_/$@
+  /\\$@
+ / \\$@
+ \\_/$@
      @@
 213  LATIN CAPITAL LETTER O WITH TILDE
- /\/$@
- / \$@
- \_/$@
+ /\\/$@
+ / \\$@
+ \\_/$@
      @@
 214  LATIN CAPITAL LETTER O WITH DIAERESIS
  o_o$@
- / \$@
- \_/$@
+ / \\$@
+ \\_/$@
      @@
 215  MULTIPLICATION SIGN
    @
@@ -699,11 +699,11 @@ $$@@
    @@
 216  LATIN CAPITAL LETTER O WITH STROKE
   __$ @
- / /\$@
- \/_/$@
+ / /\\$@
+ \\/_/$@
       @@
 217  LATIN CAPITAL LETTER U WITH GRAVE
-  \$ @
+  \\$ @
  | |$@
  |_|$@
      @@
@@ -713,7 +713,7 @@ $$@@
  |_|$@
      @@
 219  LATIN CAPITAL LETTER U WITH CIRCUMFLEX
-  /\$@
+  /\\$@
  | |$@
  |_|$@
      @@
@@ -724,7 +724,7 @@ $$@@
      @@
 221  LATIN CAPITAL LETTER Y WITH ACUTE
   /$ @
- \_/$@
+ \\_/$@
   |$ @
      @@
 222  LATIN CAPITAL LETTER THORN
@@ -738,7 +738,7 @@ $$@@
  | )$@
  |$  @@
 224  LATIN SMALL LETTER A WITH GRAVE
-  \$ @
+  \\$ @
   _.$@
  (_|$@
      @@
@@ -748,12 +748,12 @@ $$@@
  (_|$@
      @@
 226  LATIN SMALL LETTER A WITH CIRCUMFLEX
-  /\$@
+  /\\$@
   _.$@
  (_|$@
      @@
 227  LATIN SMALL LETTER A WITH TILDE
- /\/$@
+ /\\/$@
   _.$@
  (_|$@
      @@
@@ -778,7 +778,7 @@ $$@@
  (_$@
   S$@@
 232  LATIN SMALL LETTER E WITH GRAVE
-  \$ @
+  \\$ @
   _$ @
  (/_$@
      @@
@@ -788,7 +788,7 @@ $$@@
  (/_$@
      @@
 234  LATIN SMALL LETTER E WITH CIRCUMFLEX
-  /\$@
+  /\\$@
   _$ @
  (/_$@
      @@
@@ -798,7 +798,7 @@ $$@@
  (/_$@
      @@
 236  LATIN SMALL LETTER I WITH GRAVE
- \$@
+ \\$@
    @
  |$@
    @@
@@ -808,7 +808,7 @@ $$@@
  |$@
    @@
 238  LATIN SMALL LETTER I WITH CIRCUMFLEX
- /\$@
+ /\\$@
     @
  |$ @
     @@
@@ -819,16 +819,16 @@ $$@@
      @@
 240  LATIN SMALL LETTER ETH
  X$  @
-  \$ @
+  \\$ @
  (_|$@
      @@
 241  LATIN SMALL LETTER N WITH TILDE
- /\/$@
+ /\\/$@
  ._$ @
  | |$@
      @@
 242  LATIN SMALL LETTER O WITH GRAVE
-  \$ @
+  \\$ @
   _$ @
  (_)$@
      @@
@@ -838,12 +838,12 @@ $$@@
  (_)$@
      @@
 244  LATIN SMALL LETTER O WITH CIRCUMFLEX
-  /\$@
+  /\\$@
   _$ @
  (_)$@
      @@
 245  LATIN SMALL LETTER O WITH TILDE
- /\/$@
+ /\\/$@
   _$ @
  (_)$@
      @@
@@ -863,7 +863,7 @@ $$@@
  (/)$@
      @@
 249  LATIN SMALL LETTER U WITH GRAVE
-  \$ @
+  \\$ @
      @
  |_|$@
      @@
@@ -873,7 +873,7 @@ $$@@
  |_|$@
      @@
 251  LATIN SMALL LETTER U WITH CIRCUMFLEX
-  /\$@
+  /\\$@
      @
  |_|$@
      @@
@@ -885,7 +885,7 @@ $$@@
 253  LATIN SMALL LETTER Y WITH ACUTE
   /$@
     @
- \/$@
+ \\/$@
  /$ @@
 254  LATIN SMALL LETTER THORN
      @
@@ -895,6 +895,6 @@ $$@@
 255  LATIN SMALL LETTER Y WITH DIAERESIS
  oo$@
     @
- \/$@
+ \\/$@
  /$ @@
 `

@@ -4,7 +4,7 @@ version 1.0 -- 2/Feb/94
 
 Uses spanish character set with -D option:
                                                      _         _
-[ = a'   \ = e'    ] = i'    { = o'    | = u'    } = n     ~ = N
+[ = a'   \\ = e'    ] = i'    { = o'    | = u'    } = n     ~ = N
 
 $$@
 $$@

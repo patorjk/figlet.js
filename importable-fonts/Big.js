@@ -44,7 +44,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    _  @
   | | @
  / __)@
- \__ \@
+ \\__ \\@
  (   /@
   |_| @
       @
@@ -60,9 +60,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
    ___   @
   ( _ )  @
-  / _ \/\@
+  / _ \\/\\@
  | (_>  <@
-  \___/\/@
+  \\___/\\/@
          @
          @@
   _ @
@@ -79,10 +79,10 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | @
  | | @
  | | @
-  \_\@
+  \\_\\@
      @@
  __  @
- \ \ @
+ \\ \\ @
   | |@
   | |@
   | |@
@@ -90,11 +90,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  /_/ @
      @@
      _    @
-  /\| |/\ @
-  \ \` ' / @
+  /\\| |/\\ @
+  \\ \` ' / @
  |_     _|@
-  / , . \ @
-  \/|_|\/ @
+  / , . \\ @
+  \\/|_|\\/ @
           @
           @@
         @
@@ -138,11 +138,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
   __ @
@@ -154,7 +154,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
      @
      @@
   ___  @
- |__ \ @
+ |__ \\ @
    $) |@
    / / @
   / /_ @
@@ -162,7 +162,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @
        @@
   ____  @
- |___ \ @
+ |___ \\ @
    __) |@
   |__ < @
   ___) |@
@@ -180,7 +180,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _____ @
  | ____|@
  | |__  @
- |___ \ @
+ |___ \\ @
   ___) |@
  |____/ @
         @
@@ -188,9 +188,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     __  @
    / /  @
   / /_  @
- | '_ \ @
+ | '_ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
   ______ @
@@ -202,17 +202,17 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
   > _ < @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \__, |@
+  \\__, |@
     / / @
    /_/  @
         @
@@ -237,8 +237,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    / /@
   / / @
  < <  @
-  \ \ @
-   \_\@
+  \\ \\ @
+   \\_\\@
       @
       @@
          @
@@ -250,15 +250,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @@
  __   @
- \ \  @
-  \ \ @
+ \\ \\  @
+  \\ \\ @
    > >@
   / / @
  /_/  @
       @
       @@
   ___  @
- |__ \ @
+ |__ \\ @
     ) |@
    / / @
   |_|  @
@@ -267,22 +267,22 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @@
           @
     ____  @
-   / __ \ @
+   / __ \\ @
   / / _\` |@
  | | (_| |@
-  \ \__,_|@
-   \____/ @
+  \\ \\__,_|@
+   \\____/ @
           @@
            @
-     /\    @
-    /  \   @
-   / /\ \  @
-  / ____ \ @
- /_/    \_\@
+     /\\    @
+    /  \\   @
+   / /\\ \\  @
+  / ____ \\ @
+ /_/    \\_\\@
            @
            @@
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) |@
  |  _ < @
  | |_) |@
@@ -294,11 +294,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | $   @
  | | $   @
  | |____ @
-  \_____|@
+  \\_____|@
          @
          @@
   _____  @
- |  __ \ @
+ |  __ \\ @
  | |  | |@
  | |  | |@
  | |__| |@
@@ -326,7 +326,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | |  __ @
  | | |_ |@
  | |__| |@
-  \_____|@
+  \\_____|@
          @
          @@
   _    _ @
@@ -350,15 +350,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       | |@
   _   | |@
  | |__| |@
-  \____/ @
+  \\____/ @
          @
          @@
   _  __@
  | |/ /@
  | ' / @
  |  <  @
- | . \ @
- |_|\_\@
+ | . \\ @
+ |_|\\_\\@
        @
        @@
   _      @
@@ -370,31 +370,31 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @@
   __  __ @
- |  \/  |@
- | \  / |@
- | |\/| |@
+ |  \\/  |@
+ | \\  / |@
+ | |\\/| |@
  | |  | |@
  |_|  |_|@
          @
          @@
   _   _ @
- | \ | |@
- |  \| |@
+ | \\ | |@
+ |  \\| |@
  | . \` |@
- | |\  |@
- |_| \_|@
+ | |\\  |@
+ |_| \\_|@
         @
         @@
    ____  @
-  / __ \ @
+  / __ \\ @
  | |  | |@
  | |  | |@
  | |__| |@
-  \____/ @
+  \\____/ @
          @
          @@
   _____  @
- |  __ \ @
+ |  __ \\ @
  | |__) |@
  |  ___/ @
  | |     @
@@ -402,25 +402,25 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @@
    ____  @
-  / __ \ @
+  / __ \\ @
  | |  | |@
  | |  | |@
  | |__| |@
-  \___\_\@
+  \\___\\_\\@
          @
          @@
   _____  @
- |  __ \ @
+ |  __ \\ @
  | |__) |@
  |  _  / @
- | | \ \ @
- |_|  \_\@
+ | | \\ \\ @
+ |_|  \\_\\@
          @
          @@
    _____ @
   / ____|@
  | (___  @
-  \___ \ @
+  \\___ \\ @
   ____) |@
  |_____/ @
          @
@@ -438,37 +438,37 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | |  | |@
  | |  | |@
  | |__| |@
-  \____/ @
+  \\____/ @
          @
          @@
  __      __@
- \ \    / /@
-  \ \  / / @
-   \ \/ /  @
-    \  /   @
-     \/    @
+ \\ \\    / /@
+  \\ \\  / / @
+   \\ \\/ /  @
+    \\  /   @
+     \\/    @
            @
            @@
  __          __@
- \ \        / /@
-  \ \  /\  / / @
-   \ \/  \/ /  @
-    \  /\  /   @
-     \/  \/    @
+ \\ \\        / /@
+  \\ \\  /\\  / / @
+   \\ \\/  \\/ /  @
+    \\  /\\  /   @
+     \\/  \\/    @
                @
                @@
  __   __@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    > <  @
-  / . \ @
- /_/ \_\@
+  / . \\ @
+ /_/ \\_\\@
         @
         @@
  __     __@
- \ \   / /@
-  \ \_/ / @
-   \   /  @
+ \\ \\   / /@
+  \\ \\_/ / @
+   \\   /  @
     | |   @
     |_|   @
           @
@@ -490,11 +490,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |___|@
       @@
  __     @
- \ \    @
-  \ \   @
-   \ \  @
-    \ \ @
-     \_\@
+ \\ \\    @
+  \\ \\   @
+   \\ \\  @
+    \\ \\ @
+     \\_\\@
         @
         @@
   ___ @
@@ -505,8 +505,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _| |@
  |___|@
       @@
-  /\ @
- |/\|@
+  /\\ @
+ |/\\|@
    $ @
    $ @
    $ @
@@ -523,7 +523,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  |______|@@
   _ @
  ( )@
-  \|@
+  \\|@
   $ @
   $ @
   $ @
@@ -534,13 +534,13 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
   _     @
  | |    @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  |_.__/ @
         @
@@ -550,7 +550,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
        @
        @@
       _ @
@@ -558,15 +558,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __| |@
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
        @
        @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @
        @@
    __ @
@@ -582,13 +582,13 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
    __/ |@
   |___/ @@
   _     @
  | |    @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @
@@ -614,7 +614,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | __@
  | |/ /@
  |   < @
- |_|\_\@
+ |_|\\_\\@
        @
        @@
   _ @
@@ -628,7 +628,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
             @
             @
   _ __ ___  @
- | '_ \` _ \ @
+ | '_ \` _ \\ @
  | | | | | |@
  |_| |_| |_|@
             @
@@ -636,7 +636,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @
@@ -644,15 +644,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
         @
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  | .__/ @
  | |    @
@@ -662,7 +662,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__, |@
+  \\__, |@
      | |@
      |_|@@
        @
@@ -677,7 +677,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @
   ___ @
  / __|@
- \__ \@
+ \\__ \\@
  |___/@
       @
       @@
@@ -686,7 +686,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | |_ @
  | __|@
  | |_ @
-  \__|@
+  \\__|@
       @
       @@
         @
@@ -694,31 +694,31 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
         @
         @
  __   __@
- \ \ / /@
-  \ V / @
-   \_/  @
+ \\ \\ / /@
+  \\ V / @
+   \\_/  @
         @
         @@
            @
            @
  __      __@
- \ \ /\ / /@
-  \ V  V / @
-   \_/\_/  @
+ \\ \\ /\\ / /@
+  \\ V  V / @
+   \\_/\\_/  @
            @
            @@
        @
        @
  __  __@
- \ \/ /@
+ \\ \\/ /@
   >  < @
- /_/\_\@
+ /_/\\_\\@
        @
        @@
         @
@@ -726,7 +726,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
    __/ |@
   |___/ @@
       @
@@ -741,9 +741,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    / /@
   | | @
  / /  @
- \ \  @
+ \\ \\  @
   | | @
-   \_\@
+   \\_\\@
       @@
   _ @
  | |@
@@ -754,15 +754,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | |@
  |_|@@
  __   @
- \ \  @
+ \\ \\  @
   | | @
-   \ \@
+   \\ \\@
    / /@
   | | @
  /_/  @
       @@
-  /\/|@
- |/\/ @
+  /\\/|@
+ |/\\/ @
    $  @
    $  @
    $  @
@@ -771,18 +771,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @@
    _   _  @
   (_)_(_) @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
   _   _ @
@@ -790,7 +790,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
   _   _ @
@@ -798,15 +798,15 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
   _   _ @
  (_) (_)@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
   _   _ @
@@ -814,11 +814,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
    ___  @
-  / _ \ @
+  / _ \\ @
  | | ) |@
  | |< < @
  | | ) |@
@@ -849,12 +849,12 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    | | @
   / __)@
  | (__ @
-  \   )@
+  \\   )@
    |_| @
        @@
 163  POUND SIGN
      ___   @
-    / ,_\  @
+    / ,_\\  @
   _| |_    @
  |__ __|   @
    | |____ @
@@ -863,17 +863,17 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
            @@
 164  CURRENCY SIGN
         @
- /\___/\@
- \  _  /@
+ /\\___/\\@
+ \\  _  /@
  | (_) |@
- / ___ \@
- \/   \/@
+ / ___ \\@
+ \\/   \\/@
         @
         @@
 165  YEN SIGN
   __   __ @
-  \ \ / / @
-  _\ V /_ @
+  \\ \\ / / @
+  _\\ V /_ @
  |___ ___|@
  |___ ___|@
     |_|   @
@@ -891,9 +891,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 167  SECTION SIGN
     __ @
   _/ _)@
- / \ \ @
- \ \\ \@
-  \ \_/@
+ / \\ \\ @
+ \\ \\\\ \\@
+  \\ \\_/@
  (__/  @
        @
        @@
@@ -908,18 +908,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 169  COPYRIGHT SIGN
     ________   @
-   /  ____  \  @
-  /  / ___|  \ @
+   /  ____  \\  @
+  /  / ___|  \\ @
  |  | |       |@
  |  | |___    |@
-  \  \____|  / @
-   \________/  @
+  \\  \\____|  / @
+   \\________/  @
                @@
 170  FEMININE ORDINAL INDICATOR
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
  |_____|@
     $   @
         @
@@ -929,8 +929,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    / / /@
   / / / @
  < < <  @
-  \ \ \ @
-   \_\_\@
+  \\ \\ \\ @
+   \\_\\_\\@
         @
         @@
 172  NOT SIGN
@@ -953,12 +953,12 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 174  REGISTERED SIGN
     ________   @
-   /  ____  \  @
-  /  |  _ \  \ @
+   /  ____  \\  @
+  /  |  _ \\  \\ @
  |   | |_) |  |@
  |   |  _ <   |@
-  \  |_| \_\ / @
-   \________/  @
+  \\  |_| \\_\\ / @
+   \\________/  @
                @@
 175  MACRON
   ______ @
@@ -971,9 +971,9 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @@
 176  DEGREE SIGN
    __  @
-  /  \ @
+  /  \\ @
  | () |@
-  \__/ @
+  \\__/ @
     $  @
     $  @
        @
@@ -999,7 +999,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 179  SUPERSCRIPT THREE
   ____@
  |__ /@
-  |_ \@
+  |_ \\@
  |___/@
    $  @
    $  @
@@ -1027,7 +1027,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ______ @
   /      |@
  | (| || |@
-  \__ || |@
+  \\__ || |@
     | || |@
     |_||_|@
           @
@@ -1061,17 +1061,17 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     @@
 186  MASCULINE ORDINAL INDICATOR
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
  |_____|@
     $   @
         @
         @@
 187  RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
  ____   @
- \ \ \  @
-  \ \ \ @
+ \\ \\ \\  @
+  \\ \\ \\ @
    > > >@
   / / / @
  /_/_/  @
@@ -1098,7 +1098,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 190  VULGAR FRACTION THREE QUARTERS
   ____  __   @
  |__ / / /   @
-  |_ \/ / _  @
+  |_ \\/ / _  @
  |___/ / | | @
     / /|_  _|@
    /_/   |_| @
@@ -1110,61 +1110,61 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    | | @
   / /  @
  | (__ @
-  \___|@
+  \\___|@
        @
        @@
 192  LATIN CAPITAL LETTER A WITH GRAVE
     __    @
-    \_\   @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    \\_\\   @
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 193  LATIN CAPITAL LETTER A WITH ACUTE
      __   @
     /_/   @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 194  LATIN CAPITAL LETTER A WITH CIRCUMFLEX
-    //\   @
-   |/_\|  @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    //\\   @
+   |/_\\|  @
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 195  LATIN CAPITAL LETTER A WITH TILDE
-    /\/|  @
-   |/\/   @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    /\\/|  @
+   |/\\/   @
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 196  LATIN CAPITAL LETTER A WITH DIAERESIS
    _   _  @
   (_)_(_) @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 197  LATIN CAPITAL LETTER A WITH RING ABOVE
      _    @
     (o)   @
-    / \   @
-   / _ \  @
-  / ___ \ @
- /_/   \_\@
+    / \\   @
+   / _ \\  @
+  / ___ \\ @
+ /_/   \\_\\@
           @
           @@
 198  LATIN CAPITAL LETTER AE
@@ -1182,12 +1182,12 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | $   @
  | | $   @
  | |____ @
-  \_____|@
+  \\_____|@
     )_)  @
          @@
 200  LATIN CAPITAL LETTER E WITH GRAVE
    __   @
-  _\_\_ @
+  _\\_\\_ @
  | ____|@
  |  _|  @
  | |___ @
@@ -1204,8 +1204,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @@
 202  LATIN CAPITAL LETTER E WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
  | ____|@
  |  _|  @
  | |___ @
@@ -1223,7 +1223,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 204  LATIN CAPITAL LETTER I WITH GRAVE
   __  @
-  \_\ @
+  \\_\\ @
  |_ _|@
   | | @
   | | @
@@ -1240,8 +1240,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
       @
       @@
 206  LATIN CAPITAL LETTER I WITH CIRCUMFLEX
-  //\ @
- |/_\|@
+  //\\ @
+ |/_\\|@
  |_ _|@
   | | @
   | | @
@@ -1259,7 +1259,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 208  LATIN CAPITAL LETTER ETH
     _____  @
-   |  __ \ @
+   |  __ \\ @
   _| |_ | |@
  |__ __|| |@
    | |__| |@
@@ -1267,65 +1267,65 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
            @
            @@
 209  LATIN CAPITAL LETTER N WITH TILDE
-   /\/| @
-  |/\/_ @
- | \ | |@
- |  \| |@
- | |\  |@
- |_| \_|@
+   /\\/| @
+  |/\\/_ @
+ | \\ | |@
+ |  \\| |@
+ | |\\  |@
+ |_| \\_|@
         @
         @@
 210  LATIN CAPITAL LETTER O WITH GRAVE
    __   @
-   \_\  @
-  / _ \ @
+   \\_\\  @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 211  LATIN CAPITAL LETTER O WITH ACUTE
     __  @
    /_/  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 212  LATIN CAPITAL LETTER O WITH CIRCUMFLEX
-   //\  @
-  |/_\| @
-  / _ \ @
+   //\\  @
+  |/_\\| @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 213  LATIN CAPITAL LETTER O WITH TILDE
-   /\/| @
-  |/\/  @
-  / _ \ @
+   /\\/| @
+  |/\\/  @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 214  LATIN CAPITAL LETTER O WITH DIAERESIS
   _   _ @
  (_)_(_)@
-  / _ \ @
+  / _ \\ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 215  MULTIPLICATION SIGN
      @
      @
- /\/\@
+ /\\/\\@
  >  <@
- \/\/@
+ \\/\\/@
    $ @
      @
      @@
@@ -1340,11 +1340,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @@
 217  LATIN CAPITAL LETTER U WITH GRAVE
    __   @
-  _\_\_ @
+  _\\_\\_ @
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 218  LATIN CAPITAL LETTER U WITH ACUTE
@@ -1353,16 +1353,16 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 219  LATIN CAPITAL LETTER U WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 220  LATIN CAPITAL LETTER U WITH DIAERESIS
@@ -1371,14 +1371,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 221  LATIN CAPITAL LETTER Y WITH ACUTE
     __  @
  __/_/__@
- \ \ / /@
-  \ V / @
+ \\ \\ / /@
+  \\ V / @
    | |  @
    |_|  @
         @
@@ -1386,7 +1386,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 222  LATIN CAPITAL LETTER THORN
   _      @
  | |___  @
- |  __ \ @
+ |  __ \\ @
  | |__) |@
  |  ___/ @
  |_|     @
@@ -1394,7 +1394,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @@
 223  LATIN SMALL LETTER SHARP S
    ___  @
-  / _ \ @
+  / _ \\ @
  | | ) |@
  | |< < @
  | | ) |@
@@ -1403,11 +1403,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 224  LATIN SMALL LETTER A WITH GRAVE
    __   @
-   \_\  @
+   \\_\\  @
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 225  LATIN SMALL LETTER A WITH ACUTE
@@ -1416,25 +1416,25 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 226  LATIN SMALL LETTER A WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 227  LATIN SMALL LETTER A WITH TILDE
-   /\/| @
-  |/\/  @
+   /\\/| @
+  |/\\/  @
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 228  LATIN SMALL LETTER A WITH DIAERESIS
@@ -1443,7 +1443,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 229  LATIN SMALL LETTER A WITH RING ABOVE
@@ -1452,16 +1452,16 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    __ _ @
   / _\` |@
  | (_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 230  LATIN SMALL LETTER AE
            @
            @
    __ ____ @
-  / _\`  _ \@
+  / _\`  _ \\@
  | (_|  __/@
-  \__,____|@
+  \\__,____|@
            @
            @@
 231  LATIN SMALL LETTER C WITH CEDILLA
@@ -1470,48 +1470,48 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ___ @
   / __|@
  | (__ @
-  \___|@
+  \\___|@
    )_) @
        @@
 232  LATIN SMALL LETTER E WITH GRAVE
    __  @
-   \_\ @
+   \\_\\ @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @
        @@
 233  LATIN SMALL LETTER E WITH ACUTE
     __ @
    /_/ @
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @
        @@
 234  LATIN SMALL LETTER E WITH CIRCUMFLEX
-   //\ @
-  |/ \|@
+   //\\ @
+  |/ \\|@
    ___ @
-  / _ \@
+  / _ \\@
  |  __/@
-  \___|@
+  \\___|@
        @
        @@
 235  LATIN SMALL LETTER E WITH DIAERESIS
   _   _ @
  (_) (_)@
    ___  @
-  / _ \ @
+  / _ \\ @
  |  __/ @
-  \___| @
+  \\___| @
         @
         @@
 236  LATIN SMALL LETTER I WITH GRAVE
  __ @
- \_\@
+ \\_\\@
   _ @
  | |@
  | |@
@@ -1528,8 +1528,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     @
     @@
 238  LATIN SMALL LETTER I WITH CIRCUMFLEX
-  //\ @
- |/ \|@
+  //\\ @
+ |/ \\|@
    _  @
   | | @
   | | @
@@ -1546,66 +1546,66 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @@
 240  LATIN SMALL LETTER ETH
-  /\/\  @
+  /\\/\\  @
   >  <  @
-  \/\ \ @
+  \\/\\ \\ @
   / _\` |@
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 241  LATIN SMALL LETTER N WITH TILDE
-   /\/| @
-  |/\/  @
+   /\\/| @
+  |/\\/  @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| |_|@
         @
         @@
 242  LATIN SMALL LETTER O WITH GRAVE
    __   @
-   \_\  @
+   \\_\\  @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 243  LATIN SMALL LETTER O WITH ACUTE
     __  @
    /_/  @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 244  LATIN SMALL LETTER O WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 245  LATIN SMALL LETTER O WITH TILDE
-   /\/| @
-  |/\/  @
+   /\\/| @
+  |/\\/  @
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 246  LATIN SMALL LETTER O WITH DIAERESIS
   _   _ @
  (_) (_)@
    ___  @
-  / _ \ @
+  / _ \\ @
  | (_) |@
-  \___/ @
+  \\___/ @
         @
         @@
 247  DIVISION SIGN
@@ -1621,18 +1621,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @
    ____  @
-  / _//\ @
+  / _//\\ @
  | (//) |@
-  \//__/ @
+  \\//__/ @
          @
          @@
 249  LATIN SMALL LETTER U WITH GRAVE
    __   @
-   \_\  @
+   \\_\\  @
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 250  LATIN SMALL LETTER U WITH ACUTE
@@ -1641,16 +1641,16 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 251  LATIN SMALL LETTER U WITH CIRCUMFLEX
-   //\  @
-  |/ \| @
+   //\\  @
+  |/ \\| @
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 252  LATIN SMALL LETTER U WITH DIAERESIS
@@ -1659,7 +1659,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__,_|@
+  \\__,_|@
         @
         @@
 253  LATIN SMALL LETTER Y WITH ACUTE
@@ -1668,14 +1668,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
    __/ |@
   |___/ @@
 254  LATIN SMALL LETTER THORN
   _     @
  | |    @
  | |__  @
- | '_ \ @
+ | '_ \\ @
  | |_) |@
  | .__/ @
  | |    @
@@ -1686,7 +1686,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \__, |@
+  \\__, |@
    __/ |@
   |___/ @@
 0x02BC  MODIFIER LETTER APOSTROPHE
@@ -1727,7 +1727,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
     @@
 0x0391  GREEK CAPITAL LETTER ALPHA
    ___  @
-  / _ \ @
+  / _ \\ @
  | |_| |@
  |  _  |@
  | | | |@
@@ -1736,7 +1736,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x0392  GREEK CAPITAL LETTER BETA
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) )@
  |  _ ( @
  | |_) )@
@@ -1754,11 +1754,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x0394  GREEK CAPITAL LETTER DELTA
            @
-     /\    @
-    /  \   @
-   / /\ \  @
-  / /__\ \ @
- /________\@
+     /\\    @
+    /  \\   @
+   / /\\ \\  @
+  / /__\\ \\ @
+ /________\\@
            @
            @@
 0x0395  GREEK CAPITAL LETTER EPSILON
@@ -1790,11 +1790,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x0398  GREEK CAPITAL LETTER THETA
    ____  @
-  / __ \ @
+  / __ \\ @
  | |__| |@
  |  __  |@
  | |__| |@
-  \____/ @
+  \\____/ @
          @
          @@
 0x0399  GREEK CAPITAL LETTER IOTA
@@ -1811,35 +1811,35 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | | / /@
  | |/ / @
  |   <  @
- | |\ \ @
- |_| \_\@
+ | |\\ \\ @
+ |_| \\_\\@
         @
         @@
 0x039B  GREEK CAPITAL LETTER LAMDA
            @
-     /\    @
-    /  \   @
-   / /\ \  @
-  / /  \ \ @
- /_/    \_\@
+     /\\    @
+    /  \\   @
+   / /\\ \\  @
+  / /  \\ \\ @
+ /_/    \\_\\@
            @
            @@
 0x039C  GREEK CAPITAL LETTER MU
   __   __ @
- |  \ /  |@
+ |  \\ /  |@
  |   v   |@
- | |\_/| |@
+ | |\\_/| |@
  | |   | |@
  |_|   |_|@
           @
           @@
 0x039D  GREEK CAPITAL LETTER NU
   _   _ @
- | \ | |@
- |  \| |@
+ | \\ | |@
+ |  \\| |@
  |     |@
- | |\  |@
- |_| \_|@
+ | |\\  |@
+ |_| \\_|@
         @
         @@
 0x039E  GREEK CAPITAL LETTER XI
@@ -1853,11 +1853,11 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x039F  GREEK CAPITAL LETTER OMICRON
    ___  @
-  / _ \ @
+  / _ \\ @
  | | | |@
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 0x03A0  GREEK CAPITAL LETTER PI
@@ -1871,7 +1871,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
           @@
 0x03A1  GREEK CAPITAL LETTER RHO
   ____  @
- |  _ \ @
+ |  _ \\ @
  | |_) )@
  |  __/ @
  | |    @
@@ -1880,8 +1880,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x03A3  GREEK CAPITAL LETTER SIGMA
  ______ @
- \  ___)@
-  \ \   @
+ \\  ___)@
+  \\ \\   @
    > >  @
   / /__ @
  /_____)@
@@ -1898,8 +1898,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @@
 0x03A5  GREEK CAPITAL LETTER UPSILON
   __   __ @
- (_ \ / _)@
-   \ v /  @
+ (_ \\ / _)@
+   \\ v /  @
     | |   @
     | |   @
     |_|   @
@@ -1908,36 +1908,36 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
 0x03A6  GREEK CAPITAL LETTER PHI
      _    @
    _| |_  @
-  /     \ @
+  /     \\ @
  ( (| |) )@
-  \_   _/ @
+  \\_   _/ @
     |_|   @
           @
           @@
 0x03A7  GREEK CAPITAL LETTER CHI
  __   __@
- \ \ / /@
-  \ v / @
+ \\ \\ / /@
+  \\ v / @
    > <  @
-  / ^ \ @
- /_/ \_\@
+  / ^ \\ @
+ /_/ \\_\\@
         @
         @@
 0x03A8  GREEK CAPITAL LETTER PSI
   _  _  _ @
  | || || |@
- | \| |/ |@
-  \_   _/ @
+ | \\| |/ |@
+  \\_   _/ @
     | |   @
     |_|   @
           @
           @@
 0x03A9  GREEK CAPITAL LETTER OMEGA
     ____   @
-   / __ \  @
+   / __ \\  @
   | |  | | @
   | |  | | @
-  _\ \/ /_ @
+  _\\ \\/ /_ @
  (___||___)@
            @
            @@
@@ -1945,14 +1945,14 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
          @
          @
    __  __@
-  /  \/ /@
+  /  \\/ /@
  ( ()  < @
-  \__/\_\@
+  \\__/\\_\\@
          @
          @@
 0x03B2  GREEK SMALL LETTER BETA
    ___  @
-  / _ \ @
+  / _ \\ @
  | |_) )@
  |  _ < @
  | |_) )@
@@ -1963,18 +1963,18 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @
   _   _ @
- ( \ / )@
-  \ v / @
+ ( \\ / )@
+  \\ v / @
    | |  @
    | |  @
    |_|  @@
 0x03B4  GREEK SMALL LETTER DELTA
     __  @
    / _) @
-   \ \  @
-  / _ \ @
+   \\ \\  @
+  / _ \\ @
  ( (_) )@
-  \___/ @
+  \\___/ @
         @
         @@
 0x03B5  GREEK SMALL LETTER EPSILON
@@ -1983,34 +1983,34 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   ___ @
  / __)@
  > _) @
- \___)@
+ \\___)@
       @
       @@
 0x03B6  GREEK SMALL LETTER ZETA
  _____  @
- \__  ) @
+ \\__  ) @
    / /  @
   / /   @
  | |__  @
-  \__ \ @
+  \\__ \\ @
      ) )@
     (_/ @@
 0x03B7  GREEK SMALL LETTER ETA
         @
         @
   _ __  @
- | '_ \ @
+ | '_ \\ @
  | | | |@
  |_| | |@
      | |@
      |_|@@
 0x03B8  GREEK SMALL LETTER THETA
    ___  @
-  / _ \ @
+  / _ \\ @
  | |_| |@
  |  _  |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 0x03B9  GREEK SMALL LETTER IOTA
@@ -2019,7 +2019,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _  @
  | | @
  | | @
-  \_)@
+  \\_)@
      @
      @@
 0x03BA  GREEK SMALL LETTER KAPPA
@@ -2028,16 +2028,16 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _  __@
  | |/ /@
  |   < @
- |_|\_\@
+ |_|\\_\\@
        @
        @@
 0x03BB  GREEK SMALL LETTER LAMDA
  __     @
- \ \    @
-  \ \   @
-   > \  @
-  / ^ \ @
- /_/ \_\@
+ \\ \\    @
+  \\ \\   @
+   > \\  @
+  / ^ \\ @
+ /_/ \\_\\@
         @
         @@
 0x03BC  GREEK SMALL LETTER MU
@@ -2059,21 +2059,21 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
        @
        @@
 0x03BE  GREEK SMALL LETTER XI
- \=\__  @
+ \\=\\__  @
   > __) @
  ( (_   @
   > _)  @
  ( (__  @
-  \__ \ @
+  \\__ \\ @
      ) )@
     (_/ @@
 0x03BF  GREEK SMALL LETTER OMICRON
         @
         @
    ___  @
-  / _ \ @
+  / _ \\ @
  ( (_) )@
-  \___/ @
+  \\___/ @
         @
         @@
 0x03C0  GREEK SMALL LETTER PI
@@ -2089,7 +2089,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
         @
         @
    ___  @
-  / _ \ @
+  / _ \\ @
  | |_) )@
  |  __/ @
  | |    @
@@ -2100,7 +2100,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ____ @
   / ___)@
  ( (__  @
-  \__ \ @
+  \\__ \\ @
     _) )@
    (__/ @@
 0x03C3  GREEK SMALL LETTER SIGMA
@@ -2109,7 +2109,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
    ____ @
   /  ._)@
  ( () ) @
-  \__/  @
+  \\__/  @
         @
         @@
 0x03C4  GREEK SMALL LETTER TAU
@@ -2118,7 +2118,7 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   ___ @
  (   )@
   | | @
-   \_)@
+   \\_)@
       @
       @@
 0x03C5  GREEK SMALL LETTER UPSILON
@@ -2127,61 +2127,61 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   _   _ @
  | | | |@
  | |_| |@
-  \___/ @
+  \\___/ @
         @
         @@
 0x03C6  GREEK SMALL LETTER PHI
      _    @
     | |   @
    _| |_  @
-  /     \ @
+  /     \\ @
  ( (| |) )@
-  \_   _/ @
+  \\_   _/ @
     | |   @
     |_|   @@
 0x03C7  GREEK SMALL LETTER CHI
         @
         @
  __   __@
- \ \ / /@
-  \ v / @
+ \\ \\ / /@
+  \\ v / @
    > <  @
-  / ^ \ @
- /_/ \_\@@
+  / ^ \\ @
+ /_/ \\_\\@@
 0x03C8  GREEK SMALL LETTER PSI
           @
           @
   _  _  _ @
  | || || |@
- | \| |/ |@
-  \_   _/ @
+ | \\| |/ |@
+  \\_   _/ @
     | |   @
     |_|   @@
 0x03C9  GREEK SMALL LETTER OMEGA
             @
             @
    __   __  @
-  / / _ \ \ @
- | |_/ \_| |@
-  \___^___/ @
+  / / _ \\ \\ @
+ | |_/ \\_| |@
+  \\___^___/ @
             @
             @@
 0x03D1  GREEK THETA SYMBOL
      ___    @
-    / _ \   @
+    / _ \\   @
    ( (_| |_ @
-  _ \ _   _)@
+  _ \\ _   _)@
  | |___| |  @
-  \_____/   @
+  \\_____/   @
             @
             @@
 0x03D5  GREEK PHI SYMBOL
           @
           @
   _   __  @
- | | /  \ @
+ | | /  \\ @
  | || || )@
-  \_   _/ @
+  \\_   _/ @
     | |   @
     |_|   @@
 0x03D6  GREEK PI SYMBOL
@@ -2189,8 +2189,8 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
             @
   _________ @
  (  _____  )@
- | |_/ \_| |@
-  \___^___/ @
+ | |_/ \\_| |@
+  \\___^___/ @
             @
             @@
 -0x0005  
