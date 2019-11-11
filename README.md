@@ -309,7 +309,7 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 We also provide a hosted API for figlet.js which may simplify your use case.
 
 <a href="https://text-to-ascii-art.saasify.sh">
-	<img src="https://badges.saasify.sh?text=View%20Hosted%20API" height="40"/>
+    <img src="https://badges.saasify.sh?text=View%20Hosted%20API" height="40"/>
 </a>
 
 ## Release History
