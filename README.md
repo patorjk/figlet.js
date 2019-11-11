@@ -304,6 +304,14 @@ figlet -f "Dancing Font" "Hi"
 
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
+## Hosted API
+
+We also provide a hosted API for natural which may simplify your use case.
+
+<a href="https://text-to-ascii-art.saasify.sh">
+	<img src="https://badges.saasify.sh?text=View%20Hosted%20API" height="40"/>
+</a>
+
 ## Release History
 * 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
 * 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
