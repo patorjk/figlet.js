@@ -221,6 +221,24 @@ figlet.parseFont('myfont', data);
 console.log(figlet.textSync('myfont!', 'myfont'));
 ```
 
+Getting Started - Webpack / React
+-------------------------
+
+Webpack/React usage will be very similar to what's talked about in the "Getting Started - The Browser" section. The main difference is that you import fonts via the importable-fonts folder. Example:
+
+```js
+import figlet from 'figlet';
+import standard from 'figlet/importable-fonts/Standard.js'
+
+figlet.parseFont('Standard', standard);
+
+figlet.text('test', {
+    font: 'Standard',
+}, function(err, data) {
+    console.log(data);
+});
+```
+
 Getting Started - The Browser
 -------------------------
 
@@ -305,6 +323,7 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
+* 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
 * 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
 * 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
 * 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
