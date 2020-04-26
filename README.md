@@ -323,6 +323,7 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
+* 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
 * 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
 * 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
 * 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
