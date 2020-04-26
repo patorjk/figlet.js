@@ -49,8 +49,6 @@
     </div>
     <div id="outputFigDisplay"></div>
     
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="../../lib/figlet.js"></script>
     
 <script>
@@ -63,14 +61,18 @@ figlet.defaults({
     fontPath: '../../fonts'
 });
 
+figlet.preloadFonts(["Standard", "Ghost"], function() {
+    console.log('prefetching done (only did it for 2 fonts)!');
+});
+
 /*
     Generates the put
 */
 var update = function() {
-    var fontName = $('#font option:selected').val(),
-        inputText = $('#inputText').val(),
-        vLayout = $('#vLayout option:selected').val(),
-        hLayout = $('#hLayout option:selected').val();
+    var fontName = document.querySelector('#font option:checked').value,
+        inputText = document.querySelector('#inputText').value,
+        vLayout = document.querySelector('#vLayout option:checked').value,
+        hLayout = document.querySelector('#hLayout option:checked').value;
 
     /*
         How to use the text output.
@@ -87,7 +89,7 @@ var update = function() {
             console.dir(err);
             return;
         }
-        $('#outputFigDisplay').html("<pre>" + text + "</pre>");
+        document.querySelector('#outputFigDisplay').innerHTML = ("<pre>" + text + "</pre>");
     });
 
     /*
@@ -110,10 +112,10 @@ var update = function() {
     GUI Controls
 */
 
-$('#hLayout').change(update);
-$('#vLayout').change(update);
-$('#font').change(update);
-$('#inputText').keyup(update);
+document.querySelector('#hLayout').addEventListener("change", update);
+document.querySelector('#vLayout').addEventListener("change", update);
+document.querySelector('#font').addEventListener("change", update);
+document.querySelector('#inputText').addEventListener("keyup", update);
 
 update(); // init
 
