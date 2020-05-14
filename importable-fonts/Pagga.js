@@ -1,8 +1,7 @@
 export default `tlf2a$ 3 3 8 0 15 0 64 0
 ===============================================================================
   Pagga.tlf, or “Pagga”, by Sam Hocevar and pagga.
-
-  2010/01/17 -- Sam Hocevar <sam@hocevar.net>
+                Sam Hocevar sam@hocevar.net
                 font creation, all base characters
 
   This font is free software. It comes without any warranty, to the extent
@@ -208,6 +207,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
 ░░░░@
 ░▀▀▀@@
 ░▀▄@
+░░░@
 ░░░@@
 ░█▀█@
 ░█▀█@
