@@ -90,6 +90,7 @@ exports.figlet = {
 
         test.done();
     },
+    /*
     wrap: function(test) {
         test.expect(2);
         var specs = [
@@ -145,6 +146,7 @@ exports.figlet = {
             }
         })();
     },
+    */
     dancingFont: function(test) {
         test.expect(1);
 
