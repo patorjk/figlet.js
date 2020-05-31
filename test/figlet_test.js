@@ -90,6 +90,61 @@ exports.figlet = {
 
         test.done();
     },
+    wrap: function(test) {
+        test.expect(2);
+        var specs = [
+            {
+                input: 'Hello From The Figlet Library',
+                expected: grunt.file.read('test/expected/wrapSimple')
+            },
+            {
+                input: 'Hello From The Figlet Library That Wrap Text',
+                expected: grunt.file.read('test/expected/wrapSimpleThreeLines')
+            }
+        ];
+        (function recur() {
+            var spec = specs.pop();
+            if (!spec) {
+                test.done();
+            } else {
+                figlet(spec.input, {
+                    font: 'Standard',
+                    width: 80
+                }, function(err, actual) {
+                    test.equal(actual, spec.expected, 'Standard font with wrap.');
+                    recur();
+                });
+            }
+        })();
+    },
+    wrapBreakWord: function(test) {
+        test.expect(2);
+        var specs = [
+            {
+                input: 'Hello From The Figlet Library',
+                expected: grunt.file.read('test/expected/wrapWord')
+            },
+            {
+                input: 'Hello From The Figlet Library That Wrap Text',
+                expected: grunt.file.read('test/expected/wrapWordThreeLines')
+            }
+        ];
+        (function recur() {
+            var spec = specs.pop();
+            if (!spec) {
+                test.done();
+            } else {
+                figlet(spec.input, {
+                    font: 'Standard',
+                    width: 80,
+                    whitespaceBreak: true
+                }, function(err, actual) {
+                    test.equal(actual, spec.expected, 'Standard font with word break.');
+                    recur();
+                });
+            }
+        })();
+    },
     dancingFont: function(test) {
         test.expect(1);
 
