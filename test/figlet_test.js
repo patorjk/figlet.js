@@ -90,9 +90,8 @@ exports.figlet = {
 
         test.done();
     },
-    /*
     wrap: function(test) {
-        test.expect(2);
+        test.expect(4);
         var specs = [
             {
                 input: 'Hello From The Figlet Library',
@@ -112,6 +111,13 @@ exports.figlet = {
                     font: 'Standard',
                     width: 80
                 }, function(err, actual) {
+                    var maxWidth = actual.split('\n').reduce(function(acc, line) {
+                        if (acc < line.length) {
+                            return line.length;
+                        }
+                        return acc;
+                    }, 0);
+                    test.equal(maxWidth <= 80, true);
                     test.equal(actual, spec.expected, 'Standard font with wrap.');
                     recur();
                 });
@@ -119,7 +125,7 @@ exports.figlet = {
         })();
     },
     wrapBreakWord: function(test) {
-        test.expect(2);
+        test.expect(4);
         var specs = [
             {
                 input: 'Hello From The Figlet Library',
@@ -140,13 +146,19 @@ exports.figlet = {
                     width: 80,
                     whitespaceBreak: true
                 }, function(err, actual) {
+                    var maxWidth = actual.split('\n').reduce(function(acc, line) {
+                        if (acc < line.length) {
+                            return line.length;
+                        }
+                        return acc;
+                    }, 0);
+                    test.equal(maxWidth <= 80, true);
                     test.equal(actual, spec.expected, 'Standard font with word break.');
                     recur();
                 });
             }
         })();
     },
-    */
     dancingFont: function(test) {
         test.expect(1);
 
