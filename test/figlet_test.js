@@ -125,7 +125,7 @@ exports.figlet = {
         })();
     },
     wrapBreakWord: function(test) {
-        test.expect(8);
+        test.expect(10);
         var specs = [
             {
                 input: 'Hello From The Figlet Library',
@@ -145,6 +145,11 @@ exports.figlet = {
             {
                 input: 'Hello LongLongLong Word Longerhello',
                 expected: grunt.file.read('test/expected/wrapWhitespaceBreakWord'),
+                width: 30
+            },
+            {
+                input: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+                expected: grunt.file.read('test/expected/wrapWhitespaceLogString'),
                 width: 30
             }
         ];
