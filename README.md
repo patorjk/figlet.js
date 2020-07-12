@@ -55,7 +55,7 @@ There are 5 main functions on the figlet object.
 Calling the figlet object as a function is shorthand for calling the text function. This method allows you to create ASCII Art from text. It takes in 3 parameters:
 
 * Input Text - A string of text to turn into ASCII Art.
-* Font Options - Either a string indicating the font name or an options object (description below).
+* Options - Either a string indicating the font name or an options object (description below).
 * Callback - A function to execute with the generated ASCII Art.
 
 Example:
@@ -64,7 +64,9 @@ Example:
 figlet.text('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
-    verticalLayout: 'default'
+    verticalLayout: 'default',
+    width: 80,
+    whitespaceBreak: true
 }, function(err, data) {
     if (err) {
         console.log('Something went wrong...');
@@ -102,7 +104,9 @@ Example:
 console.log(figlet.textSync('Boo!', {
     font: 'Ghost',
     horizontalLayout: 'default',
-    verticalLayout: 'default'
+    verticalLayout: 'default',
+    width: 80,
+    whitespaceBreak: true
 }));
 ```
 
@@ -120,31 +124,43 @@ That will print out:
  `------'      `-----'      `-----' '--'
 ```
 
-#### Font Options
+### Options
 
-The font options object has 3 parameters which you can set:
+The options object has several parameters which you can set:
 
-##### font
+#### font
 Type: `String`
 Default value: `'Standard'`
 
 A string value that indicates the FIGlet font to use.
 
-##### horizontalLayout
+#### horizontalLayout
 Type: `String`
 Default value: `'default'`
 
-A string value that indicates the horizontal layout to use. FIGlet fonts have 5 possible values for this: "default", full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+A string value that indicates the horizontal layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
-##### verticalLayout
+#### verticalLayout
 Type: `String`
 Default value: `'default'`
 
-A string value that indicates the vertical layout to use. FIGlet fonts have 5 possible values for this: "default", full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+A string value that indicates the vertical layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
-#### kerning
+#### width
+Type: `Number`
+Default value: `undefined`
 
-The layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full".
+This option allows you to limit the width of the output. For example, if you want your output to be a max of 80 characters wide, you would set this option to 80. [Example](https://github.com/patorjk/figlet.js/blob/master/examples/front-end/index.htm)
+
+#### whitespaceBreak
+Type: `Boolean`
+Default value: `false`
+
+This option works in conjunction with "width". If this option is set to true, then the library will attempt to break text up on whitespace when limiting the width. [Example](https://github.com/patorjk/figlet.js/blob/master/examples/front-end/index.htm)
+
+### Understanding Kerning
+
+The 2 layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full". 
 
 ```
   _  __               _             
@@ -323,6 +339,7 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
+* 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
 * 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
 * 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
 * 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
@@ -330,5 +347,5 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 * 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
 * 2013.01.02 v1.0.8 Added tests and command line info.
 * 2013.12.28 v1.0.7 README update and minor tweaks.
-* 2014.07.31 v1.0.10 Bug fixes.
+* 2014.07.31 v1.0.1 Bug fixes.
 * 2014.08.15 v1.1.0 Sync functions added.
