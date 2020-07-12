@@ -48,8 +48,6 @@ That should print out:
 Basic Usage - Node.js
 -------------------------
 
-There are 5 main functions on the figlet object.
-
 ### text
 
 Calling the figlet object as a function is shorthand for calling the text function. This method allows you to create ASCII Art from text. It takes in 3 parameters:
