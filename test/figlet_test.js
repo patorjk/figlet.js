@@ -90,9 +90,8 @@ exports.figlet = {
 
         test.done();
     },
-    /*
     wrap: function(test) {
-        test.expect(2);
+        test.expect(4);
         var specs = [
             {
                 input: 'Hello From The Figlet Library',
@@ -112,6 +111,13 @@ exports.figlet = {
                     font: 'Standard',
                     width: 80
                 }, function(err, actual) {
+                    var maxWidth = actual.split('\n').reduce(function(acc, line) {
+                        if (acc < line.length) {
+                            return line.length;
+                        }
+                        return acc;
+                    }, 0);
+                    test.equal(maxWidth <= 80, true);
                     test.equal(actual, spec.expected, 'Standard font with wrap.');
                     recur();
                 });
@@ -119,15 +125,32 @@ exports.figlet = {
         })();
     },
     wrapBreakWord: function(test) {
-        test.expect(2);
+        test.expect(10);
         var specs = [
             {
                 input: 'Hello From The Figlet Library',
-                expected: grunt.file.read('test/expected/wrapWord')
+                expected: grunt.file.read('test/expected/wrapWord'),
+                width: 80
             },
             {
                 input: 'Hello From The Figlet Library That Wrap Text',
-                expected: grunt.file.read('test/expected/wrapWordThreeLines')
+                expected: grunt.file.read('test/expected/wrapWordThreeLines'),
+                width: 80
+            },
+            {
+                input: 'Hello From The Figlet Library That Wrap Text',
+                expected: grunt.file.read('test/expected/wrapWordThreeLines'),
+                width: 80
+            },
+            {
+                input: 'Hello LongLongLong Word Longerhello',
+                expected: grunt.file.read('test/expected/wrapWhitespaceBreakWord'),
+                width: 30
+            },
+            {
+                input: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+                expected: grunt.file.read('test/expected/wrapWhitespaceLogString'),
+                width: 30
             }
         ];
         (function recur() {
@@ -135,18 +158,25 @@ exports.figlet = {
             if (!spec) {
                 test.done();
             } else {
+                var width = spec.width;
                 figlet(spec.input, {
                     font: 'Standard',
-                    width: 80,
+                    width: width,
                     whitespaceBreak: true
                 }, function(err, actual) {
+                    var maxWidth = actual.split('\n').reduce(function(acc, line) {
+                        if (acc < line.length) {
+                            return line.length;
+                        }
+                        return acc;
+                    }, 0);
+                    test.equal(maxWidth <= width, true);
                     test.equal(actual, spec.expected, 'Standard font with word break.');
                     recur();
                 });
             }
         })();
     },
-    */
     dancingFont: function(test) {
         test.expect(1);
 
