@@ -8,6 +8,7 @@ ___________.___  ________.__          __          __
 
 ```
 [![Build Status](https://travis-ci.org/patorjk/figlet.js.svg)](https://travis-ci.org/patorjk/figlet.js)
+[![NPM Downloads](https://img.shields.io/npm/dt/figlet.svg?style=flat)](https://npmcharts.com/compare/figlet?minimal=true)
 
 This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application)
 
