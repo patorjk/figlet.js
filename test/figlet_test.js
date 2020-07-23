@@ -200,6 +200,15 @@ exports.figlet = {
 
         test.done();
     },
+    verticalSmushRule2: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/verticalSmushRule2');
+        var actual = figlet.textSync('Terminal\nChess', {font: 'Slant'});
+        test.equal(actual, expected, 'Vertical Smush Rule 2 should be followed.');
+
+        test.done();
+    },
     printDirection: function(test) {
         test.expect(1);
 

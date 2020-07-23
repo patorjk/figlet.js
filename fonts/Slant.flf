@@ -1,4 +1,4 @@
-flf2a$ 6 5 16 15 12 0 17807
+flf2a$ 6 5 16 15 10 0 18319
 Slant by Glenn Chappell 3/93 -- based on Standard
 Includes ISO Latin-1
 figlet release 2.1 -- 12 Aug 1994
@@ -8,8 +8,6 @@ modifier's name is placed on a comment line.
 Modified by Paul Burton <solution@earthlink.net> 12/96 to include new parameter
 supported by FIGlet and FIGWin.  May also be slightly modified for better use
 of new full-width/kern/smush alternatives, but default output is NOT changed.
-
-Modified by Patrick Gillespie (patorjk) on 2020/07/23 to fix vertical layout issue (ref: https://github.com/patorjk/figlet.js/issues/61)
 
      $$@
     $$ @

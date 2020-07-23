@@ -338,6 +338,7 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
+* 2020.07.12 v1.5.1 Fixed with with vertical smushing, updated lodash version.
 * 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
 * 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
 * 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
