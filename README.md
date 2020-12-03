@@ -345,7 +345,7 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 * 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
 * 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
 * 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
-* 2013.01.02 v1.0.8 Added tests and command line info.
-* 2013.12.28 v1.0.7 README update and minor tweaks.
-* 2014.07.31 v1.0.1 Bug fixes.
 * 2014.08.15 v1.1.0 Sync functions added.
+* 2014.07.31 v1.0.1 Bug fixes.
+* 2013.12.28 v1.0.7 README update and minor tweaks.
+* 2013.01.02 v1.0.8 Added tests and command line info.
