@@ -337,6 +337,14 @@ figlet -f "Dancing Font" "Hi"
 
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
+## Hosted API
+
+We also provide a hosted API for figlet.js which may simplify your use case.
+
+<a href="https://text-to-ascii-art.saasify.sh">
+    <img src="https://badges.saasify.sh?text=View%20Hosted%20API" height="40"/>
+</a>
+
 ## Release History
 * 2020.07.12 v1.5.1 Fixed with with vertical smushing, updated lodash version.
 * 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
