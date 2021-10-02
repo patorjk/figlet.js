@@ -159,7 +159,7 @@ This option works in conjunction with "width". If this option is set to true, th
 
 ### Understanding Kerning
 
-The 2 layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horiontal layouts of "default", "fitted" and then "full". 
+The 2 layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horizontal layouts of "default", "fitted" and then "full". 
 
 ```
   _  __               _             
