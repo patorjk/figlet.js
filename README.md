@@ -182,7 +182,7 @@ The 2 layout options allow you to override a font's default "kerning". Below you
                                            |___/
 ```
 
-In most cases you'll either use the default setting or the "fitted" setting. Most fonts don't support vertical kerning, but a hand full fo them do (like the "Standard" font).
+In most cases you'll either use the default setting or the "fitted" setting. Most fonts don't support vertical kerning, but a hand full of them do (like the "Standard" font).
 
 ### metadata
 
@@ -281,7 +281,7 @@ Example usage:
 
 ### textSync
 
-The browser API supports a synchronous mode so long as fonts used are preloaded.
+The browser API supports synchronous mode so long as fonts used are preloaded.
 
 Example:
 
@@ -339,7 +339,7 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
 * 2021.08.11 v1.5.2 Minor bug fixes.
-* 2020.07.12 v1.5.1 Fixed with with vertical smushing, updated lodash version.
+* 2020.07.12 v1.5.1 Fixed with vertical smushing, updated lodash version.
 * 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
 * 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
 * 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
