@@ -9,6 +9,7 @@
         "banner",
         "ansi"
     ],
+    "bin": "./bin/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/patorjk/figlet.js.git"
@@ -24,7 +25,6 @@
     "license": "MIT",
     "main": "./lib/node-figlet.js",
     "browser": "./lib/figlet.js",
-    "dependencies": {},
     "devDependencies": {
         "async": "~0.9.0",
         "grunt": "^1.0.3",
