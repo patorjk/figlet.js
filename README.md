@@ -1,5 +1,5 @@
 ```
-___________.___  ________.__          __          __        
+___________.___  ________.__          __          __
 \_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
  |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
  |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \
@@ -7,13 +7,13 @@ ___________.___  ________.__          __          __
      \/                \/          \/     \/ \______|    \/
 
 ```
+
 [![Build Status](https://travis-ci.org/patorjk/figlet.js.svg)](https://travis-ci.org/patorjk/figlet.js)
 [![NPM Downloads](https://img.shields.io/npm/dt/figlet.svg?style=flat)](https://npmcharts.com/compare/figlet?minimal=true)
 
 This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application)
 
-Quick Start - Node.js
--------------------------
+## Quick Start - Node.js
 
 Install:
 
@@ -24,15 +24,15 @@ npm install figlet
 Simple usage:
 
 ```js
-var figlet = require('figlet');
+var figlet = require("figlet");
 
-figlet('Hello World!!', function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.log(data)
+figlet("Hello World!!", function (err, data) {
+  if (err) {
+    console.log("Something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.log(data);
 });
 ```
 
@@ -46,34 +46,37 @@ That should print out:
  |_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_|_)
 ```
 
-Basic Usage - Node.js
--------------------------
+## Basic Usage - Node.js
 
 ### text
 
 Calling the figlet object as a function is shorthand for calling the text function. This method allows you to create ASCII Art from text. It takes in 3 parameters:
 
-* Input Text - A string of text to turn into ASCII Art.
-* Options - Either a string indicating the font name or an options object (description below).
-* Callback - A function to execute with the generated ASCII Art.
+- Input Text - A string of text to turn into ASCII Art.
+- Options - Either a string indicating the font name or an options object (description below).
+- Callback - A function to execute with the generated ASCII Art.
 
 Example:
 
 ```js
-figlet.text('Boo!', {
-    font: 'Ghost',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
+figlet.text(
+  "Boo!",
+  {
+    font: "Ghost",
+    horizontalLayout: "default",
+    verticalLayout: "default",
     width: 80,
-    whitespaceBreak: true
-}, function(err, data) {
+    whitespaceBreak: true,
+  },
+  function (err, data) {
     if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
+      console.log("Something went wrong...");
+      console.dir(err);
+      return;
     }
     console.log(data);
-});
+  }
+);
 ```
 
 That will print out:
@@ -85,8 +88,8 @@ That will print out:
  | .-.  | ( OO'  .-.  '( OO'  .-.  '|   |
  | '-' /_)/   |  | |  |/   |  | |  ||   |
  | .-. `. \_) |  |\|  |\_) |  |\|  ||  .'
- | |  \  |  \ |  | |  |  \ |  | |  |`--'  
- | '--'  /   `'  '-'  '   `'  '-'  '.--.  
+ | |  \  |  \ |  | |  |  \ |  | |  |`--'
+ | '--'  /   `'  '-'  '   `'  '-'  '.--.
  `------'      `-----'      `-----' '--'
 ```
 
@@ -94,19 +97,21 @@ That will print out:
 
 This method is the synchronous version of the method above.
 
-* Input Text - A string of text to turn into ASCII Art.
-* Font Options - Either a string indicating the font name or an options object (description below).
+- Input Text - A string of text to turn into ASCII Art.
+- Font Options - Either a string indicating the font name or an options object (description below).
 
 Example:
 
 ```js
-console.log(figlet.textSync('Boo!', {
-    font: 'Ghost',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
+console.log(
+  figlet.textSync("Boo!", {
+    font: "Ghost",
+    horizontalLayout: "default",
+    verticalLayout: "default",
     width: 80,
-    whitespaceBreak: true
-}));
+    whitespaceBreak: true,
+  })
+);
 ```
 
 That will print out:
@@ -128,30 +133,35 @@ That will print out:
 The options object has several parameters which you can set:
 
 #### font
+
 Type: `String`
 Default value: `'Standard'`
 
 A string value that indicates the FIGlet font to use.
 
 #### horizontalLayout
+
 Type: `String`
 Default value: `'default'`
 
 A string value that indicates the horizontal layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
 #### verticalLayout
+
 Type: `String`
 Default value: `'default'`
 
 A string value that indicates the vertical layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
 #### width
+
 Type: `Number`
 Default value: `undefined`
 
 This option allows you to limit the width of the output. For example, if you want your output to be a max of 80 characters wide, you would set this option to 80. [Example](https://github.com/patorjk/figlet.js/blob/master/examples/front-end/index.htm)
 
 #### whitespaceBreak
+
 Type: `Boolean`
 Default value: `false`
 
@@ -159,22 +169,22 @@ This option works in conjunction with "width". If this option is set to true, th
 
 ### Understanding Kerning
 
-The 2 layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horizontal layouts of "default", "fitted" and then "full". 
+The 2 layout options allow you to override a font's default "kerning". Below you can see how this effects the text. The string "Kerning" was printed using the "Standard" font with horizontal layouts of "default", "fitted" and then "full".
 
 ```
-  _  __               _             
+  _  __               _
  | |/ /___ _ __ _ __ (_)_ __   __ _
  | ' // _ \ '__| '_ \| | '_ \ / _` |
  | . \  __/ |  | | | | | | | | (_| |
  |_|\_\___|_|  |_| |_|_|_| |_|\__, |
                               |___/
-  _  __                   _               
+  _  __                   _
  | |/ / ___  _ __  _ __  (_) _ __    __ _
  | ' / / _ \| '__|| '_ \ | || '_ \  / _` |
  | . \|  __/| |   | | | || || | | || (_| |
  |_|\_\\___||_|   |_| |_||_||_| |_| \__, |
                                     |___/
-  _  __                        _                 
+  _  __                        _
  | |/ /   ___   _ __   _ __   (_)  _ __     __ _
  | ' /   / _ \ | '__| | '_ \  | | | '_ \   / _` |
  | . \  |  __/ | |    | | | | | | | | | | | (_| |
@@ -189,14 +199,14 @@ In most cases you'll either use the default setting or the "fitted" setting. Mos
 The metadata function allows you to retrieve a font's default options and header comment. Example usage:
 
 ```js
-figlet.metadata('Standard', function(err, options, headerComment) {
-    if (err) {
-        console.log('something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.dir(options);
-    console.log(headerComment);
+figlet.metadata("Standard", function (err, options, headerComment) {
+  if (err) {
+    console.log("something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.dir(options);
+  console.log(headerComment);
 });
 ```
 
@@ -205,13 +215,13 @@ figlet.metadata('Standard', function(err, options, headerComment) {
 The fonts function allows you to get a list of all of the available fonts. Example usage:
 
 ```js
-figlet.fonts(function(err, fonts) {
-    if (err) {
-        console.log('something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.dir(fonts);
+figlet.fonts(function (err, fonts) {
+  if (err) {
+    console.log("something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.dir(fonts);
 });
 ```
 
@@ -228,54 +238,57 @@ console.log(figlet.fontsSync());
 Allows you to use a font from another source.
 
 ```js
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-let data = fs.readFileSync(path.join(__dirname, 'myfont.flf'), 'utf8');
-figlet.parseFont('myfont', data);
-console.log(figlet.textSync('myfont!', 'myfont'));
+let data = fs.readFileSync(path.join(__dirname, "myfont.flf"), "utf8");
+figlet.parseFont("myfont", data);
+console.log(figlet.textSync("myfont!", "myfont"));
 ```
 
-Getting Started - Webpack / React
--------------------------
+## Getting Started - Webpack / React
 
 Webpack/React usage will be very similar to what's talked about in the "Getting Started - The Browser" section. The main difference is that you import fonts via the importable-fonts folder. Example:
 
 ```js
-import figlet from 'figlet';
-import standard from 'figlet/importable-fonts/Standard.js'
+import figlet from "figlet";
+import standard from "figlet/importable-fonts/Standard.js";
 
-figlet.parseFont('Standard', standard);
+figlet.parseFont("Standard", standard);
 
-figlet.text('test', {
-    font: 'Standard',
-}, function(err, data) {
+figlet.text(
+  "test",
+  {
+    font: "Standard",
+  },
+  function (err, data) {
     console.log(data);
-});
+  }
+);
 ```
 
-Getting Started - The Browser
--------------------------
+## Getting Started - The Browser
 
 The browser API is the same as the Node API with the exception of the "fonts" method not being available. The browser version also requires [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) (or a [shim](https://github.com/github/fetch)) for its loadFont function.
 
 Example usage:
 
 ```html
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+<script
+  type="text/javascript"
+  src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"
+></script>
 <script type="text/javascript" src="figlet.js"></script>
 
 <script>
-
-    figlet(inputText, 'Standard', function(err, text) {
-        if (err) {
-            console.log('something went wrong...');
-            console.dir(err);
-            return;
-        }
-        console.log(text);
-    });
-
+  figlet(inputText, "Standard", function (err, text) {
+    if (err) {
+      console.log("something went wrong...");
+      console.dir(err);
+      return;
+    }
+    console.log(text);
+  });
 </script>
 ```
 
@@ -286,15 +299,14 @@ The browser API supports synchronous mode so long as fonts used are preloaded.
 Example:
 
 ```js
-figlet.defaults({fontPath: "assets/fonts"});
+figlet.defaults({ fontPath: "assets/fonts" });
 
 figlet.preloadFonts(["Standard", "Ghost"], ready);
 
-function ready(){
+function ready() {
   console.log(figlet.textSync("ASCII"));
   console.log(figlet.textSync("Art", "Ghost"));
 }
-
 ```
 
 That will print out:
@@ -306,22 +318,21 @@ That will print out:
   / ___ \  ___) || |___  | |  | |
  /_/   \_\|____/  \____||___||___|
 
-   ('-.     _  .-')   .-') _    
-  ( OO ).-.( \( -O ) (  OO) )   
-  / . --. / ,------. /     '._  
+   ('-.     _  .-')   .-') _
+  ( OO ).-.( \( -O ) (  OO) )
+  / . --. / ,------. /     '._
   | \-.  \  |   /`. '|'--...__)
 .-'-'  |  | |  /  | |'--.  .--'
- \| |_.'  | |  |_.' |   |  |    
-  |  .-.  | |  .  '.'   |  |    
-  |  | |  | |  |\  \    |  |    
-  `--' `--' `--' '--'   `--'    
+ \| |_.'  | |  |_.' |   |  |
+  |  .-.  | |  .  '.'   |  |
+  |  | |  | |  |\  \    |  |
+  `--' `--' `--' '--'   `--'
 
 ```
 
 See the examples folder for a more robust front-end example.
 
-Getting Started - Command Line
--------------------------
+## Getting Started - Command Line
 
 To use figlet.js on the command line, install figlet-cli:
 
@@ -338,15 +349,17 @@ figlet -f "Dancing Font" "Hi"
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Release History
-* 2021.08.11 v1.5.2 Minor bug fixes. 
-* 2020.07.12 v1.5.1 Fixed with vertical smushing, updated lodash version.
-* 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
-* 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
-* 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
-* 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
-* 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
-* 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
-* 2014.08.15 v1.1.0 Sync functions added.
-* 2014.07.31 v1.0.1 Bug fixes.
-* 2013.12.28 v1.0.7 README update and minor tweaks.
-* 2013.01.02 v1.0.8 Added tests and command line info.
+
+- 2023.04.08 v1.6.0 Added npx support (ex: npx figlet test).
+- 2021.08.11 v1.5.2 Minor bug fixes.
+- 2020.07.12 v1.5.1 Fixed with vertical smushing, updated lodash version.
+- 2020.07.12 v1.5.0 Added width and whitespaceBreak options.
+- 2020.04.26 v1.4.0 Removed jQuery from preloader and examples.
+- 2020.02.23 v1.3.0 Added the "ANSI Regular" font and updated the README with info on how to use with Webpack.
+- 2018.03.26 v1.2.1 parseFont works in node for adding fonts manually
+- 2016.09.27 v1.2.0 jQuery replaced with fetch API / polyfill.
+- 2016.04.28 v1.1.2 textSync now works in the browser with font pre-loading.
+- 2014.08.15 v1.1.0 Sync functions added.
+- 2014.07.31 v1.0.1 Bug fixes.
+- 2013.12.28 v1.0.7 README update and minor tweaks.
+- 2013.01.02 v1.0.8 Added tests and command line info.

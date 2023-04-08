@@ -1,42 +1,43 @@
 {
-    "name": "figlet",
-    "version": "1.6.0-beta.1",
-    "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
-    "keywords": [
-        "figlet",
-        "ascii",
-        "art",
-        "banner",
-        "ansi"
-    ],
-    "bin": "./bin/index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/patorjk/figlet.js.git"
-    },
-    "bugs": {
-        "url": "https://github.com/patorjk/figlet.js/issues"
-    },
-    "author": {
-        "name": "Patrick Gillespie",
-        "email": "patorjk@gmail.com",
-        "url": "http://patorjk.com/"
-    },
-    "license": "MIT",
-    "main": "./lib/node-figlet.js",
-    "browser": "./lib/figlet.js",
-    "devDependencies": {
-        "async": "~3.2.4",
-        "grunt": "^1.6.1",
-        "grunt-contrib-clean": "~2.0.1",
-        "grunt-contrib-jshint": "^3.2.0",
-        "grunt-contrib-nodeunit": "~5.0.0",
-        "grunt-contrib-uglify": "^5.2.2"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "engines": {
-        "node": ">= 0.4.0"
-    }
+  "name": "figlet",
+  "version": "1.6.0",
+  "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
+  "keywords": [
+    "figlet",
+    "ascii",
+    "art",
+    "banner",
+    "ansi"
+  ],
+  "bin": "./bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patorjk/figlet.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patorjk/figlet.js/issues"
+  },
+  "author": {
+    "name": "Patrick Gillespie",
+    "email": "patorjk@gmail.com",
+    "url": "http://patorjk.com/"
+  },
+  "license": "MIT",
+  "main": "./lib/node-figlet.js",
+  "browser": "./lib/figlet.js",
+  "devDependencies": {
+    "async": "~3.2.4",
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "~2.0.1",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "~5.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "prettier": "2.8.7"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }

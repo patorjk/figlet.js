@@ -2,7 +2,7 @@
  Example
  */
 
-var figlet = require('../../lib/node-figlet.js');
+var figlet = require("../../lib/node-figlet.js");
 
 /*
  Once this has been run:
@@ -13,10 +13,12 @@ var figlet = require('../../lib/node-figlet.js');
  */
 // var figlet = require('figlet');
 
-console.log(figlet.textSync('Hello World!', 'Standard'));
-console.log(figlet.textSync('Again, Hello World!', 'Graffiti'));
-console.log(figlet.textSync('Last time...', {
-    font: 'Standard',
-    horizontalLayout: 'full',
-    verticalLayout: 'full'
-}));
+console.log(figlet.textSync("Hello World!", "Standard"));
+console.log(figlet.textSync("Again, Hello World!", "Graffiti"));
+console.log(
+  figlet.textSync("Last time...", {
+    font: "Standard",
+    horizontalLayout: "full",
+    verticalLayout: "full",
+  })
+);
