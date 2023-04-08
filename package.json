@@ -32,10 +32,16 @@
     "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-nodeunit": "~5.0.0",
     "grunt-contrib-uglify": "^5.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "2.8.7"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
     "node": ">= 0.4.0"
