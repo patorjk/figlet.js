@@ -366,6 +366,7 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://abhishekchoudhary.com.np"><img src="https://avatars.githubusercontent.com/u/61597896?v=4?s=100" width="100px;" alt="Abhishek Choudhary"/><br /><sub><b>Abhishek Choudhary</b></sub></a><br /><a href="#doc-shreemaan-abhishek" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mbodomi"><img src="https://avatars.githubusercontent.com/u/390802?v=4?s=100" width="100px;" alt="mbodomi"/><br /><sub><b>mbodomi</b></sub></a><br /><a href="#design-mbodomi" title="Design">🎨</a> <a href="#code-mbodomi" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
