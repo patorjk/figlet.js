@@ -31,6 +31,16 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "tracker1",
+      "name": "Michael J. Ryan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/444316?v=4",
+      "profile": "https://tracker1.dev/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
