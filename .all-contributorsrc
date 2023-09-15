@@ -1,4 +1,22 @@
 {
   "projectName": "figlet.js",
-  "projectOwner": "patorjk"
+  "projectOwner": "patorjk",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "patorjk",
+      "name": "patorjk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/521224?v=4",
+      "profile": "http://patorjk.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ]
 }
