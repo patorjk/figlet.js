@@ -17,6 +17,17 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "jcubic",
+      "name": "Jakub T. Jankiewicz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/280241?v=4",
+      "profile": "https://jcu.bi",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ]
 }
