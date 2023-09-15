@@ -43,6 +43,16 @@
       ]
     },
     {
+      "login": "seriousManual",
+      "name": "Manuel Ernst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1330022?v=4",
+      "profile": "https://github.com/seriousManual",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
       "login": "eiriksm",
       "name": "Eirik Stanghelle Morland",
       "avatar_url": "https://avatars.githubusercontent.com/u/865153?v=4",
