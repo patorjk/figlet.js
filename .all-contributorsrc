@@ -60,6 +60,16 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "Horhik",
+      "name": "George",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46262811?v=4",
+      "profile": "http://und.ooo",
+      "contributions": [
+        "example",
+        "doc"
+      ]
     }
   ]
 }
