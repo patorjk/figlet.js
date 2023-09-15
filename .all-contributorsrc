@@ -118,6 +118,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "LetsMelon",
+      "name": "Domenic Melcher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35605787?v=4",
+      "profile": "https://melcher.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
