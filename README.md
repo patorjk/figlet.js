@@ -362,6 +362,9 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/seriousManual"><img src="https://avatars.githubusercontent.com/u/1330022?v=4?s=100" width="100px;" alt="Manuel Ernst"/><br /><sub><b>Manuel Ernst</b></sub></a><br /><a href="#code-seriousManual" title="Code">💻</a> <a href="#doc-seriousManual" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/eiriksm"><img src="https://avatars.githubusercontent.com/u/865153?v=4?s=100" width="100px;" alt="Eirik Stanghelle Morland"/><br /><sub><b>Eirik Stanghelle Morland</b></sub></a><br /><a href="#infra-eiriksm" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://und.ooo"><img src="https://avatars.githubusercontent.com/u/46262811?v=4?s=100" width="100px;" alt="George"/><br /><sub><b>George</b></sub></a><br /><a href="#example-Horhik" title="Examples">💡</a> <a href="#doc-Horhik" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://websemantics.ca"><img src="https://avatars.githubusercontent.com/u/2190455?v=4?s=100" width="100px;" alt="Adnan M.Sagar, PhD"/><br /><sub><b>Adnan M.Sagar, PhD</b></sub></a><br /><a href="#code-websemantics" title="Code">💻</a> <a href="#doc-websemantics" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://abhishekchoudhary.com.np"><img src="https://avatars.githubusercontent.com/u/61597896?v=4?s=100" width="100px;" alt="Abhishek Choudhary"/><br /><sub><b>Abhishek Choudhary</b></sub></a><br /><a href="#doc-shreemaan-abhishek" title="Documentation">📖</a></td>
     </tr>
   </tbody>
