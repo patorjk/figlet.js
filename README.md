@@ -370,7 +370,7 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mbodomi"><img src="https://avatars.githubusercontent.com/u/390802?v=4?s=100" width="100px;" alt="mbodomi"/><br /><sub><b>mbodomi</b></sub></a><br /><a href="#design-mbodomi" title="Design">🎨</a> <a href="#code-mbodomi" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://orkhan-huseyn.github.io"><img src="https://avatars.githubusercontent.com/u/21221412?v=4?s=100" width="100px;" alt="Orkhan Huseynli"/><br /><sub><b>Orkhan Huseynli</b></sub></a><br /><a href="#code-orkhan-huseyn" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://melcher.io"><img src="https://avatars.githubusercontent.com/u/35605787?v=4?s=100" width="100px;" alt="Domenic Melcher"/><br /><sub><b>Domenic Melcher</b></sub></a><br /><a href="#doc-LetsMelon" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/a-raccoon"><img src="https://avatars.githubusercontent.com/u/1052090?v=4?s=100" width="100px;" alt="a-raccoon"/><br /><sub><b>a-raccoon</b></sub></a><br /><a href="#doc-a-raccoon" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://about.me/peterdehaan"><img src="https://avatars.githubusercontent.com/u/557895?v=4?s=100" width="100px;" alt="Peter deHaan"/><br /><sub><b>Peter deHaan</b></sub></a><br /><a href="#doc-pdehaan" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
