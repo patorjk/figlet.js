@@ -99,6 +99,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "mbodomi",
+      "name": "mbodomi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/390802?v=4",
+      "profile": "https://github.com/mbodomi",
+      "contributions": [
+        "design",
+        "code"
+      ]
     }
   ]
 }
