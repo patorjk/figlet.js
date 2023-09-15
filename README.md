@@ -348,6 +348,17 @@ figlet -f "Dancing Font" "Hi"
 
 For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## Release History
 
 - 2023.04.08 v1.6.0 Added npx support (ex: npx figlet test).
