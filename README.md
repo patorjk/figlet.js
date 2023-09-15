@@ -356,8 +356,9 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://patorjk.com/"><img src="https://avatars.githubusercontent.com/u/521224?v=4?s=100" width="100px;" alt="patorjk"/><br /><sub><b>patorjk</b></sub></a><br /><a href="#code-patorjk" title="Code">💻</a> <a href="#doc-patorjk" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://patorjk.com/"><img src="https://avatars.githubusercontent.com/u/521224?v=4?s=100" width="100px;" alt="patorjk"/><br /><sub><b>patorjk</b></sub></a><br /><a href="#code-patorjk" title="Code">💻</a> <a href="#doc-patorjk" title="Documentation">📖</a> <a href="#test-patorjk" title="Tests">⚠️</a> <a href="#infra-patorjk" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#example-patorjk" title="Examples">💡</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://jcu.bi"><img src="https://avatars.githubusercontent.com/u/280241?v=4?s=100" width="100px;" alt="Jakub T. Jankiewicz"/><br /><sub><b>Jakub T. Jankiewicz</b></sub></a><br /><a href="#code-jcubic" title="Code">💻</a> <a href="#doc-jcubic" title="Documentation">📖</a> <a href="#test-jcubic" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/seriousManual"><img src="https://avatars.githubusercontent.com/u/1330022?v=4?s=100" width="100px;" alt="Manuel Ernst"/><br /><sub><b>Manuel Ernst</b></sub></a><br /><a href="#code-seriousManual" title="Code">💻</a> <a href="#doc-seriousManual" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
