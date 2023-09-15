@@ -70,6 +70,15 @@
         "example",
         "doc"
       ]
+    },
+    {
+      "login": "shreemaan-abhishek",
+      "name": "Abhishek Choudhary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61597896?v=4",
+      "profile": "http://abhishekchoudhary.com.np",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
