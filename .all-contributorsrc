@@ -154,6 +154,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "t1st3",
+      "name": "t1st3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1469638?v=4",
+      "profile": "https://www.t1st3.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }

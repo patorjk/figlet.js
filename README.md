@@ -372,7 +372,10 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
       <td align="center" valign="top" width="14.28%"><a href="https://melcher.io"><img src="https://avatars.githubusercontent.com/u/35605787?v=4?s=100" width="100px;" alt="Domenic Melcher"/><br /><sub><b>Domenic Melcher</b></sub></a><br /><a href="#doc-LetsMelon" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/a-raccoon"><img src="https://avatars.githubusercontent.com/u/1052090?v=4?s=100" width="100px;" alt="a-raccoon"/><br /><sub><b>a-raccoon</b></sub></a><br /><a href="#doc-a-raccoon" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://about.me/peterdehaan"><img src="https://avatars.githubusercontent.com/u/557895?v=4?s=100" width="100px;" alt="Peter deHaan"/><br /><sub><b>Peter deHaan</b></sub></a><br /><a href="#doc-pdehaan" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://ionicabizau.net"><img src="https://avatars.githubusercontent.com/u/2864371?v=4?s=100" width="100px;" alt="Ionică Bizău (Johnny B.)"/><br /><sub><b>Ionică Bizău (Johnny B.)</b></sub></a><br /><a href="#doc-IonicaBizau" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.t1st3.com/"><img src="https://avatars.githubusercontent.com/u/1469638?v=4?s=100" width="100px;" alt="t1st3"/><br /><sub><b>t1st3</b></sub></a><br /><a href="#code-t1st3" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
