@@ -350,6 +350,8 @@ For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Contributors
 
+Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/emoji-key))
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
