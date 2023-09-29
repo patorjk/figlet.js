@@ -20,6 +20,14 @@ var figlet = require("../../lib/node-figlet.js");
   const example2 = await figlet.text("Async Example", "Graffiti");
   console.log(example2);
 
+  const example3 = await figlet.text("Bonus Example.", {
+    font: "Standard",
+    horizontalLayout: "full",
+    verticalLayout: "full",
+  });
+
+  console.log(example3);
+
   figlet("Callback World!", "Standard", function (err, data) {
     if (err) {
       console.log("Something went wrong...");
