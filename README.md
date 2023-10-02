@@ -379,6 +379,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
       <td align="center" valign="top" width="14.28%"><a href="https://ionicabizau.net"><img src="https://avatars.githubusercontent.com/u/2864371?v=4?s=100" width="100px;" alt="Ionică Bizău (Johnny B.)"/><br /><sub><b>Ionică Bizău (Johnny B.)</b></sub></a><br /><a href="#doc-IonicaBizau" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.t1st3.com/"><img src="https://avatars.githubusercontent.com/u/1469638?v=4?s=100" width="100px;" alt="t1st3"/><br /><sub><b>t1st3</b></sub></a><br /><a href="#code-t1st3" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/timhudson"><img src="https://avatars.githubusercontent.com/u/122594?v=4?s=100" width="100px;" alt="Tim Hudson"/><br /><sub><b>Tim Hudson</b></sub></a><br /><a href="#code-timhudson" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lev-Shapiro"><img src="https://avatars.githubusercontent.com/u/96536068?v=4?s=100" width="100px;" alt="Lev-Shapiro"/><br /><sub><b>Lev-Shapiro</b></sub></a><br /><a href="#code-Lev-Shapiro" title="Code">💻</a> <a href="#example-Lev-Shapiro" title="Examples">💡</a></td>
     </tr>
   </tbody>
 </table>
