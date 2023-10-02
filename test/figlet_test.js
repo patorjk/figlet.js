@@ -52,6 +52,23 @@ exports.figlet = {
       }
     );
   },
+  standardAsync: async function (test) {
+    test.expect(1);
+
+    const result = await figlet("FIGlet\nFONTS", {
+      font: "Standard",
+      verticalLayout: "fitted",
+    });
+
+    var expected = grunt.file.read("test/expected/standard");
+    test.equal(
+      result,
+      expected,
+      'Standard font with a vertical layout of "fitted".'
+    );
+
+    test.done();
+  },
   standardSync: function (test) {
     test.expect(1);
 
