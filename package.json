@@ -38,7 +38,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "prepare": "husky install"
+    "prepare": "[ -d '.git' ] && husky install || echo 'skipping husky'"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
