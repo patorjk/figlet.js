@@ -54,7 +54,8 @@ Calling the figlet object as a function is shorthand for calling the text functi
 
 - Input Text - A string of text to turn into ASCII Art.
 - Options - Either a string indicating the font name or an options object (description below).
-- Callback - A function to execute with the generated ASCII Art.
+- Callback - Optional function to execute with the generated ASCII Art.
+- Return value is a promise that resolves to generated ASCII Art.
 
 Example:
 
@@ -92,6 +93,28 @@ That will print out:
  | '--'  /   `'  '-'  '   `'  '-'  '.--.
  `------'      `-----'      `-----' '--'
 ```
+
+Similary you can use Promise API:
+
+```js
+try {
+  console.log(await figlet.text(
+    "Boo!",
+    {
+      font: "Ghost",
+      horizontalLayout: "default",
+      verticalLayout: "default",
+      width: 80,
+      whitespaceBreak: true,
+    }
+  ));
+} catch (err) {
+  console.log("Something went wrong...");
+  console.dir(err);
+}
+```
+
+This will print the same output.
 
 ### textSync
 
@@ -210,6 +233,19 @@ figlet.metadata("Standard", function (err, options, headerComment) {
 });
 ```
 
+The function also return a promise that return an array with two values:
+
+```js
+try {
+  const [options, headerComment] = await figlet.metadata("Standard");
+  console.dir(options);
+  console.log(headerComment);
+} catch (err) {
+  console.log("something went wrong...");
+  console.dir(err);
+}
+```
+
 ### fonts
 
 The fonts function allows you to get a list of all of the available fonts. Example usage:
@@ -225,6 +261,8 @@ figlet.fonts(function (err, fonts) {
 });
 ```
 
+`fonts` is Node.js only.
+
 ### fontsSync
 
 The synchronous version of the fonts method
@@ -232,6 +270,8 @@ The synchronous version of the fonts method
 ```js
 console.log(figlet.fontsSync());
 ```
+
+same as `fonts`, `fontsSync` is Node.js only.
 
 ### parseFont
 
