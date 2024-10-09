@@ -98,16 +98,15 @@ Similary you can use Promise API:
 
 ```js
 try {
-  console.log(await figlet.text(
-    "Boo!",
-    {
+  console.log(
+    await figlet.text("Boo!", {
       font: "Ghost",
       horizontalLayout: "default",
       verticalLayout: "default",
       width: 80,
       whitespaceBreak: true,
-    }
-  ));
+    })
+  );
 } catch (err) {
   console.log("Something went wrong...");
   console.dir(err);
@@ -431,6 +430,8 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2024.10.08 v1.8.0 Added support for promises for loadFont, preloadedFonts, and metadata methods. 5 fonts added: DiamFont, RubiFont, CosMike2, BlurVision ASCII, and Shaded Blocky.
+- 2023.10.01 v1.7.0 Added support for promises for text method.
 - 2023.04.08 v1.6.0 Added npx support (ex: npx figlet test).
 - 2021.08.11 v1.5.2 Minor bug fixes.
 - 2020.07.12 v1.5.1 Fixed with vertical smushing, updated lodash version.
