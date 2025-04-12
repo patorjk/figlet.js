@@ -430,6 +430,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.04.11 v1.8.1 Added miniwi font.
 - 2024.10.08 v1.8.0 Added support for promises for loadFont, preloadedFonts, and metadata methods. 5 fonts added: DiamFont, RubiFont, CosMike2, BlurVision ASCII, and Shaded Blocky.
 - 2023.10.01 v1.7.0 Added support for promises for text method.
 - 2023.04.08 v1.6.0 Added npx support (ex: npx figlet test).
