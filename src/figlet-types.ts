@@ -160,4 +160,5 @@ export interface FigletModule {
     callback?: CallbackFunction<string>,
   ) => Promise<string>;
   figFonts: Record<string, FigletFont>;
+  defaults: (opts?: Partial<Defaults>) => Defaults;
 }
