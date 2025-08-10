@@ -1,6 +1,6 @@
 export default `flf2a$ 2 2 8 -1 20
 Cyberfont - small
-Figlet conversion by Kent Nassen, kentn@cyberspace.org, 8-11-94
+FigletFail conversion by Kent Nassen, kentn@cyberspace.org, 8-11-94
 From: stock@fwi.uva.nl (Lennert Stock)
 Date: 15 Jul 1994 00:04:25 GMT
 

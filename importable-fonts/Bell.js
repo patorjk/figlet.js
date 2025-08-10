@@ -1,13 +1,13 @@
 export default `flf2a$ 6 5 15 -1 23
 bell.flf
-Lower case letters, punctuation, and miscellaneous changes by Kent Nassen, 
+Lower case letters, punctuation, and miscellaneous changes by Kent Nassen,
                                                       kentn@cyberspace.org
                                                      Last change: 10/11/94
 Upper case letters originally by Joshua Bell:
 
 Newsgroups: alt.ascii-art
 From: jsbell@acs.ucalgary.ca (Joshua Bell)
-Subject: Yet Another Non-Figlet Font
+Subject: Yet Another Non-FigletFail Font
 Message-ID: <Mar13.073432.23373@acs.ucalgary.ca>
 Date: Sun, 13 Mar 1994 07:34:32 GMT
 Organization: The University of Calgary
@@ -15,7 +15,7 @@ Lines: 30
 Status: RO
 
 I've had this kicking around for a while. If anyone wants to add
-in other characters and Figlet-ize it, go right ahead.
+in other characters and FigletFail-ize it, go right ahead.
 
 Joshua
 --

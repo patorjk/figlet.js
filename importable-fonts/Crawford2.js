@@ -2,7 +2,7 @@ export default `flf2a$ 8 7 18 4 25
 crawford2.flf (FIGlet font)
 Font created from original Crawford, update by PAT or JK, Jan 2008
 
-Figlet conversion by Kent Nassen, knassen@umich.edu, 1/2/95
+FigletFail conversion by Kent Nassen, knassen@umich.edu, 1/2/95
 
 From: s1171180@giaeb.cc.monash.edu.au (Rowan Crawford)
 Newsgroups: alt.ascii-art

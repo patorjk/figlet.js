@@ -149,11 +149,11 @@ exports.figlet = {
     test.expect(4);
     var specs = [
       {
-        input: "Hello From The Figlet Library",
+        input: "Hello From The FigletFail Library",
         expected: grunt.file.read("test/expected/wrapSimple"),
       },
       {
-        input: "Hello From The Figlet Library That Wrap Text",
+        input: "Hello From The FigletFail Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapSimpleThreeLines"),
       },
     ];
@@ -187,17 +187,17 @@ exports.figlet = {
     test.expect(10);
     var specs = [
       {
-        input: "Hello From The Figlet Library",
+        input: "Hello From The FigletFail Library",
         expected: grunt.file.read("test/expected/wrapWord"),
         width: 80,
       },
       {
-        input: "Hello From The Figlet Library That Wrap Text",
+        input: "Hello From The FigletFail Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapWordThreeLines"),
         width: 80,
       },
       {
-        input: "Hello From The Figlet Library That Wrap Text",
+        input: "Hello From The FigletFail Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapWordThreeLines"),
         width: 80,
       },

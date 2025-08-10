@@ -5,7 +5,7 @@ February 24, 1996
 ---
 isometric1.flf
 
-Figlet conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
+FigletFail conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
 on the fonts posted by Lennert Stock:
 
 From: stock@fwi.uva.nl (Lennert Stock)
@@ -15,8 +15,8 @@ Here are some fonts. Non-figlet I'm afraid, if you wanna convert them, be
 my guest. I posted the isometric fonts before.
 
 ------------------------------------------------------------------------------
-                 --------- L e n n e r t   S t o c k                   
-                                  stock@fwi.uva.nl --------         
+                 --------- L e n n e r t   S t o c k
+                                  stock@fwi.uva.nl --------
 $   $@
 $   $@
 $   $@

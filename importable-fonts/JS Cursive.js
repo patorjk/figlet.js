@@ -1,7 +1,7 @@
 export default `flf2a$ 6 3 8 0 3
 Cursive By Joan Stark
 Website: http://www.geocities.com/SoHo/7373/
-Figlet conversion by patorjk, April 17, 2008
+FigletFail conversion by patorjk, April 17, 2008
 $ $@
 $ $@
 $ $@
@@ -355,13 +355,13 @@ _/)_ @
   _/_@
  (/  @
      @
-     @@    
-@   
-@   
-@   
+     @@
 @
 @
-@@  
+@
+@
+@
+@@
 @
 @
 @

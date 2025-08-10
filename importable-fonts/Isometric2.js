@@ -1,7 +1,7 @@
 export default `flf2a$ 11 11 18 -1 23
 isometric2.flf
 
-Figlet conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
+FigletFail conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
 on the fonts posted by Lennert Stock:
 
 From: stock@fwi.uva.nl (Lennert Stock)

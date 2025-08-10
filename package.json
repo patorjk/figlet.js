@@ -23,27 +23,64 @@
     "url": "http://patorjk.com/"
   },
   "license": "MIT",
-  "main": "./lib/node-figlet.js",
-  "browser": "./lib/figlet.js",
-  "devDependencies": {
-    "async": "~3.2.4",
-    "grunt": "^1.6.1",
-    "grunt-contrib-clean": "~2.0.1",
-    "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-nodeunit": "~5.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
-    "prettier": "2.8.7"
+  "type": "module",
+  "main": "./dist/node-figlet.js",
+  "module": "./dist/figlet.mjs",
+  "browser": "./dist/figlet.mjs",
+  "types": "./dist/types/figlet.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/figlet.d.ts",
+      "browser": {
+        "import": "./dist/figlet.mjs",
+        "require": "./dist/figlet.js"
+      },
+      "node": {
+        "import": "./dist/node-figlet.mjs",
+        "require": "./dist/node-figlet.js"
+      },
+      "import": "./dist/figlet.mjs",
+      "require": "./dist/figlet.js"
+    },
+    "./node": {
+      "types": "./dist/types/node-figlet.d.ts",
+      "import": "./dist/node-figlet.mjs",
+      "require": "./dist/node-figlet.js"
+    },
+    "./browser": {
+      "types": "./dist/types/figlet.d.ts",
+      "import": "./dist/figlet.mjs",
+      "require": "./dist/figlet.js"
+    }
   },
+  "files": [
+    "dist",
+    "fonts",
+    "README.md"
+  ],
   "scripts": {
-    "test": "grunt test",
-    "prepare": "husky install"
+    "pre-build-scripts": "node utils/create-font-list.js && node utils/flf-to-strings.js",
+    "prebuild": "npm run pre-build-scripts",
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "test": "vitest",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@vitest/ui": "^3.2.4",
+    "async": "~3.2.4",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">= 0.4.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
   }
 }

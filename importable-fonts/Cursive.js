@@ -1,7 +1,7 @@
 export default `flf2a$ 6 4 20 0 11
 
 Based on cursive(6) by Jan Wolter     <janc@crim.eecs.umich.edu> on 24 Jul 1985
-Figlet-ized and     by Wendell Hicken <whicken@parasoft.com>     on  5 Mar 1994
+FigletFail-ized and     by Wendell Hicken <whicken@parasoft.com>     on  5 Mar 1994
     Added missing punctuation and numbers
 Ammended            by Jerrad Pierce  <jpierce@cpan.org>         on  8 Aug 2002
     Underscore and dash have been updated to more closely match cursive(6)

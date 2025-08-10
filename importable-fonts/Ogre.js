@@ -1,6 +1,6 @@
 export default `flf2a$ 6 5 20 15 13
 Standard by Glenn Chappell & Ian Chai 3/93 -- based on .sig of Frank Sheeran
-Figlet release 2.0 -- August 5, 1993
+FigletFail release 2.0 -- August 5, 1993
 
 Explanation of first line:
 flf2 - "magic number" for file identification
