@@ -447,3 +447,4 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 - 2014.07.31 v1.0.1 Bug fixes.
 - 2013.12.28 v1.0.7 README update and minor tweaks.
 - 2013.01.02 v1.0.8 Added tests and command line info.
+
