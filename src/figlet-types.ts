@@ -96,7 +96,7 @@ export type CallbackFunction<T = string> = (
   result?: T,
 ) => void;
 
-export type EmptyNextFunction = () => void;
+export type EmptyCallbackFunction = () => void;
 
 export const LAYOUT = {
   FULL_WIDTH: 0,
@@ -142,4 +142,22 @@ export interface FigCharsWithOverlap {
 export interface BreakWordResult {
   outputFigText: string[];
   chars: FigCharWithOverlap[];
+}
+
+export interface FigletModule {
+  loadFont: (
+    font: FontName,
+    callback?: CallbackFunction<FontOptions>,
+  ) => Promise<FontOptions>;
+  loadFontSync: (font: FontName) => FontOptions;
+  fonts: (callback?: CallbackFunction<FontName[]>) => Promise<FontName[]>;
+  fontsSync: () => FontName[];
+  parseFont: (font: FontName, data: string) => FontOptions;
+  textSync: (text: string, options?: Options) => string;
+  text: (
+    text: string,
+    optionsOrFontOrCallback?: Options | FontName | CallbackFunction<string>,
+    callback?: CallbackFunction<string>,
+  ) => Promise<string>;
+  figFonts: Record<string, FigletFont>;
 }

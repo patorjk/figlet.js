@@ -8,34 +8,12 @@ import * as path from "path";
 // Import the main figlet module - you'll need to type this based on your figlet.js structure
 import figlet from "./figlet.js";
 import { fileURLToPath } from "url";
+import { FigletModule, FontOptions } from "./figlet-types";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const fontDir: string = path.join(__dirname, "/../fonts/");
-
-// Type definitions for figlet objects
-interface FontOptions {
-  [key: string]: any; // Define more specific types based on your font options structure
-}
-
-interface FigFont {
-  options: FontOptions;
-}
-
-interface FigletModule {
-  figFonts: { [fontName: string]: FigFont };
-  parseFont: (name: string, fontData: string) => FontOptions;
-  loadFont: (
-    name: string,
-    next?: (err: Error | null, font?: FontOptions) => void,
-  ) => Promise<FontOptions>;
-  loadFontSync: (name: string) => FontOptions;
-  fonts: (
-    next?: (err: Error | null, fonts?: string[]) => void,
-  ) => Promise<string[]>;
-  fontsSync: () => string[];
-}
 
 // Type assertion for the figlet module
 const typedFiglet = figlet as FigletModule;
@@ -49,11 +27,11 @@ const typedFiglet = figlet as FigletModule;
 */
 typedFiglet.loadFont = function (
   name: string,
-  next?: (err: Error | null, font?: FontOptions) => void,
+  callback?: (err: Error | null, font?: FontOptions) => void,
 ): Promise<FontOptions> {
   return new Promise<FontOptions>((resolve, reject) => {
     if (typedFiglet.figFonts[name]) {
-      next && next(null, typedFiglet.figFonts[name].options);
+      callback?.(null, typedFiglet.figFonts[name].options);
       resolve(typedFiglet.figFonts[name].options);
       return;
     }
@@ -63,7 +41,7 @@ typedFiglet.loadFont = function (
       { encoding: "utf-8" },
       (err: NodeJS.ErrnoException | null, fontData: string) => {
         if (err) {
-          next && next(err);
+          callback?.(err);
           reject(err);
           return;
         }
@@ -71,12 +49,12 @@ typedFiglet.loadFont = function (
         fontData = fontData + "";
         try {
           const font: FontOptions = typedFiglet.parseFont(name, fontData);
-          next && next(null, font);
+          callback?.(null, font);
           resolve(font);
         } catch (error) {
           const typedError =
             error instanceof Error ? error : new Error(String(error));
-          next && next(typedError);
+          callback?.(typedError);
           reject(typedError);
         }
       },
@@ -90,17 +68,17 @@ typedFiglet.loadFont = function (
  Parameters:
  - name (string): Name of the font to load.
  */
-typedFiglet.loadFontSync = function (name: string): FontOptions {
-  if (typedFiglet.figFonts[name]) {
-    return typedFiglet.figFonts[name].options;
+typedFiglet.loadFontSync = function (font: string): FontOptions {
+  if (typedFiglet.figFonts[font]) {
+    return typedFiglet.figFonts[font].options;
   }
 
   const fontData: string =
-    fs.readFileSync(path.join(fontDir, name + ".flf"), {
+    fs.readFileSync(path.join(fontDir, font + ".flf"), {
       encoding: "utf-8",
     }) + "";
 
-  return typedFiglet.parseFont(name, fontData);
+  return typedFiglet.parseFont(font, fontData);
 };
 
 /*
