@@ -1074,9 +1074,6 @@ const figlet: FigletModule = (() => {
     options: InternalOptions,
     txt: string,
   ): string {
-    console.log("generateText");
-    console.log(options);
-
     txt = txt.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
     let lines = txt.split("\n");
     let figLines: string[][] = [];
@@ -1114,12 +1111,10 @@ const figlet: FigletModule = (() => {
      Then we need to override the default font options.
      */
     if (options.horizontalLayout) {
-      console.log("here");
       const params = getHorizontalFittingRules(
         options.horizontalLayout,
         fontOpts,
       );
-      console.log(params);
       if (params) {
         Object.assign(myOpts.fittingRules, params);
       }
@@ -1178,14 +1173,8 @@ const figlet: FigletModule = (() => {
     }
     const fontName = options.font || figDefaults.font;
 
-    console.log("----------------text");
-    console.log(options);
-
     try {
       const fontOpts = await me.loadFont(fontName);
-
-      console.log(fontOpts);
-
       const generatedTxt = generateText(
         fontName,
         _reworkFontOpts(fontOpts, options),

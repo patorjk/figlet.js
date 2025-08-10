@@ -10,6 +10,12 @@ describe('figlet', () => {
     return fs.readFileSync(path.join(__dirname, `expected/${filename}`), 'utf8');
   };
 
+  const getMaxWidth = (input: string) => {
+    return input.split("\n").reduce((acc, line) => {
+      return (acc < line.length) ? line.length : acc;
+    }, 0);
+  }
+
   // Setup for font registration tests
   beforeAll(() => {
   });
@@ -81,22 +87,71 @@ describe('figlet', () => {
         width: 80,
       });
 
+      const maxWidth = getMaxWidth(actual);
+      expect(maxWidth).toBeLessThanOrEqual(80);
+
       const expected = readExpected('wrapSimple');
       expect(actual).toBe(expected);
     });
 
-    it('should wrap text correctly with three lines', async () => {
+    it('should wrap text correctly with multiple lines', async () => {
       const actual = await figlet.text("Hello From The Figlet Library That Wrap Text", {
         font: "Standard",
         width: 80,
       });
 
+      const maxWidth = getMaxWidth(actual);
+      expect(maxWidth).toBeLessThanOrEqual(80);
+
       const expected = readExpected('wrapSimpleThreeLines');
+      expect(actual).toBe(expected);
+    });
+
+    it('should wrap text correctly with multiple lines (word break - test1)', async () => {
+      const actual = await figlet.text("Hello From The Figlet Library That Wrap Text", {
+        font: "Standard",
+        width: 80,
+        whitespaceBreak: true,
+      });
+
+      const maxWidth = getMaxWidth(actual);
+      expect(maxWidth).toBeLessThanOrEqual(80);
+
+      const expected = readExpected('wrapWordThreeLines');
+      expect(actual).toBe(expected);
+    });
+
+    it('should wrap text correctly with multiple lines (word break - test2)', async () => {
+      const actual = await figlet.text("Hello LongLongLong Word Longerhello", {
+        font: "Standard",
+        width: 30,
+        whitespaceBreak: true,
+      });
+
+      const maxWidth = getMaxWidth(actual);
+      expect(maxWidth).toBeLessThanOrEqual(30);
+
+      const expected = readExpected('wrapWhitespaceBreakWord');
+      expect(actual).toBe(expected);
+    });
+
+    it('should wrap text correctly with multiple lines (word break - test3)', async () => {
+      const actual = await figlet.text("xxxxxxxxxxxxxxxxxxxxxxxx", {
+        font: "Standard",
+        width: 30,
+        whitespaceBreak: true,
+      });
+
+      const maxWidth = getMaxWidth(actual);
+      expect(maxWidth).toBeLessThanOrEqual(30);
+
+      const expected = readExpected('wrapWhitespaceLogString');
       expect(actual).toBe(expected);
     });
   });
 
-  describe('font loading tests', () => {
+
+  describe('misc font tests', () => {
     it('should load a custom font and render with it', async () => {
       const fontPath = path.join(__dirname, '../fonts/Dancing Font.flf');
       const fontData = fs.readFileSync(fontPath, 'utf8');
@@ -126,12 +181,33 @@ describe('figlet', () => {
       expect(actual).toBe(expected);
     });
 
+    it('should correctly follow vertical smush rule 2 (Slant) ', async () => {
+      const actual = figlet.textSync("Terminal\nChess", {
+        font: "Slant",
+      });
+
+      const expected = readExpected('verticalSmushRule2');
+      expect(actual).toBe(expected);
+    });
+
     it('should get a list of loaded fonts', async () => {
       const fonts = await figlet.fonts();
       expect(Array.isArray(fonts)).toBe(true);
       expect(fonts.length).toBeGreaterThan(0);
       expect(fonts).toContain('Standard');
       expect(fonts).toContain('Graffiti');
+    });
+
+    it('all fonts should load and output text without error', async () => {
+      const fonts = await figlet.fonts();
+
+      const promises = fonts.map(async font => {
+        const text = await figlet.text("abc ABC ...", {font});
+        const maxWidth = getMaxWidth(text);
+        expect(maxWidth).toBeGreaterThan(0);
+      })
+      await Promise.all(promises);
+
     });
   });
 
