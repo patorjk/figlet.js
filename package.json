@@ -66,12 +66,14 @@
     "test": "vitest",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf dist",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^24.2.0",
     "@vitest/ui": "^3.2.4",
     "async": "~3.2.4",
+    "lint-staged": "^16.1.5",
     "typescript": "^5.9.2",
     "vite": "^7.0.6",
     "vite-plugin-dts": "^4.5.4",
@@ -79,6 +81,9 @@
   },
   "engines": {
     "node": ">= 0.4.0"
+  },
+  "lint-staged": {
+    "src/**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "commander": "^14.0.0"
