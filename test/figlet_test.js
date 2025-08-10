@@ -149,11 +149,11 @@ exports.figlet = {
     test.expect(4);
     var specs = [
       {
-        input: "Hello From The FigletFail Library",
+        input: "Hello From The Figlet Library",
         expected: grunt.file.read("test/expected/wrapSimple"),
       },
       {
-        input: "Hello From The FigletFail Library That Wrap Text",
+        input: "Hello From The Figlet Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapSimpleThreeLines"),
       },
     ];
@@ -187,17 +187,17 @@ exports.figlet = {
     test.expect(10);
     var specs = [
       {
-        input: "Hello From The FigletFail Library",
+        input: "Hello From The Figlet Library",
         expected: grunt.file.read("test/expected/wrapWord"),
         width: 80,
       },
       {
-        input: "Hello From The FigletFail Library That Wrap Text",
+        input: "Hello From The Figlet Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapWordThreeLines"),
         width: 80,
       },
       {
-        input: "Hello From The FigletFail Library That Wrap Text",
+        input: "Hello From The Figlet Library That Wrap Text",
         expected: grunt.file.read("test/expected/wrapWordThreeLines"),
         width: 80,
       },
@@ -281,7 +281,7 @@ exports.figlet = {
     test.expect(1);
 
     var expected = grunt.file.read("test/expected/verticalSmushRule2");
-    var actual = figlet.textSync("Terminal\nChess", { font: "Slant" });
+    var actual = figlet.textSync("Terminal\nChess", {font: "Slant"});
     test.equal(actual, expected, "Vertical Smush Rule 2 should be followed.");
 
     test.done();

@@ -15,12 +15,11 @@ import {
   BreakWordResult,
   CallbackFunction,
   Defaults,
-  EmptyNextFunction,
-  FigChar,
+  EmptyCallbackFunction,
   FigCharsWithOverlap,
   FigCharWithOverlap,
+  FigletModule,
   FigletFont,
-  FittingProperties,
   FittingRules,
   FontName,
   FontOptions,
@@ -33,7 +32,7 @@ import {
 } from "./figlet-types";
 import { fontList } from "./font-list";
 
-const figlet = (() => {
+const figlet: FigletModule = (() => {
   // ---------------------------------------------------------------------
   // Private static variables
 
@@ -1075,6 +1074,9 @@ const figlet = (() => {
     options: InternalOptions,
     txt: string,
   ): string {
+    console.log("generateText");
+    console.log(options);
+
     txt = txt.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
     let lines = txt.split("\n");
     let figLines: string[][] = [];
@@ -1101,12 +1103,7 @@ const figlet = (() => {
     fontOpts: FontOptions,
     options: Options,
   ): InternalOptions {
-    let myOpts: InternalOptions = {
-      width: -1,
-      whitespaceBreak: false,
-      showHardBlanks: false,
-      ...fontOpts, // make a copy because we may edit this (see below)
-    };
+    let myOpts: InternalOptions = structuredClone(fontOpts) as InternalOptions; // make a copy because we may edit this (see below)
 
     myOpts.showHardBlanks = options.showHardBlanks || false;
     myOpts.width = options.width || -1;
@@ -1117,10 +1114,12 @@ const figlet = (() => {
      Then we need to override the default font options.
      */
     if (options.horizontalLayout) {
+      console.log("here");
       const params = getHorizontalFittingRules(
         options.horizontalLayout,
         fontOpts,
       );
+      console.log(params);
       if (params) {
         Object.assign(myOpts.fittingRules, params);
       }
@@ -1146,22 +1145,22 @@ const figlet = (() => {
    *
    * @param txt The text to make into ASCII Art.
    * @param options Options that will override the current font's default options.
-   * @param next A callback function, it will contain the outputted ASCII Art.
+   * @param callback A callback function, it will contain the outputted ASCII Art.
    */
   const me = async function (
     txt: string,
     options?: FontOptions | CallbackFunction | FontName,
-    next?: CallbackFunction,
+    callback?: CallbackFunction,
   ): Promise<string> {
-    return me.text(txt, options, next);
+    return me.text(txt, options, callback);
   };
   me.text = async function (
     txt: string,
-    optionsOrFontOrCallback?: Options | FontName | CallbackFunction,
-    callback?: CallbackFunction,
+    optionsOrFontOrCallback?: Options | FontName | CallbackFunction<string>,
+    callback?: CallbackFunction<string>,
   ): Promise<string> {
     txt = txt + ""; // ensure string
-    let options: Options, next: CallbackFunction | undefined;
+    let options: Options, next: CallbackFunction<string> | undefined;
 
     // Handle function overloading
     if (typeof optionsOrFontOrCallback === "function") {
@@ -1179,8 +1178,14 @@ const figlet = (() => {
     }
     const fontName = options.font || figDefaults.font;
 
+    console.log("----------------text");
+    console.log(options);
+
     try {
       const fontOpts = await me.loadFont(fontName);
+
+      console.log(fontOpts);
+
       const generatedTxt = generateText(
         fontName,
         _reworkFontOpts(fontOpts, options),
@@ -1222,11 +1227,11 @@ const figlet = (() => {
    * Returns metadata about a specific FIGlet font.
    *
    * @param fontName
-   * @param next
+   * @param callback
    */
   me.metadata = async function (
     fontName: FontName,
-    next?: (
+    callback?: (
       error: Error | null,
       fontOptions?: FontOptions,
       comment?: string,
@@ -1239,11 +1244,11 @@ const figlet = (() => {
       const font = figFonts[fontName];
       const result: [FontOptions, string] = [fontOpts, font?.comment || ""];
 
-      next?.(null, fontOpts, font?.comment);
+      callback?.(null, fontOpts, font?.comment);
       return result;
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
-      next?.(error);
+      callback?.(error);
       throw error;
     }
   };
@@ -1259,7 +1264,7 @@ const figlet = (() => {
     if (opts && typeof opts === "object") {
       Object.assign(figDefaults, opts);
     }
-    return { ...figDefaults };
+    return structuredClone(figDefaults);
   };
 
   /**
@@ -1415,17 +1420,15 @@ const figlet = (() => {
    * Loads a font.
    *
    * @param fontName
-   * @param next
+   * @param callback
    */
   me.loadFont = async function (
     fontName: FontName,
-    next?: CallbackFunction<FontOptions>,
+    callback?: CallbackFunction<FontOptions>,
   ): Promise<FontOptions> {
     if (figFonts[fontName]) {
       const result = figFonts[fontName].options;
-      if (next) {
-        next(null, result);
-      }
+      callback?.(null, result);
       return Promise.resolve(result);
     }
 
@@ -1439,12 +1442,12 @@ const figlet = (() => {
       const text = await response.text();
       const result = me.parseFont(fontName, text);
 
-      next?.(null, result);
+      callback?.(null, result);
       return result;
     } catch (error) {
       console.error("Unexpected response", error);
       const err = error instanceof Error ? error : new Error(String(error));
-      next?.(err);
+      callback?.(err);
       throw err;
     }
   };
@@ -1467,11 +1470,11 @@ const figlet = (() => {
    * Preloads a list of fonts prior to using textSync
    *
    * @param fonts An array of font names (ex: ["Standard", "Soft"])
-   * @param next Callback
+   * @param callback Callback
    */
   me.preloadFonts = async function (
     fonts: FontName[],
-    next: EmptyNextFunction,
+    callback: EmptyCallbackFunction,
   ): Promise<void> {
     let fontData: string[] = [];
 
@@ -1484,26 +1487,28 @@ const figlet = (() => {
         const data = await response.text();
         fontData.push(data);
       }, Promise.resolve())
-      .then(function (res) {
-        for (var i in fonts) {
+      .then(function () {
+        for (let i in fonts) {
           if (fonts.hasOwnProperty(i)) {
             me.parseFont(fonts[i], fontData[i]);
           }
         }
 
-        if (next) next();
+        callback?.();
       });
   };
 
   /**
    * Retrieves a list of the fonts.
    *
-   * @param next
+   * @param callback
    */
-  me.fonts = function (next?: CallbackFunction<string[]>): Promise<FontName[]> {
+  me.fonts = function (
+    callback?: CallbackFunction<string[]>,
+  ): Promise<FontName[]> {
     return new Promise(function (resolve, reject) {
       resolve(fontList);
-      next?.(null, fontList);
+      callback?.(null, fontList);
     });
   };
 
@@ -1520,10 +1525,3 @@ const figlet = (() => {
 })();
 
 export default figlet;
-
-// for node.js
-if (typeof module !== "undefined") {
-  if (typeof module.exports !== "undefined") {
-    module.exports = figlet;
-  }
-}
