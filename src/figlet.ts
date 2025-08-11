@@ -32,6 +32,13 @@ import {
 } from "./figlet-types";
 import { fontList } from "./font-list";
 
+// helper method
+function escapeRegExpChar(char: string): string {
+  // Characters that have special meaning in regex and need escaping
+  const specialChars = /[.*+?^${}()|[\]\\]/;
+  return specialChars.test(char) ? "\\" + char : char;
+}
+
 const figlet: FigletModule = (() => {
   // ---------------------------------------------------------------------
   // Private static variables
@@ -1335,8 +1342,11 @@ const figlet: FigletModule = (() => {
         if (typeof font[cNum][i] === "undefined") {
           font[cNum][i] = "";
         } else {
-          const endChar = font[cNum][i].slice(-1);
-          const endCharRegEx = new RegExp("\\" + endChar + "+$");
+          const endChar = escapeRegExpChar(font[cNum][i].slice(-1));
+          const endCharRegEx =
+            i === opts.height - 1
+              ? new RegExp(endChar + endChar + "?$")
+              : new RegExp(endChar + "$");
           font[cNum][i] = font[cNum][i].replace(endCharRegEx, "");
         }
       }
@@ -1393,8 +1403,11 @@ const figlet: FigletModule = (() => {
         if (typeof font[parsedNum][i] === "undefined") {
           font[parsedNum][i] = "";
         } else {
-          const endChar = font[parsedNum][i].slice(-1);
-          const endCharRegEx = new RegExp("\\" + endChar + "+$");
+          const endChar = escapeRegExpChar(font[parsedNum][i].slice(-1));
+          const endCharRegEx =
+            i === opts.height - 1
+              ? new RegExp(endChar + endChar + "?$")
+              : new RegExp(endChar + "$");
           font[parsedNum][i] = font[parsedNum][i].replace(endCharRegEx, "");
         }
       }

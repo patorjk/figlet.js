@@ -17,7 +17,7 @@ const packageJson = JSON.parse(
 
 program
   .name('figlet')
-  .description('Generate ASCII art from text using figlet fonts')
+  .description('JavaScript FIGdriver. Generates ASCII art from text using FIGlet fonts.')
   .version(packageJson.version)
   .argument('[text]', 'text to convert to ASCII art')
   .option('-f, --font <font>', 'font to use', 'Standard')
