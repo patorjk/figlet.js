@@ -51,11 +51,17 @@
       "types": "./dist/types/figlet.d.ts",
       "import": "./dist/figlet.mjs",
       "require": "./dist/figlet.js"
-    }
+    },
+    "./fonts/*": {
+      "types": "./importable-fonts/*.d.ts",
+      "default": "./importable-fonts/*.js"
+    },
+    "./importable-fonts/*": "./importable-fonts/*"
   },
   "files": [
     "dist",
     "fonts",
+    "importable-fonts",
     "README.md"
   ],
   "scripts": {
@@ -73,6 +79,7 @@
     "@types/node": "^24.2.0",
     "@vitest/ui": "^3.2.4",
     "async": "~3.2.4",
+    "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "typescript": "^5.9.2",
     "vite": "^7.0.6",

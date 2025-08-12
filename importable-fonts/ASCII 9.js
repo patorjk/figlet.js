@@ -1,9 +1,7 @@
-export default `tlf2a$ 8 7 16 -1 6 0 0 0
+export default `tlf2a$ 8 7 16 -1 4 0 0 0
 ================================================================================
   This font was automatically generated using:
    % caca2tlf --half --ascii "Monospace 9"
-================================================================================
-  Edited 2025/08 by patorjk - adjustments for flf file format
 ================================================================================
    $  $@
    $  $@

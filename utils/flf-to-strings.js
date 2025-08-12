@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
+import {fileURLToPath} from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,7 +26,16 @@ fs.readdir(fontDir, function (err, files) {
       fs.writeFileSync(
         path.join(exportDir, name.replace(/flf$/, "js")),
         fontData,
-        { encoding: "utf-8" }
+        {encoding: "utf-8"}
+      );
+
+      const fontTypeData = `
+export default string;
+      `;
+      fs.writeFileSync(
+        path.join(exportDir, name.replace(/flf$/, "d.ts")),
+        fontTypeData,
+        {encoding: "utf-8"}
       );
     }
   });
