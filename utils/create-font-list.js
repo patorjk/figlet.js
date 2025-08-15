@@ -26,7 +26,7 @@ fs.readdir(fontDir, function (err, files) {
   fs.writeFileSync(
     outputPath,
     `
-export const fontList = [\n  ${fontList.join(",\n  ")}\n];
+export const fontList = [\n  ${fontList.join(",\n  ")},\n];
 `,
     "utf8"
   );
