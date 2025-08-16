@@ -63,7 +63,7 @@ export type FittingProperties =
   | "vRule4"
   | "vRule5";
 
-export interface FontOptions {
+export interface FontMetadata {
   baseline?: number;
   codeTagCount?: number | null;
   fittingRules: FittingRules;
@@ -76,7 +76,7 @@ export interface FontOptions {
   printDirection?: PrintDirection;
 }
 
-export interface Options {
+export interface FigletOptions {
   font?: FontName;
   horizontalLayout?: KerningMethods;
   verticalLayout?: KerningMethods;
@@ -86,7 +86,7 @@ export interface Options {
   showHardBlanks?: boolean;
 }
 
-export interface Defaults {
+export interface FigletDefaults {
   font: FontName;
   fontPath: string;
 }
@@ -95,8 +95,6 @@ export type CallbackFunction<T = string> = (
   error: Error | null,
   result?: T,
 ) => void;
-
-export type EmptyCallbackFunction = () => void;
 
 export const LAYOUT = {
   FULL_WIDTH: 0,
@@ -112,18 +110,18 @@ export interface FigChar {
 }
 
 export class FigletFont {
-  public options: FontOptions;
+  public options: FontMetadata;
   public comment: string = "";
   public numChars: number = 0;
 
   [charCode: number]: string[];
 
   constructor() {
-    this.options = {} as FontOptions;
+    this.options = {} as FontMetadata;
   }
 }
 
-export interface InternalOptions extends FontOptions {
+export interface InternalOptions extends FontMetadata {
   width: number;
   whitespaceBreak: boolean;
   showHardBlanks: boolean;
@@ -147,18 +145,21 @@ export interface BreakWordResult {
 export interface FigletModule {
   loadFont: (
     font: FontName,
-    callback?: CallbackFunction<FontOptions>,
-  ) => Promise<FontOptions>;
-  loadFontSync: (font: FontName) => FontOptions;
+    callback?: CallbackFunction<FontMetadata>,
+  ) => Promise<FontMetadata>;
+  loadFontSync: (font: FontName) => FontMetadata;
   fonts: (callback?: CallbackFunction<FontName[]>) => Promise<FontName[]>;
   fontsSync: () => FontName[];
-  parseFont: (font: FontName, data: string) => FontOptions;
-  textSync: (text: string, options?: Options) => string;
+  parseFont: (font: FontName, data: string) => FontMetadata;
+  textSync: (text: string, options?: FigletOptions) => string;
   text: (
     text: string,
-    optionsOrFontOrCallback?: Options | FontName | CallbackFunction<string>,
+    optionsOrFontOrCallback?:
+      | FigletOptions
+      | FontName
+      | CallbackFunction<string>,
     callback?: CallbackFunction<string>,
   ) => Promise<string>;
   figFonts: Record<string, FigletFont>;
-  defaults: (opts?: Partial<Defaults>) => Defaults;
+  defaults: (opts?: Partial<FigletDefaults>) => FigletDefaults;
 }

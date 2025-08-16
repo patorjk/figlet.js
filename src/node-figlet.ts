@@ -8,7 +8,7 @@ import * as path from "path";
 // Import the main figlet module - you'll need to type this based on your figlet.js structure
 import figlet from "./figlet.js";
 import { fileURLToPath } from "url";
-import { FigletModule, FontOptions } from "./figlet-types";
+import { FigletModule, FontMetadata } from "./figlet-types";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,9 +29,9 @@ nodeFiglet.defaults({ fontPath });
 */
 nodeFiglet.loadFont = function (
   name: string,
-  callback?: (err: Error | null, font?: FontOptions) => void,
-): Promise<FontOptions> {
-  return new Promise<FontOptions>((resolve, reject) => {
+  callback?: (err: Error | null, font?: FontMetadata) => void,
+): Promise<FontMetadata> {
+  return new Promise<FontMetadata>((resolve, reject) => {
     if (nodeFiglet.figFonts[name]) {
       callback?.(null, nodeFiglet.figFonts[name].options);
       resolve(nodeFiglet.figFonts[name].options);
@@ -50,7 +50,7 @@ nodeFiglet.loadFont = function (
 
         fontData = fontData + "";
         try {
-          const font: FontOptions = nodeFiglet.parseFont(name, fontData);
+          const font: FontMetadata = nodeFiglet.parseFont(name, fontData);
           callback?.(null, font);
           resolve(font);
         } catch (error) {
@@ -70,7 +70,7 @@ nodeFiglet.loadFont = function (
  Parameters:
  - name (string): Name of the font to load.
  */
-nodeFiglet.loadFontSync = function (font: string): FontOptions {
+nodeFiglet.loadFontSync = function (font: string): FontMetadata {
   if (nodeFiglet.figFonts[font]) {
     return nodeFiglet.figFonts[font].options;
   }
