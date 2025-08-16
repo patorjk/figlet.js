@@ -14,20 +14,19 @@
 import {
   BreakWordResult,
   CallbackFunction,
-  Defaults,
-  EmptyCallbackFunction,
+  FigletDefaults,
   FigCharsWithOverlap,
   FigCharWithOverlap,
   FigletModule,
   FigletFont,
   FittingRules,
   FontName,
-  FontOptions,
+  FontMetadata,
   InternalOptions,
   KerningMethods,
   LAYOUT,
   LayoutType,
-  Options,
+  FigletOptions,
   PrintDirection,
 } from "./figlet-types";
 import { fontList } from "./font-list";
@@ -49,7 +48,7 @@ const figlet: FigletModule = (() => {
   // Variable that will hold information about the fonts
 
   const figFonts: Record<string, FigletFont> = {}; // What stores all of the FIGlet font data
-  const figDefaults: Defaults = {
+  const figDefaults: FigletDefaults = {
     font: "Standard",
     fontPath: "./fonts",
   };
@@ -954,7 +953,7 @@ const figlet: FigletModule = (() => {
 
   const getHorizontalFittingRules = function (
     layout: KerningMethods,
-    options: FontOptions,
+    options: FontMetadata,
   ): Partial<FittingRules> | undefined {
     let params: Partial<FittingRules>;
     if (layout === "default") {
@@ -1015,7 +1014,7 @@ const figlet: FigletModule = (() => {
 
   const getVerticalFittingRules = function (
     layout: KerningMethods,
-    options: FontOptions,
+    options: FontMetadata,
   ): Partial<FittingRules> | undefined {
     let params: Partial<FittingRules> = {};
     if (layout === "default") {
@@ -1104,10 +1103,10 @@ const figlet: FigletModule = (() => {
     takes assigned options and merges them with the default options from the chosen font
    */
   function _reworkFontOpts(
-    fontOpts: FontOptions,
-    options: Options,
+    fontMeta: FontMetadata,
+    options: FigletOptions,
   ): InternalOptions {
-    let myOpts: InternalOptions = structuredClone(fontOpts) as InternalOptions; // make a copy because we may edit this (see below)
+    let myOpts: InternalOptions = structuredClone(fontMeta) as InternalOptions; // make a copy because we may edit this (see below)
 
     myOpts.showHardBlanks = options.showHardBlanks || false;
     myOpts.width = options.width || -1;
@@ -1120,7 +1119,7 @@ const figlet: FigletModule = (() => {
     if (options.horizontalLayout) {
       const params = getHorizontalFittingRules(
         options.horizontalLayout,
-        fontOpts,
+        fontMeta,
       );
       if (params) {
         Object.assign(myOpts.fittingRules, params);
@@ -1128,13 +1127,13 @@ const figlet: FigletModule = (() => {
     }
 
     if (options.verticalLayout) {
-      const params = getVerticalFittingRules(options.verticalLayout, fontOpts);
+      const params = getVerticalFittingRules(options.verticalLayout, fontMeta);
       if (params) {
         Object.assign(myOpts.fittingRules, params);
       }
     }
 
-    myOpts.printDirection = options.printDirection ?? fontOpts.printDirection;
+    myOpts.printDirection = options.printDirection ?? fontMeta.printDirection;
 
     return myOpts;
   }
@@ -1151,18 +1150,21 @@ const figlet: FigletModule = (() => {
    */
   const me = async function (
     txt: string,
-    options?: FontOptions | CallbackFunction | FontName,
+    options?: FontMetadata | CallbackFunction | FontName,
     callback?: CallbackFunction,
   ): Promise<string> {
     return me.text(txt, options, callback);
   };
   me.text = async function (
     txt: string,
-    optionsOrFontOrCallback?: Options | FontName | CallbackFunction<string>,
+    optionsOrFontOrCallback?:
+      | FigletOptions
+      | FontName
+      | CallbackFunction<string>,
     callback?: CallbackFunction<string>,
   ): Promise<string> {
     txt = txt + ""; // ensure string
-    let options: Options, next: CallbackFunction<string> | undefined;
+    let options: FigletOptions, next: CallbackFunction<string> | undefined;
 
     // Handle function overloading
     if (typeof optionsOrFontOrCallback === "function") {
@@ -1204,7 +1206,10 @@ const figlet: FigletModule = (() => {
    * @param txt
    * @param options
    */
-  me.textSync = function (txt: string, options?: Options | FontName): string {
+  me.textSync = function (
+    txt: string,
+    options?: FigletOptions | FontName,
+  ): string {
     txt = txt + ""; // ensure string
 
     if (typeof options === "string") {
@@ -1229,16 +1234,16 @@ const figlet: FigletModule = (() => {
     fontName: FontName,
     callback?: (
       error: Error | null,
-      fontOptions?: FontOptions,
+      fontOptions?: FontMetadata,
       comment?: string,
     ) => void,
-  ): Promise<[FontOptions, string]> {
+  ): Promise<[FontMetadata, string]> {
     fontName = fontName + "";
 
     try {
       const fontOpts = await me.loadFont(fontName);
       const font = figFonts[fontName];
-      const result: [FontOptions, string] = [fontOpts, font?.comment || ""];
+      const result: [FontMetadata, string] = [fontOpts, font?.comment || ""];
 
       callback?.(null, fontOpts, font?.comment);
       return result;
@@ -1256,7 +1261,7 @@ const figlet: FigletModule = (() => {
    *
    * @param opts
    */
-  me.defaults = function (opts?: Partial<Defaults>) {
+  me.defaults = function (opts?: Partial<FigletDefaults>) {
     if (opts && typeof opts === "object") {
       Object.assign(figDefaults, opts);
     }
@@ -1269,7 +1274,7 @@ const figlet: FigletModule = (() => {
    * @param fontName
    * @param data
    */
-  me.parseFont = function (fontName: FontName, data: string): FontOptions {
+  me.parseFont = function (fontName: FontName, data: string): FontMetadata {
     data = data.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
     const font = new FigletFont();
 
@@ -1281,7 +1286,7 @@ const figlet: FigletModule = (() => {
 
     const headerData = headerLine.split(" ");
 
-    const opts: FontOptions = {
+    const opts: FontMetadata = {
       hardBlank: headerData[0].substring(5, 6),
       height: parseInt(headerData[1], 10),
       baseline: parseInt(headerData[2], 10),
@@ -1293,7 +1298,7 @@ const figlet: FigletModule = (() => {
         : 0) as PrintDirection,
       fullLayout: headerData[7] ? parseInt(headerData[7], 10) : null,
       codeTagCount: headerData[8] ? parseInt(headerData[8], 10) : null,
-    } as FontOptions;
+    } as FontMetadata;
 
     // Validate header
     if (
@@ -1426,8 +1431,8 @@ const figlet: FigletModule = (() => {
    */
   me.loadFont = async function (
     fontName: FontName,
-    callback?: CallbackFunction<FontOptions>,
-  ): Promise<FontOptions> {
+    callback?: CallbackFunction<FontMetadata>,
+  ): Promise<FontMetadata> {
     if (figFonts[fontName]) {
       const result = figFonts[fontName].options;
       callback?.(null, result);
@@ -1459,7 +1464,7 @@ const figlet: FigletModule = (() => {
    *
    * @param name
    */
-  me.loadFontSync = function (name: FontName): FontOptions {
+  me.loadFontSync = function (name: FontName): FontMetadata {
     if (figFonts[name]) {
       return figFonts[name].options;
     }
@@ -1476,7 +1481,7 @@ const figlet: FigletModule = (() => {
    */
   me.preloadFonts = async function (
     fonts: FontName[],
-    callback: EmptyCallbackFunction,
+    callback: () => void,
   ): Promise<void> {
     let fontData: string[] = [];
 
@@ -1525,5 +1530,13 @@ const figlet: FigletModule = (() => {
 
   return me;
 })();
+
+export type {
+  FigletOptions,
+  FontMetadata,
+  FontName,
+  CallbackFunction,
+  FigletDefaults,
+};
 
 export default figlet;
