@@ -162,4 +162,12 @@ export interface FigletModule {
   ) => Promise<string>;
   figFonts: Record<string, FigletFont>;
   defaults: (opts?: Partial<FigletDefaults>) => FigletDefaults;
+  metadata: (
+    fontName: FontName,
+    callback?: (
+      error: Error | null,
+      fontOptions?: FontMetadata,
+      comment?: string,
+    ) => void,
+  ) => Promise<[FontMetadata, string]>;
 }
