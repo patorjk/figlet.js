@@ -150,7 +150,7 @@ export interface FigletModule {
   loadFontSync: (font: FontName) => FontMetadata;
   fonts: (callback?: CallbackFunction<FontName[]>) => Promise<FontName[]>;
   fontsSync: () => FontName[];
-  parseFont: (font: FontName, data: string) => FontMetadata;
+  parseFont: (font: FontName, data: string, override?: boolean) => FontMetadata;
   textSync: (text: string, options?: FigletOptions) => string;
   text: (
     text: string,

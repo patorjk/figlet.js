@@ -1273,8 +1273,17 @@ const figlet: FigletModule = (() => {
    *
    * @param fontName
    * @param data
+   * @param override
    */
-  me.parseFont = function (fontName: FontName, data: string): FontMetadata {
+  me.parseFont = function (
+    fontName: FontName,
+    data: string,
+    override: boolean = true,
+  ): FontMetadata {
+    if (figFonts[fontName] && !override) {
+      return figFonts[fontName].options;
+    }
+
     data = data.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
     const font = new FigletFont();
 
@@ -1330,7 +1339,9 @@ const figlet: FigletModule = (() => {
 
     // Validate sufficient data
     if (lines.length < opts.numCommentLines + opts.height * charNums.length) {
-      throw new Error("FIGlet file is missing data.");
+      throw new Error(
+        `FIGlet file is missing data. Line length: ${lines.length}. Comment lines: ${opts.numCommentLines}. Height: ${opts.height}. Num chars: ${charNums.length}.`,
+      );
     }
 
     // Parse comment
