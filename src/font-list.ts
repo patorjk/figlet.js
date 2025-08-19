@@ -310,6 +310,7 @@ export const fontList = [
   "Two Point",
   "USA Flag",
   "Univers",
+  "Upside Down Text",
   "Varsity",
   "Wavescape",
   "Wavy",
