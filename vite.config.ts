@@ -19,7 +19,7 @@ export default defineConfig({
       },
       formats: ["es", "cjs"],
       fileName: (format, entryName) => {
-        const extension = format === "es" ? "mjs" : "js";
+        const extension = format === "es" ? "mjs" : "cjs";
         return `${entryName}.${extension}`;
       },
     },
@@ -43,7 +43,7 @@ export default defineConfig({
         // CommonJS output
         {
           format: "cjs",
-          entryFileNames: "[name].js",
+          entryFileNames: "[name].cjs",
           dir: "dist",
           exports: "auto",
         },
