@@ -1,6 +1,6 @@
 export default `flf2a$ 10 7 20 -1 20
 whimsy.flf (FIGlet font)
-FigletFail conversion by Kent Nassen, knassen@umich.edu
+Figlet conversion by Kent Nassen, knassen@umich.edu
 
 From: llyra@coho.halcyon.com (The Mouse)
 Newsgroups: alt.ascii-art

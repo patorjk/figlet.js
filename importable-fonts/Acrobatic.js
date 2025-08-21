@@ -1,6 +1,6 @@
 export default `flf2a$ 12 9 25 0 15 0
 Acrobatic by Randy Ransom 8/94 <ransom@scf.usc.edu>
-FigletFail release 2.1 -- August 12, 1994
+Figlet release 2.1 -- August 12, 1994
 Date: 23 Aug 1994
 
 Explanation of first line:

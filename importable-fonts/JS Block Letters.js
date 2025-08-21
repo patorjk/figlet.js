@@ -1,7 +1,7 @@
 export default `flf2a$ 3 3 8 0 3
 Block Letters By Joan Stark
 Website: http://www.geocities.com/SoHo/7373/
-FigletFail conversion by patorjk, April 17, 2008
+Figlet conversion by patorjk, April 17, 2008
 $ $@
 $ $@
 $ $@@
