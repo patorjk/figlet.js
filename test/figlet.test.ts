@@ -1,239 +1,326 @@
-// test/figlet.test.ts
-import {describe, it, expect, beforeAll} from 'vitest';
+// test/node-figlet.test.ts
+import {describe, it, vi, beforeEach, afterEach, expect, beforeAll, MockInstance} from 'vitest';
 import fs from 'fs';
 import path from 'path';
-import figlet from '../src/node-figlet'; // Import from src instead of lib
+import figlet from '../src/figlet'; // Import from src instead of lib
+import fontData from '../importable-fonts/Standard'
 
 describe('figlet', () => {
+  let fetchSpy: MockInstance<{
+    (input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
+    (input: string | URL | globalThis.Request, init?: RequestInit): Promise<Response>;
+  }>;
+
   // Helper function to read expected output files
   const readExpected = (filename: string): string => {
     return fs.readFileSync(path.join(__dirname, `expected/${filename}`), 'utf8');
   };
 
-  const getMaxWidth = (input: string) => {
-    return input.split("\n").reduce((acc, line) => {
-      return (acc < line.length) ? line.length : acc;
-    }, 0);
-  }
-
   // Setup for font registration tests
-  beforeAll(() => {
+  beforeEach(() => {
+    fetchSpy = vi.spyOn(global, 'fetch');
   });
 
-  describe('standard font tests', () => {
-    it('should render text with standard font and fitted vertical layout', async () => {
-      const actual = await figlet.text("FIGlet\nFONTS", {
-        font: "Standard",
-        verticalLayout: "fitted",
-      });
-
-      const expected = readExpected('standard');
-      expect(actual).toBe(expected);
-    });
-
-    it('should render text synchronously with standard font and fitted vertical layout', () => {
-      const actual = figlet.textSync("FIGlet\nFONTS", {
-        font: "Standard",
-        verticalLayout: "fitted",
-      });
-
-      const expected = readExpected('standard');
-      expect(actual).toBe(expected);
-    });
-
-    it('should render text with a parsed font', () => {
-      const data = fs.readFileSync(
-        path.join(__dirname, "../fonts/Standard.flf"),
-        "utf8"
-      );
-      const font = figlet.parseFont("StandardParseFontName", data);
-
-      const actual = figlet.textSync("FIGlet\nFONTS", {
-        font: "StandardParseFontName",
-        verticalLayout: "fitted",
-      });
-
-      const expected = readExpected('standard');
-      expect(actual).toBe(expected);
-    });
+  afterEach(() => {
+    fetchSpy.mockRestore(); // Restore the original fetch after each test
+    figlet.clearLoadedFonts();
   });
 
-  describe('graffiti font tests', () => {
-    it('should render text with graffiti font and fitted horizontal layout', async () => {
-      const actual = await figlet.text("ABC.123", {
-        font: "Graffiti",
-        horizontalLayout: "fitted",
+  describe('preloadFonts tests', () => {
+
+    it('preloadFonts should execute without error when valid data is given', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
       });
 
-      const expected = readExpected('graffiti');
-      expect(actual).toBe(expected);
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      await figlet.preloadFonts(['Standard', 'Graffiti']);
+
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard', 'Graffiti']);
     });
 
-    it('should render text synchronously with graffiti font and fitted horizontal layout', () => {
-      const actual = figlet.textSync("ABC.123", {
-        font: "Graffiti",
-        horizontalLayout: "fitted",
+    it('preloadFonts should execute without error and execute its callback', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+      const mockCallback = vi.fn();
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
       });
 
-      const expected = readExpected('graffiti');
-      expect(actual).toBe(expected);
-    });
-  });
+      expect(figlet.loadedFonts()).toStrictEqual([]);
 
-  describe('text wrapping tests', () => {
-    it('should wrap text correctly with simple input', async () => {
-      const actual = await figlet.text("Hello From The Figlet Library", {
-        font: "Standard",
-        width: 80,
-      });
+      figlet.preloadFonts(['Standard', 'Graffiti'], mockCallback);
 
-      const maxWidth = getMaxWidth(actual);
-      expect(maxWidth).toBeLessThanOrEqual(80);
+      await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
 
-      const expected = readExpected('wrapSimple');
-      expect(actual).toBe(expected);
-    });
-
-    it('should wrap text correctly with multiple lines', async () => {
-      const actual = await figlet.text("Hello From The Figlet Library That Wrap Text", {
-        font: "Standard",
-        width: 80,
-      });
-
-      const maxWidth = getMaxWidth(actual);
-      expect(maxWidth).toBeLessThanOrEqual(80);
-
-      const expected = readExpected('wrapSimpleThreeLines');
-      expect(actual).toBe(expected);
+      expect(mockCallback).toHaveBeenCalledWith();
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard', 'Graffiti']);
     });
 
-    it('should wrap text correctly with multiple lines (word break - test1)', async () => {
-      const actual = await figlet.text("Hello From The Figlet Library That Wrap Text", {
-        font: "Standard",
-        width: 80,
-        whitespaceBreak: true,
+    it('preloadFonts should throw an error when fetch fails', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const mockResponse = {
+        ok: false,
+        statusText: 'Oopsy!',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
       });
 
-      const maxWidth = getMaxWidth(actual);
-      expect(maxWidth).toBeLessThanOrEqual(80);
-
-      const expected = readExpected('wrapWordThreeLines');
-      expect(actual).toBe(expected);
+      await expect(figlet.preloadFonts(['Standard', 'Graffiti'])).rejects.toThrow();
     });
 
-    it('should wrap text correctly with multiple lines (word break - test2)', async () => {
-      const actual = await figlet.text("Hello LongLongLong Word Longerhello", {
-        font: "Standard",
-        width: 30,
-        whitespaceBreak: true,
+    it('preloadFonts should pass the error to its callback if its provided', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+      const mockCallback = vi.fn();
+
+      const mockResponse = {
+        ok: false,
+        statusText: 'Oopsy!',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
       });
 
-      const maxWidth = getMaxWidth(actual);
-      expect(maxWidth).toBeLessThanOrEqual(30);
+      figlet.preloadFonts(['Standard', 'Graffiti'], mockCallback);
 
-      const expected = readExpected('wrapWhitespaceBreakWord');
-      expect(actual).toBe(expected);
-    });
+      await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
 
-    it('should wrap text correctly with multiple lines (word break - test3)', async () => {
-      const actual = await figlet.text("xxxxxxxxxxxxxxxxxxxxxxxx", {
-        font: "Standard",
-        width: 30,
-        whitespaceBreak: true,
-      });
-
-      const maxWidth = getMaxWidth(actual);
-      expect(maxWidth).toBeLessThanOrEqual(30);
-
-      const expected = readExpected('wrapWhitespaceLogString');
-      expect(actual).toBe(expected);
+      expect(mockCallback).toHaveBeenCalledWith(expect.any(Error));
     });
   });
 
+  // -------------------------------------------------------------------------------------------------------------------
 
-  describe('misc font tests', () => {
-    it('should load a custom font and render with it', async () => {
-      const fontPath = path.join(__dirname, '../fonts/Dancing Font.flf');
-      const fontData = fs.readFileSync(fontPath, 'utf8');
-      figlet.parseFont('Dancing Font', fontData);
+  describe('loadFont tests', () => {
 
-      const actual = await figlet.text("pizzapie", {
-        font: "Dancing Font",
-        horizontalLayout: "full",
-      });
-
-      const expected = readExpected('dancingFont');
-      expect(actual).toBe(expected);
-    });
-
-    it('should load a font with a right-to-left parameter', async () => {
-      const fontPath = path.join(__dirname, '../fonts/Dancing Font.flf');
-      const fontData = fs.readFileSync(fontPath, 'utf8');
-      figlet.parseFont('Dancing Font Reverse', fontData);
-
-      const actual = figlet.textSync("pizzapie", {
-        font: "Dancing Font Reverse",
-        horizontalLayout: "full",
-        printDirection: 1,
-      });
-
-      const expected = readExpected('dancingFontReverse');
-      expect(actual).toBe(expected);
-    });
-
-    it('should correctly follow vertical smush rule 2 (Slant) ', async () => {
-      const actual = figlet.textSync("Terminal\nChess", {
-        font: "Slant",
-      });
-
-      const expected = readExpected('verticalSmushRule2');
-      expect(actual).toBe(expected);
-    });
-
-    it('should get a list of loaded fonts', async () => {
-      const fonts = await figlet.fonts();
-      expect(Array.isArray(fonts)).toBe(true);
-      expect(fonts.length).toBeGreaterThan(0);
-      expect(fonts).toContain('Standard');
-      expect(fonts).toContain('Graffiti');
-    });
-
-    it('all fonts should load and output text without error', async () => {
-      const fonts = await figlet.fonts();
-
-      const promises = fonts.map(async font => {
-        const text = await figlet.text("abc ABC ...", {font});
-        const maxWidth = getMaxWidth(text);
-        expect(maxWidth).toBeGreaterThan(0);
-      })
-      await Promise.all(promises);
-
-    });
-  });
-
-  describe('error handling', () => {
-    it('should handle errors when font not found', async () => {
-      try {
-        await figlet.text("test", {
-          font: "NonExistentFont",
-        });
-        // If we get here, the test should fail
-        expect(true).toBe(false);
-      } catch (err: any) {
-        expect(err?.message).toContain('Font');
+    const standardMeta = {
+      hardBlank: '$',
+      height: 6,
+      baseline: 5,
+      maxLength: 16,
+      oldLayout: 15,
+      numCommentLines: 13,
+      printDirection: 0,
+      fullLayout: 24463,
+      codeTagCount: 229,
+      fittingRules: {
+        vLayout: 3,
+        vRule5: true,
+        vRule4: true,
+        vRule3: true,
+        vRule2: true,
+        vRule1: true,
+        hLayout: 3,
+        hRule6: false,
+        hRule5: false,
+        hRule4: true,
+        hRule3: true,
+        hRule2: true,
+        hRule1: true
       }
+    };
+
+    it('loadFont should execute without error for valid inputs', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      const meta = await figlet.loadFont('Standard');
+      expect(meta).toEqual(standardMeta);
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
     });
 
-    it('should handle errors when font not found in sync mode', () => {
-      try {
-        figlet.textSync("test", {
-          font: "NonExistentFont",
-        });
-        // If we get here, the test should fail
-        expect(true).toBe(false);
-      } catch (err: any) {
-        expect(err?.message).toContain('Font');
-      }
+    it('loadFont should execute without error for valid inputs and pass its return data to its callback', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+      const mockCallback = vi.fn();
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      figlet.loadFont('Standard', mockCallback);
+
+      await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
+
+      expect(mockCallback).toHaveBeenCalledWith(null, standardMeta);
+
+    });
+
+    it('loadFont should throw an error when fetch fails', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const mockResponse = {
+        ok: false,
+        statusText: 'Oopsy!',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      await expect(figlet.loadFont('Standard')).rejects.toThrow();
+    });
+
+    it('loadFont should pass the error to its callback if its provided', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+      const mockCallback = vi.fn();
+
+      const mockResponse = {
+        ok: false,
+        statusText: 'Oopsy!',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      figlet.loadFont('Standard', mockCallback);
+
+      await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
+
+      expect(mockCallback).toHaveBeenCalledWith(expect.any(Error));
+    });
+  });
+
+  // -------------------------------------------------------------------------------------------------------------------
+  describe('text tests', () => {
+
+    const expected = readExpected('standard_default');
+    const text = 'FIGlet\nFonts';
+
+    it('text should execute without error for valid inputs', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      const output = await figlet.text(text, 'Standard');
+
+      expect(output).toEqual(expected);
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
+    });
+
+    it('text should execute without error for valid inputs and pass its return data to its callback', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+      const mockCallback = vi.fn();
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(fontData),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      figlet.text(text, 'Standard', mockCallback);
+
+      await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
+
+      expect(mockCallback).toHaveBeenCalledWith(null, expected);
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
+
     });
   });
 });

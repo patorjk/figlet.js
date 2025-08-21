@@ -945,6 +945,10 @@ const figlet: FigletModule = (() => {
         }
       });
     }
+    // special case where the line is just an empty line
+    if (txt === "" && outputFigLines.length === 0) {
+      outputFigLines.push(new Array(height).fill(""));
+    }
     return outputFigLines;
   }
 
@@ -1184,17 +1188,18 @@ const figlet: FigletModule = (() => {
 
     try {
       const fontOpts = await me.loadFont(fontName);
-      const generatedTxt = generateText(
-        fontName,
-        _reworkFontOpts(fontOpts, options),
-        txt,
-      );
+      const generatedTxt = fontOpts
+        ? generateText(fontName, _reworkFontOpts(fontOpts, options), txt)
+        : "";
 
       next?.(null, generatedTxt);
       return generatedTxt;
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
-      next?.(error);
+      if (next) {
+        next(error);
+        return "";
+      }
       throw error;
     }
   };
@@ -1237,11 +1242,14 @@ const figlet: FigletModule = (() => {
       fontOptions?: FontMetadata,
       comment?: string,
     ) => void,
-  ): Promise<[FontMetadata, string]> {
+  ): Promise<[FontMetadata, string] | null> {
     fontName = fontName + "";
 
     try {
       const fontOpts = await me.loadFont(fontName);
+      if (!fontOpts) {
+        throw new Error("Error loading font.");
+      }
       const font = figFonts[fontName];
       const result: [FontMetadata, string] = [fontOpts, font?.comment || ""];
 
@@ -1249,7 +1257,10 @@ const figlet: FigletModule = (() => {
       return result;
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
-      callback?.(error);
+      if (callback) {
+        callback(error);
+        return null;
+      }
       throw error;
     }
   };
@@ -1389,8 +1400,7 @@ const figlet: FigletModule = (() => {
       } else if (/^-?[0-9]+$/.test(cNum)) {
         parsedNum = parseInt(cNum, 10);
       } else {
-        console.error("Invalid data:", cNum);
-        throw new Error("Error parsing data.");
+        throw new Error(`Error parsing data. Invalid data: ${cNum}`);
       }
 
       // Per FigletFail specification, the character code can be in the range
@@ -1408,8 +1418,7 @@ const figlet: FigletModule = (() => {
                   ? "less than -2147483648"
                   : "greater than 2147483647"
               }.`;
-        console.error(msg);
-        throw new Error("Error parsing data.");
+        throw new Error(`Error parsing data. ${msg}`);
       }
 
       font[parsedNum] = lines.splice(0, opts.height);
@@ -1435,6 +1444,22 @@ const figlet: FigletModule = (() => {
   };
 
   /**
+   * Returns an array of the fonts that have been parsed and loaded
+   */
+  me.loadedFonts = (): string[] => {
+    return Object.keys(figFonts);
+  };
+
+  /**
+   * Remove all fonts that have been loaded
+   */
+  me.clearLoadedFonts = (): void => {
+    Object.keys(figFonts).forEach((key) => {
+      delete figFonts[key];
+    });
+  };
+
+  /**
    * Loads a font.
    *
    * @param fontName
@@ -1443,7 +1468,7 @@ const figlet: FigletModule = (() => {
   me.loadFont = async function (
     fontName: FontName,
     callback?: CallbackFunction<FontMetadata>,
-  ): Promise<FontMetadata> {
+  ): Promise<FontMetadata | null> {
     if (figFonts[fontName]) {
       const result = figFonts[fontName].options;
       callback?.(null, result);
@@ -1463,9 +1488,11 @@ const figlet: FigletModule = (() => {
       callback?.(null, result);
       return result;
     } catch (error) {
-      console.error("Unexpected response", error);
       const err = error instanceof Error ? error : new Error(String(error));
-      callback?.(err);
+      if (callback) {
+        callback(err);
+        return null;
+      }
       throw err;
     }
   };
@@ -1492,28 +1519,40 @@ const figlet: FigletModule = (() => {
    */
   me.preloadFonts = async function (
     fonts: FontName[],
-    callback: () => void,
+    callback?: (error?: Error) => void,
   ): Promise<void> {
-    let fontData: string[] = [];
-
-    return fonts
-      .reduce(async function (promise, name) {
-        await promise;
-        const response = await fetch(
-          figDefaults.fontPath + "/" + name + ".flf",
-        );
-        const data = await response.text();
-        fontData.push(data);
-      }, Promise.resolve())
-      .then(function () {
-        for (let i in fonts) {
-          if (fonts.hasOwnProperty(i)) {
-            me.parseFont(fonts[i], fontData[i]);
-          }
+    try {
+      // Load all fonts in parallel
+      const fontPromises = fonts.map(async (name) => {
+        const response = await fetch(`${figDefaults.fontPath}/${name}.flf`);
+        if (!response.ok) {
+          throw new Error(
+            `Failed to preload fonts. Error fetching font: ${name}, status code: ${response.statusText}`,
+          );
         }
-
-        callback?.();
+        return {
+          name,
+          data: await response.text(),
+        };
       });
+
+      const fontResults = await Promise.all(fontPromises);
+
+      // Parse fonts
+      fontResults.forEach(({ name, data }) => {
+        me.parseFont(name, data);
+      });
+
+      callback?.();
+    } catch (error) {
+      const err = error instanceof Error ? error : new Error(String(error));
+      if (callback) {
+        callback(err);
+        return;
+      }
+
+      throw error; // Re-throw to allow caller to handle
+    }
   };
 
   /**
