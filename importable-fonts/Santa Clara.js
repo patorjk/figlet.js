@@ -1,6 +1,6 @@
 export default `flf2a$ 6 4 20 0 2
 Derived from a copyrighted program by Jan Wolter (janc@crim.eecs.umich.edu)
-FigletFail-ized by Wendell Hicken (whicken@parasoft.com)
+Figlet-ized by Wendell Hicken (whicken@parasoft.com)
 $$@
 $$@
 $$@

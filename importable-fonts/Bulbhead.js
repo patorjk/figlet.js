@@ -1,6 +1,6 @@
 export default `flf2a$ 4 4 99 0 20
 Bulbhead by Jef Poskanzer, 23jun94
-FigletFail release 2.0 -- August 5, 1993
+Figlet release 2.0 -- August 5, 1993
  ____  __  __  __    ____  _   _  ____    __    ____
 (  _ \\(  )(  )(  )  (  _ \\( )_( )( ___)  /__\\  (  _ \\
  ) _ < )(__)(  )(__  ) _ < ) _ (  )___) /(__)\\  )(_) )

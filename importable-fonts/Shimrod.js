@@ -1,6 +1,6 @@
 export default `flf2a$ 6 5 13 15 13
 HHscript by Shimrod (Herman Hiddema), based on his own .sig
-FigletFail release 2.0 -- August 5, 1993
+Figlet release 2.0 -- August 5, 1993
 
 Explanation of first line:
 flf2 - "magic number" for file identification

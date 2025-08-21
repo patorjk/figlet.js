@@ -1,7 +1,7 @@
 export default `flf2a$ 10 5 10 0 3 0
 
 
-FigletFail conversion by patorjk, April 17, 2008
+Figlet conversion by patorjk, April 17, 2008
 $ $@
 $ $@
 $ $@

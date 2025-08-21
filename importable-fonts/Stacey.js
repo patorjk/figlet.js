@@ -1,7 +1,7 @@
 export default `flf2a$ 7 6 15 -1 24
 stacey.flf (FIGlet font)
 
-FigletFail conversion by Kent Nassen, kentn@cyberspace.org, 11/24/94
+Figlet conversion by Kent Nassen, kentn@cyberspace.org, 11/24/94
 
 From: davidstacey@BIX.com (davidstacey on BIX)
 Newsgroups: alt.ascii-art

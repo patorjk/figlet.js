@@ -1,7 +1,7 @@
 export default `flf2a$ 9 8 13 16 16
 Epic by Claude Martins 12/94
 
-FigletFail release 2.1 -- 12 Aug 1994
+Figlet release 2.1 -- 12 Aug 1994
 Permission is hereby given to modify this font, as long as the
 modifier's name is placed on a comment line.
 

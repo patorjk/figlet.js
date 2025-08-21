@@ -1,6 +1,6 @@
 export default `flf2a$ 8 7 20 -1 7
 NIPPLES by Ron Fritz 8/94
-FigletFail Release 2.0
+Figlet Release 2.0
 
 ---
 
