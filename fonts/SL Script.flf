@@ -9,7 +9,7 @@ Ammended            by Jerrad Pierce  <jpierce@cpan.org>         on  8 Aug 2002
        The  '_' character is treated in a special way.  It may be
        inserted in the text anywhere you wish to lengthen a  con-
        necting line between two letters.
-
+       
 Changed 2004-02-18: Bugfix in '-' character by Markus Gebhard
 Changed 2012-05-21: Update to '-' character by patorjk
 $$@

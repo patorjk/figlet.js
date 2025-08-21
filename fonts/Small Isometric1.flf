@@ -15,8 +15,8 @@ Here are some fonts. Non-figlet I'm afraid, if you wanna convert them, be
 my guest. I posted the isometric fonts before.
 
 ------------------------------------------------------------------------------
-                 --------- L e n n e r t   S t o c k
-                                  stock@fwi.uva.nl --------
+                 --------- L e n n e r t   S t o c k                   
+                                  stock@fwi.uva.nl --------         
 $   $@
 $   $@
 $   $@
