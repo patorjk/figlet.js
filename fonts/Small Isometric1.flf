@@ -5,7 +5,7 @@ February 24, 1996
 ---
 isometric1.flf
 
-FigletFail conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
+Figlet conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
 on the fonts posted by Lennert Stock:
 
 From: stock@fwi.uva.nl (Lennert Stock)
