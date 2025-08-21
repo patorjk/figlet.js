@@ -146,11 +146,17 @@ export interface FigletModule {
   loadFont: (
     font: FontName,
     callback?: CallbackFunction<FontMetadata>,
-  ) => Promise<FontMetadata>;
+  ) => Promise<FontMetadata | null>;
   loadFontSync: (font: FontName) => FontMetadata;
   fonts: (callback?: CallbackFunction<FontName[]>) => Promise<FontName[]>;
   fontsSync: () => FontName[];
   parseFont: (font: FontName, data: string, override?: boolean) => FontMetadata;
+  preloadFonts: (
+    fonts: FontName[],
+    callback?: (error?: Error) => void,
+  ) => Promise<void>;
+  loadedFonts: () => string[];
+  clearLoadedFonts: () => void;
   textSync: (text: string, options?: FigletOptions) => string;
   text: (
     text: string,
@@ -169,5 +175,5 @@ export interface FigletModule {
       fontOptions?: FontMetadata,
       comment?: string,
     ) => void,
-  ) => Promise<[FontMetadata, string]>;
+  ) => Promise<[FontMetadata, string] | null>;
 }

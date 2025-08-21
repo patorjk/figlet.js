@@ -95,14 +95,12 @@ test
 <div>
   <label for="outputFigDisplay">Output</label>
 </div>
-<pre>
-0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999</pre
->
+
 <div id="outputFigDisplay"></div>
 
-<script type="text/javascript" src="../../dist/figlet.js?1"></script>
+<script type="module">
+  import figlet from '../../dist/figlet.mjs';
 
-<script>
   if (window.location.protocol === "file:") {
     alert("fetch APi does not support file: protocol.");
   }
@@ -111,15 +109,18 @@ test
     fontPath: "../../fonts",
   });
 
-  figlet.preloadFonts(["Standard", "Ghost"], function () {
-    console.log("prefetching done (only did it for 2 fonts)!");
+  figlet.preloadFonts(["Standard", "Ghost", "Dancing Font", "3D Diagonal"], function (err, fonts) {
+    if (err) {
+      console.error("There was an error prefetching fonts: ", err);
+    }
+    console.log("prefetching done.");
   });
 
   /*
-Generates the put
-*/
-  var update = function () {
-    var fontName = document.querySelector("#font option:checked").value,
+    Generates the output
+  */
+  let update = function () {
+    let fontName = document.querySelector("#font option:checked").value,
       inputText = document.querySelector("#inputText").value,
       vLayout = document.querySelector("#vLayout option:checked").value,
       hLayout = document.querySelector("#hLayout option:checked").value,
@@ -129,10 +130,10 @@ Generates the put
       ).value;
 
     /*
-    How to use the text output.
+        How to use the text output.
 
-    The below call could also have been: figlet.text(...
-*/
+        The below call could also have been: figlet.text(...
+    */
     figlet(
       inputText,
       {
@@ -175,8 +176,8 @@ figlet.metadata(fontName, function(err, options, headerComment) {
   };
 
   /*
-GUI Controls
-*/
+    GUI Controls
+  */
 
   document.querySelector("#hLayout").addEventListener("change", update);
   document.querySelector("#vLayout").addEventListener("change", update);
