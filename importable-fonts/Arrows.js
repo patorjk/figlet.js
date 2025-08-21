@@ -4,7 +4,7 @@ Figlet Release 2.0
 
 ---
 
-Font modified June 17, 2007 by patorjk
+Font modified June 17, 2007 by patorjk 
 This was to widen the space character.
 
 $    $@

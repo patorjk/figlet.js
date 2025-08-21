@@ -1403,7 +1403,7 @@ const figlet: FigletModule = (() => {
         throw new Error(`Error parsing data. Invalid data: ${cNum}`);
       }
 
-      // Per FigletFail specification, the character code can be in the range
+      // Per Figlet specification, the character code can be in the range
       // of -2147483648 to +2147483647, but cannot be -1.
       if (
         parsedNum === -1 ||
