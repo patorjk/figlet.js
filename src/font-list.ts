@@ -225,6 +225,7 @@ export const fontList = [
   "Puzzle",
   "Pyramid",
   "Rammstein",
+  "Rebel",
   "Rectangles",
   "Red Phoenix",
   "Relief",

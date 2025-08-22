@@ -1,10 +1,10 @@
 /*
-    FIGlet.js (a FIGDriver for FIGlet fonts)
+    FIGlet.ts (a FIGDriver for FIGlet fonts)
     Written by https://github.com/patorjk/figlet.js/graphs/contributors
     Originally Written For: http://patorjk.com/software/taag/
-    License: MIT (with this header staying intact)
+    License: MIT
 
-    This JavaScript code aims to fully implement the FIGlet spec.
+    This TypeScript code aims to fully implement the FIGlet spec.
     Full FIGlet spec: http://patorjk.com/software/taag/docs/figfont.txt
 
     FIGlet fonts are actually kind of complex, which is why you will see
@@ -55,6 +55,24 @@ const figlet: FigletModule = (() => {
 
   // ---------------------------------------------------------------------
   // Private static methods
+
+  /**
+   * Figures out the end char for a FIGlet line and removes it. Technically there aren't supposed to be white spaces
+   * after the end char, but certain TOIlet fonts have this. The FIGlet unix app handles this though so we handle it
+   * here too.
+   *
+   * @param line
+   * @param lineNum
+   * @param fontHeight
+   */
+  function removeEndChar(line: string, lineNum: number, fontHeight: number) {
+    const endChar = escapeRegExpChar(line.trim().slice(-1)) || "@";
+    const endCharRegEx =
+      lineNum === fontHeight - 1
+        ? new RegExp(endChar + endChar + "?\\s*$")
+        : new RegExp(endChar + "\\s*$");
+    return line.replace(endCharRegEx, "");
+  }
 
   /**
    *  This method takes in the oldLayout and newLayout data from the FIGfont header file and returns
@@ -1369,12 +1387,7 @@ const figlet: FigletModule = (() => {
         if (typeof font[cNum][i] === "undefined") {
           font[cNum][i] = "";
         } else {
-          const endChar = escapeRegExpChar(font[cNum][i].slice(-1));
-          const endCharRegEx =
-            i === opts.height - 1
-              ? new RegExp(endChar + endChar + "?$")
-              : new RegExp(endChar + "$");
-          font[cNum][i] = font[cNum][i].replace(endCharRegEx, "");
+          font[cNum][i] = removeEndChar(font[cNum][i], i, opts.height);
         }
       }
       font.numChars++;
@@ -1428,12 +1441,11 @@ const figlet: FigletModule = (() => {
         if (typeof font[parsedNum][i] === "undefined") {
           font[parsedNum][i] = "";
         } else {
-          const endChar = escapeRegExpChar(font[parsedNum][i].slice(-1));
-          const endCharRegEx =
-            i === opts.height - 1
-              ? new RegExp(endChar + endChar + "?$")
-              : new RegExp(endChar + "$");
-          font[parsedNum][i] = font[parsedNum][i].replace(endCharRegEx, "");
+          font[parsedNum][i] = removeEndChar(
+            font[parsedNum][i],
+            i,
+            opts.height,
+          );
         }
       }
       font.numChars++;

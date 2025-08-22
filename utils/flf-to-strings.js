@@ -29,9 +29,7 @@ fs.readdir(fontDir, function (err, files) {
         {encoding: "utf-8"}
       );
 
-      const fontTypeData = `
-export default string;
-      `;
+      const fontTypeData = `export default string;\n`;
       fs.writeFileSync(
         path.join(exportDir, name.replace(/flf$/, "d.ts")),
         fontTypeData,
