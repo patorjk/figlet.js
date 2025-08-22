@@ -87,7 +87,7 @@
     "vitest": "^3.2.4"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 17.0.0"
   },
   "lint-staged": {
     "src/**/*": "prettier --write --ignore-unknown"

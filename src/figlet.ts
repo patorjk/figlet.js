@@ -51,6 +51,7 @@ const figlet: FigletModule = (() => {
   const figDefaults: FigletDefaults = {
     font: "Standard",
     fontPath: "./fonts",
+    fetchFontIfMissing: true,
   };
 
   // ---------------------------------------------------------------------
@@ -1488,6 +1489,10 @@ const figlet: FigletModule = (() => {
     }
 
     try {
+      if (!figDefaults.fetchFontIfMissing) {
+        throw new Error(`Font is not loaded: ${fontName}`);
+      }
+
       const response = await fetch(`${figDefaults.fontPath}/${fontName}.flf`);
 
       if (!response.ok) {
@@ -1534,26 +1539,18 @@ const figlet: FigletModule = (() => {
     callback?: (error?: Error) => void,
   ): Promise<void> {
     try {
-      // Load all fonts in parallel
-      const fontPromises = fonts.map(async (name) => {
+      // Load fonts sequentially
+      for (const name of fonts) {
         const response = await fetch(`${figDefaults.fontPath}/${name}.flf`);
         if (!response.ok) {
           throw new Error(
             `Failed to preload fonts. Error fetching font: ${name}, status code: ${response.statusText}`,
           );
         }
-        return {
-          name,
-          data: await response.text(),
-        };
-      });
 
-      const fontResults = await Promise.all(fontPromises);
-
-      // Parse fonts
-      fontResults.forEach(({ name, data }) => {
+        const data = await response.text();
         me.parseFont(name, data);
-      });
+      }
 
       callback?.();
     } catch (error) {

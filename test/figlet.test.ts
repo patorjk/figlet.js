@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import figlet from '../src/figlet'; // Import from src instead of lib
 import fontData from '../importable-fonts/Standard'
+import miniwi from '../importable-fonts/miniwi'
 
 describe('figlet', () => {
   let fetchSpy: MockInstance<{
@@ -321,6 +322,35 @@ describe('figlet', () => {
       expect(mockCallback).toHaveBeenCalledWith(null, expected);
       expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
 
+    });
+
+    it('text should allow empty lines in output', async () => {
+
+      const localPath = import.meta.url;
+      const lastSlashIndex = localPath.lastIndexOf("/");
+      const directoryPath = localPath.substring(0, lastSlashIndex);
+
+      const expected = readExpected('miniwi_multiline');
+      const multilineText = 'This\n\nis\n\n\na test'
+
+      const mockResponse = {
+        ok: true,
+        statusText: 'OK',
+        text: () => Promise.resolve(miniwi),
+      };
+      // @ts-ignore
+      fetchSpy.mockReturnValue(Promise.resolve(mockResponse));
+
+      figlet.defaults({
+        fontPath: `${directoryPath}/../fonts`,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      const output = await figlet.text(multilineText, 'miniwi');
+
+      expect(output).toEqual(expected);
+      expect(figlet.loadedFonts()).toStrictEqual(['miniwi']);
     });
   });
 });
