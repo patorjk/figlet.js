@@ -23,7 +23,7 @@ export default defineConfig({
         return `${entryName}.${extension}`;
       },
     },
-    minify: false, // Usually better to let consumers decide on minification
+    minify: false, // Let consumers decide on minification
     rollupOptions: {
       external: [
         // Node.js built-ins that shouldn't be bundled
@@ -31,7 +31,6 @@ export default defineConfig({
         "path",
         "util",
         "url",
-        // Add other Node.js modules you don't want bundled
       ],
       output: [
         // ES modules output
