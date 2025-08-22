@@ -2,7 +2,7 @@ export default `flf2a$ 11 11 18 -1 23
 isometric3.flf
 
 Figlet conversion by Kent Nassen (kentn@cyberspace.org), 8-10-94, based
-on the post by Lennert Stock:
+on the post by Lennert Stock: 
 
 From: stock@fwi.uva.nl (Lennert Stock)
 Date: 15 Jul 1994 00:04:25 GMT

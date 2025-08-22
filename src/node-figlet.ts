@@ -5,8 +5,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-// Import the main figlet module - you'll need to type this based on your figlet.js structure
-import figlet from "./figlet.js";
+import figlet from "./figlet";
 import { fileURLToPath } from "url";
 import { FigletModule, FontMetadata } from "./figlet-types";
 

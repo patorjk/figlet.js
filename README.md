@@ -1,20 +1,17 @@
 ```
-___________.___  ________.__          __          __
-\_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
- |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
- |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \
- \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  >
-     \/                \/          \/     \/ \______|    \/
-
+___________.___  ________.__          __          __             /\   __          
+\_   _____/|   |/  _____/|  |   _____/  |_       |__| ______    / / _/  |_  ______
+ |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/   / /  \   __\/  ___/
+ |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \   / /    |  |  \___ \ 
+ \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  > / /     |__| /____  >
+     \/                \/          \/     \/ \______|    \/  \/                \/ 
 ```
 
 [![NPM Downloads](https://img.shields.io/npm/dt/figlet.svg?style=flat)](https://npmcharts.com/compare/figlet?minimal=true)
 
-This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application)
+This project aims to fully implement the FIGfont spec in TypeScript (compiles to JavaScript). It works in the browser and with Node. You can see it in action here: http://patorjk.com/software/taag/ (this project was written to power that application)
 
-**TypeScript Update 2025/08/11**: A beta version of 1.9.0 has been released (`npm install figlet@beta`). API is unchanged and should work exactly as before. See https://github.com/patorjk/figlet.js/pull/136 for more details.
-
-## Quick Start - Node.js
+## Quick Start - Node
 
 Install:
 
@@ -25,7 +22,20 @@ npm install figlet
 Simple usage:
 
 ```js
-var figlet = require("figlet");
+import figlet from "figlet";
+
+async function doStuff() {
+  const text = await figlet.text("Hello World!!");
+  console.log(text);
+}
+
+doStuff();
+```
+
+Of the classic callback version:
+
+```js
+const figlet = require('figlet');
 
 figlet("Hello World!!", function (err, data) {
   if (err) {
@@ -37,7 +47,7 @@ figlet("Hello World!!", function (err, data) {
 });
 ```
 
-That should print out:
+These will print out:
 
 ```
   _   _      _ _        __        __         _     _ _ _
@@ -47,7 +57,7 @@ That should print out:
  |_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_|_)
 ```
 
-## Basic Usage - Node.js
+## Basic Usage - Node
 
 ### text
 
@@ -56,7 +66,8 @@ Calling the figlet object as a function is shorthand for calling the text functi
 - Input Text - A string of text to turn into ASCII Art.
 - Options - Either a string indicating the font name or an options object (description below).
 - Callback - Optional function to execute with the generated ASCII Art.
-- Return value is a promise that resolves to generated ASCII Art.
+
+The return value is a **promise** that resolves to the generated ASCII Art.
 
 Example:
 
@@ -95,7 +106,7 @@ That will print out:
  `------'      `-----'      `-----' '--'
 ```
 
-Similary you can use Promise API:
+Similarly, you can use Promise API:
 
 ```js
 try {
@@ -167,14 +178,14 @@ A string value that indicates the FIGlet font to use.
 Type: `String`
 Default value: `'default'`
 
-A string value that indicates the horizontal layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+A string value that indicates the horizontal layout to use. 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing"  are common FIGlet kerning setups.
 
 #### verticalLayout
 
 Type: `String`
 Default value: `'default'`
 
-A string value that indicates the vertical layout to use. FIGlet fonts have 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
+A string value that indicates the vertical layout to use. 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
 #### width
 
@@ -261,7 +272,9 @@ figlet.fonts(function (err, fonts) {
 });
 ```
 
-`fonts` is Node.js only.
+For Node, it will look in the fonts folder and list all of the fonts there - this folder is configurable in case you want to use your own folder (see the `defaults` method).
+
+When dealing with this code in the browser, it will return a list of all of the fonts that come with this library. If you only want a list of the fonts that have been loaded into memory (ie, fetched and parsed and currently usable), use the `loadedFonts` method (this also returns a list of strings).
 
 ### fontsSync
 
@@ -271,7 +284,15 @@ The synchronous version of the fonts method
 console.log(figlet.fontsSync());
 ```
 
-same as `fonts`, `fontsSync` is Node.js only.
+As with `fonts`, when used in the browser this will list all of the fonts that come with this library.
+
+### loadedFonts
+
+When you call `loadFont` or `parseFont`, the font information gets processed and put into an internal array. This method allows you to see all of the fonts that have been loaded. It returns an array of font names.
+
+### clearLoadedFonts
+
+Resets the internal state so that no fonts have been loaded.
 
 ### parseFont
 
@@ -286,55 +307,31 @@ figlet.parseFont("myfont", data);
 console.log(figlet.textSync("myfont!", "myfont"));
 ```
 
-## Getting Started - Webpack / React
+## Getting Started - Browser with ES modules
 
-Webpack/React usage will be very similar to what's talked about in the "Getting Started - The Browser" section. The main difference is that you import fonts via the importable-fonts folder. Example:
+Here's the basic ES module usage:
 
 ```js
 import figlet from "figlet";
-import standard from "figlet/importable-fonts/Standard.js";
+import standard from "figlet/fonts/Standard";
 
 figlet.parseFont("Standard", standard);
 
-figlet.text(
-  "test",
-  {
-    font: "Standard",
-  },
-  function (err, data) {
-    console.log(data);
-  }
-);
+async function doStuff() {
+  const text = figlet.text("test", { font: "Standard" });
+  console.log(text);
+}
+
+doStuff();
 ```
 
-## Getting Started - The Browser
+In previous versions you imported js files from an importable-fonts folder. This still works, but the new way is slightly cleaner.
 
-The browser API is the same as the Node API with the exception of the "fonts" method not being available. The browser version also requires [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) (or a [shim](https://github.com/github/fetch)) for its loadFont function.
-
-Example usage:
-
-```html
-<script
-  type="text/javascript"
-  src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"
-></script>
-<script type="text/javascript" src="figlet.js"></script>
-
-<script>
-  figlet(inputText, "Standard", function (err, text) {
-    if (err) {
-      console.log("something went wrong...");
-      console.dir(err);
-      return;
-    }
-    console.log(text);
-  });
-</script>
-```
+If you attempt to access a font that doesn't exist, the library will attempt to fetch it. You can control the fetch location via the `fontPath` property in `defaults`. If you want to disable this behavior (fetching a font if it doesn't exist), set `fetchFontIfMissing` to false (with the `defaults` method).
 
 ### textSync
 
-The browser API supports synchronous mode so long as fonts used are preloaded.
+The browser API supports synchronous mode so long for fonts that have been loaded or preloaded.
 
 Example:
 
@@ -374,10 +371,10 @@ See the examples folder for a more robust front-end example.
 
 ## Getting Started - Command Line
 
-To use figlet.js on the command line, install figlet-cli:
+To use figlet.js on the command line, install globally:
 
 ```sh
-npm install -g figlet-cli
+npm install -g figlet
 ```
 
 And then you should be able run from the command line. Example:
@@ -385,8 +382,6 @@ And then you should be able run from the command line. Example:
 ```sh
 figlet -f "Dancing Font" "Hi"
 ```
-
-For more info see the [figlet-cli](https://github.com/patorjk/figlet-cli).
 
 ## Contributors
 

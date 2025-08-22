@@ -1,8 +1,9 @@
 // test/node-figlet.test.ts
-import {describe, it, expect, beforeAll} from 'vitest';
+import {describe, it, expect, beforeAll, afterEach, beforeEach, vi} from 'vitest';
 import fs from 'fs';
 import path from 'path';
-import figlet from '../src/node-figlet'; // Import from src instead of lib
+import figlet from '../src/node-figlet';
+import fontData from "../importable-fonts/Standard"; // Import from src instead of lib
 
 describe('node-figlet', () => {
   // Helper function to read expected output files
@@ -234,6 +235,57 @@ describe('node-figlet', () => {
       } catch (err: any) {
         expect(err?.message).toContain('Font');
       }
+    });
+  });
+
+  describe('fontLoad', () => {
+
+    beforeEach(() => {
+      figlet.clearLoadedFonts();
+    });
+
+    afterEach(() => {
+      figlet.clearLoadedFonts();
+    });
+
+    const standardMeta = {
+      hardBlank: '$',
+      height: 6,
+      baseline: 5,
+      maxLength: 16,
+      oldLayout: 15,
+      numCommentLines: 13,
+      printDirection: 0,
+      fullLayout: 24463,
+      codeTagCount: 229,
+      fittingRules: {
+        vLayout: 3,
+        vRule5: true,
+        vRule4: true,
+        vRule3: true,
+        vRule2: true,
+        vRule1: true,
+        hLayout: 3,
+        hRule6: false,
+        hRule5: false,
+        hRule4: true,
+        hRule3: true,
+        hRule2: true,
+        hRule1: true
+      }
+    };
+
+    it('should be able to set a custom font directory', async () => {
+
+      figlet.defaults({
+        fontPath: `${__dirname}/fonts`,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      const meta = await figlet.loadFont('Standard-Test');
+      expect(meta).toEqual(standardMeta);
+      expect(figlet.loadedFonts()).toStrictEqual(['Standard-Test']);
     });
   });
 });

@@ -89,6 +89,7 @@ export interface FigletOptions {
 export interface FigletDefaults {
   font: FontName;
   fontPath: string;
+  fetchFontIfMissing: boolean;
 }
 
 export type CallbackFunction<T = string> = (
