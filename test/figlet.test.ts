@@ -25,6 +25,9 @@ describe('figlet', () => {
   afterEach(() => {
     fetchSpy.mockRestore(); // Restore the original fetch after each test
     figlet.clearLoadedFonts();
+    figlet.defaults({
+      fetchFontIfMissing: true,
+    });
   });
 
   describe('preloadFonts tests', () => {
@@ -134,6 +137,10 @@ describe('figlet', () => {
   // -------------------------------------------------------------------------------------------------------------------
 
   describe('loadFont tests', () => {
+
+    beforeEach(() => {
+      figlet.clearLoadedFonts();
+    });
 
     const standardMeta = {
       hardBlank: '$',
@@ -259,6 +266,34 @@ describe('figlet', () => {
       await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
 
       expect(mockCallback).toHaveBeenCalledWith(expect.any(Error));
+    });
+
+    it('fetchFontIfMissing should be respected when false', async () => {
+
+      figlet.defaults({
+        fetchFontIfMissing: false,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      await expect(figlet.loadFont('Unknown-Font')).rejects.toThrow();
+
+      expect(fetchSpy).not.toHaveBeenCalled();
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+    });
+
+    it('fetchFontIfMissing should be respected when true', async () => {
+
+      figlet.defaults({
+        fetchFontIfMissing: true,
+      });
+
+      expect(figlet.loadedFonts()).toStrictEqual([]);
+
+      await expect(figlet.loadFont('Unknown-Font')).rejects.toThrow();
+
+      expect(fetchSpy).toHaveBeenCalled();
+      expect(figlet.loadedFonts()).toStrictEqual([]);
     });
   });
 
