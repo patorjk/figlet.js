@@ -1,5 +1,5 @@
 // test/node-figlet.test.ts
-import {describe, it, expect, beforeAll, afterEach, beforeEach, vi} from 'vitest';
+import {describe, it, expect, beforeAll, afterEach, beforeEach, vi, MockInstance} from 'vitest';
 import fs from 'fs';
 import path from 'path';
 import figlet from '../src/node-figlet';
@@ -16,10 +16,6 @@ describe('node-figlet', () => {
       return (acc < line.length) ? line.length : acc;
     }, 0);
   }
-
-  // Setup for font registration tests
-  beforeAll(() => {
-  });
 
   describe('standard font tests', () => {
     it('should render text with standard font and fitted vertical layout', async () => {
@@ -287,5 +283,7 @@ describe('node-figlet', () => {
       expect(meta).toEqual(standardMeta);
       expect(figlet.loadedFonts()).toStrictEqual(['Standard-Test']);
     });
+
+
   });
 });

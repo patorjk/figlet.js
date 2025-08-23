@@ -32,7 +32,7 @@ async function doStuff() {
 doStuff();
 ```
 
-Of the classic callback version:
+Or the classic callback version:
 
 ```js
 const figlet = require('figlet');
@@ -178,7 +178,7 @@ A string value that indicates the FIGlet font to use.
 Type: `String`
 Default value: `'default'`
 
-A string value that indicates the horizontal layout to use. 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing"  are common FIGlet kerning setups.
+A string value that indicates the horizontal layout to use. 5 possible values for this: "default", "full", "fitted", "controlled smushing", and "universal smushing". "default" does the kerning the way the font designer intended, "full" uses full letter spacing, "fitted" moves the letters together until they almost touch, and "controlled smushing" and "universal smushing" are common FIGlet kerning setups.
 
 #### verticalLayout
 
@@ -307,6 +307,18 @@ figlet.parseFont("myfont", data);
 console.log(figlet.textSync("myfont!", "myfont"));
 ```
 
+### defaults
+
+Allows you to set a handful of default values for the library. Ex:
+
+```js
+figlet.defaults({
+  font: "Standard", // default font
+  fontPath: "some-random-place/fonts", // default font path location
+  fetchFontIfMissing: true, // for the browser, fetch a font if its missing
+})
+```
+
 ## Getting Started - Browser with ES modules
 
 Here's the basic ES module usage:
@@ -331,7 +343,7 @@ If you attempt to access a font that doesn't exist, the library will attempt to 
 
 ### textSync
 
-The browser API supports synchronous mode so long for fonts that have been loaded or preloaded.
+The browser API supports synchronous mode as long as the fonts have been loaded or preloaded.
 
 Example:
 
