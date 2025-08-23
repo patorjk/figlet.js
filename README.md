@@ -12,7 +12,7 @@ ___________.___  ________.__          __          __
 
 This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application)
 
-**TypeScript Update 2025/08/11**: A beta version of 1.9.0 has been released (`npm publish figlet@beta`). API is unchanged and should work exactly as before. See https://github.com/patorjk/figlet.js/pull/136 for more details.
+**TypeScript Update 2025/08/11**: A beta version of 1.9.0 has been released (`npm install figlet@beta`). API is unchanged and should work exactly as before. See https://github.com/patorjk/figlet.js/pull/136 for more details.
 
 ## Quick Start - Node.js
 
