@@ -2,16 +2,15 @@
     Example
 */
 
-var figlet = require("../../lib/node-figlet.js");
+import figlet from "../../dist/node-figlet.mjs";
 
 /*
     Once this has been run:
-    
+
     npm install figlet
 
     Use the below line instead of the above line
 */
-// var figlet = require('figlet');
 
 (async () => {
   const helloWorld = await figlet("Async World!", "Standard");
