@@ -1,1 +1,2 @@
-export default string;
+declare const fontData: string;
+export default fontData;
