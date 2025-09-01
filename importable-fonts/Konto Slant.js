@@ -1,4 +1,4 @@
-export default `flf2a$ 2 2 8 -1 25 0 0 0
+export default `flf2a$ 2 2 8 -1 27 0 0 0
 Author : David Dahlberg <D-Mail@gmx.net>
          Markus Gebhard markus@jave.de
 Date   : 2001/9/26 19:57:04
@@ -13,17 +13,19 @@ Those characters are: A..Z 0..9 $%&/\`*�+-,.?^
 
 Font designed by:
   David Dahlberg <D-Mail@gmx.net>
-Converted to FLF by:  
+Converted to FLF by:
   Markus Gebhard <markus@jave.de>
 -------------------------------------------------
-This font has been created using Jave's FIGlet font export assistant 
+This font has been created using Jave's FIGlet font export assistant
 (that will be included in Jave 2.0).
 
 Have a look at: http://www.jave.de
 
 Permission is hereby given to modify this font, as long as the
 modifier's name is placed on a comment line.
-
+-------------------------------------------------
+Converted this file from a text encoding of ISO 8859-1 to UTF-8
+Done by Patrick Gillespie (patorjk) on 2025/08/31
 $ #
 $ ##
 !#
@@ -91,44 +93,44 @@ $#
 @#
  ##
  /1 #
-/�/ ##
- /�1 #
+/´/ ##
+ /´1 #
 /.I  ##
 /\` #
 L- ##
  /\`. #
-/.-� ##
- /.� #
+/.-´ ##
+ /.´ #
 /..  ##
- /�� #
-/�   ##
- /� #
+ /´´ #
+/´   ##
+ /´ #
 /.T ##
  / / #
-/�/  ##
+/´/  ##
  / #
 /  ##
-��/ #
+´´/ #
 L/  ##
- /.� #
-/�.  ##
+ /.´ #
+/´.  ##
  / #
 /. ##
  /1/1 #
 /   1 ##
  /1 / #
 / 1/  ##
- /�/ #
+ /´/ #
 /./  ##
- /�/ #
-/��  ##
- /�/ #
+ /´/ #
+/´´  ##
+ /´/ #
 /.X  ##
- /�/ #
+ /´/ #
 /\`.  ##
- /�� #
+ /´´ #
 ../  ##
-�/� #
+´/´ #
 /   ##
 / / #
 L/  ##
@@ -140,7 +142,7 @@ L/L/  ##
 /1  ##
 L/ #
 /  ##
-��/ #
+´´/ #
 /.. ##
 [#
  ##
@@ -155,44 +157,44 @@ _#
 \`#
  ##
  /1 #
-/�/ ##
- /�1 #
+/´/ ##
+ /´1 #
 /.I  ##
 /\` #
 L- ##
  /\`. #
-/.-� ##
- /.� #
+/.-´ ##
+ /.´ #
 /..  ##
- /�� #
-/�   ##
- /� #
+ /´´ #
+/´   ##
+ /´ #
 /.T ##
  / / #
-/�/  ##
+/´/  ##
  / #
 /  ##
-��/ #
+´´/ #
 L/  ##
- /.� #
-/�.  ##
+ /.´ #
+/´.  ##
  / #
 /. ##
  /1/1 #
 /   1 ##
  /1 / #
 / 1/  ##
- /�/ #
+ /´/ #
 /./  ##
- /�/ #
-/��  ##
- /�/ #
+ /´/ #
+/´´  ##
+ /´/ #
 /.X  ##
- /�/ #
+ /´/ #
 /\`.  ##
- /�� #
+ /´´ #
 ../  ##
-�/� #
+´/´ #
 /   ##
 / / #
 L/  ##
@@ -204,7 +206,7 @@ L/L/  ##
 /1  ##
 L/ #
 /  ##
-��/ #
+´´/ #
 /.. ##
 {#
  ##
@@ -215,17 +217,17 @@ L/ #
 ~#
  ##
  /1 #
-/�/ ##
- /�/ #
+/´/ ##
+ /´/ #
 /./  ##
 / / #
 L/  ##
  /1 #
-/�/ ##
- /�/ #
+/´/ ##
+ /´/ #
 /./  ##
 / / #
 L/  ##
-�#
+ß#
  ##
 `

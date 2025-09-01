@@ -1,4 +1,4 @@
-export default `flf2a$ 2 2 8 -1 24 0 0 0
+export default `flf2a$ 2 2 8 -1 27 0 0 0
 Author : Markus Gebhard markus@jave.de
 Date   : 2001/9/26 19:57:04
 Version: 0.2
@@ -16,13 +16,16 @@ People who contributed to this font (in order of appearance):
   Thomas Schuetzkowski <Thomas.Schuetzkowski@alcatel.de>
   Jan Foerster <Jan.Foerster@alcatel.de>:
 -------------------------------------------------
-This font has been created using Jave's FIGlet font export assistant 
+This font has been created using Jave's FIGlet font export assistant
 (that will be included in Jave 2.0).
 
 Have a look at: http://www.jave.de
 
 Permission is hereby given to modify this font, as long as the
 modifier's name is placed on a comment line.
+-------------------------------------------------
+Converted this file from a text encoding of ISO 8859-1 to UTF-8
+Done by Patrick Gillespie (patorjk) on 2025/08/31
 $ #
 $ ##
 I #
@@ -91,25 +94,25 @@ $#
  ##
 .^. #
 I^I ##
-I�D #
+I´D #
 I.D ##
-,�� #
+,´´ #
 \`.. ##
 I\`. #
 I./ ##
 I.\` #
 I.. ##
-I�� #
-I�  ##
-,�� #
+I´´ #
+I´  ##
+,´´ #
 \`.7 ##
 L.J #
 I I ##
 I #
 I ##
   7 #
-\`.� ##
-I,� #
+\`.´ ##
+I,´ #
 I\`. ##
 I   #
 L.. ##
@@ -117,17 +120,17 @@ IVI #
 I I ##
 I\`.I #
 I \`I ##
-,�\`. #
-\`..� ##
-I��, #
-I��  ##
-,�\`. #
+,´\`. #
+\`..´ ##
+I´´, #
+I´´  ##
+,´\`. #
 \`.\`. ##
-I��, #
-I�\`. ##
-/�� #
+I´´, #
+I´\`. ##
+/´´ #
 ..7 ##
-��T�� #
+´´T´´ #
   I   ##
 I  I #
 \`..I ##
@@ -135,12 +138,12 @@ I  I #
  V  ##
 \` ^ / #
  V V  ##
-\`.� #
+\`.´ #
 .^. ##
 \`./ #
  /  ##
-��7 #
-/�. ##
+´´7 #
+/´. ##
 [#
  ##
 \\#
@@ -155,25 +158,25 @@ _#
  ##
 .^. #
 I^I ##
-I�D #
+I´D #
 I.D ##
-,�� #
+,´´ #
 \`.. ##
 I\`. #
 I./ ##
 I.\` #
 I.. ##
-I�� #
-I�  ##
-,�� #
+I´´ #
+I´  ##
+,´´ #
 \`.7 ##
 L.J #
 I I ##
 I #
 I ##
   7 #
-\`.� ##
-I,� #
+\`.´ ##
+I,´ #
 I\`. ##
 I   #
 L.. ##
@@ -181,17 +184,17 @@ IVI #
 I I ##
 I\`.I #
 I \`I ##
-,�\`. #
+,´\`. #
 \`..' ##
-I��, #
-I��  ##
-,�\`. #
+I´´, #
+I´´  ##
+,´\`. #
 \`.\`. ##
-I��, #
-I�\`. ##
-/�� #
+I´´, #
+I´\`. ##
+/´´ #
 ..7 ##
-��T�� #
+´´T´´ #
   I   ##
 I  I #
 \`..I ##
@@ -199,12 +202,12 @@ I  I #
  V  ##
 \` ^ / #
  V V  ##
-\`.� #
+\`.´ #
 .^. ##
 \`./ #
  /  ##
-��7 #
-/�. ##
+´´7 #
+/´. ##
 {#
  ##
 |#
@@ -215,15 +218,16 @@ I  I #
  ##
 .^. #
 I^I ##
-,�\`. #
-\`..� ##
+,´\`. #
+\`..´ ##
 I  I #
 \`..I ##
 .^. #
 I^I ##
-,�\`. #
+,´\`. #
 \`..' ##
 I  I #
 \`..I ##
-�#
- ##`
+ß#
+ ##
+`
