@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.09.07 v1.9.0 TypeScript refactor. Added Toilet fonts.
 - 2025.07.11 v1.8.2 Added Terrace and Wavescape fonts. Fixed tag validation (https://github.com/patorjk/figlet.js/pull/134) thanks to @deverac
 - 2025.04.11 v1.8.1 Added miniwi font.
 - 2024.10.08 v1.8.0 Added support for promises for loadFont, preloadedFonts, and metadata methods. 5 fonts added: DiamFont, RubiFont, CosMike2, BlurVision ASCII, and Shaded Blocky.
