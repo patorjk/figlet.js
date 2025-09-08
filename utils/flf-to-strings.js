@@ -1,7 +1,12 @@
-var path = require("path");
-var fontDir = path.join(__dirname, "/../fonts/");
-var exportDir = path.join(__dirname, "../importable-fonts/");
-var fs = require("fs");
+import path from "path";
+import fs from "fs";
+import {fileURLToPath} from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const fontDir = path.join(__dirname, "/../fonts/");
+const exportDir = path.join(__dirname, "../importable-fonts/");
 
 fs.readdir(fontDir, function (err, files) {
   if (err) {
@@ -11,8 +16,7 @@ fs.readdir(fontDir, function (err, files) {
 
   files.forEach(function (name) {
     if (/\.flf$/.test(name)) {
-      console.log(name);
-      var fontData = fs.readFileSync(path.join(fontDir, name), {
+      let fontData = fs.readFileSync(path.join(fontDir, name), {
         encoding: "utf-8",
       });
       fontData =
@@ -22,7 +26,14 @@ fs.readdir(fontDir, function (err, files) {
       fs.writeFileSync(
         path.join(exportDir, name.replace(/flf$/, "js")),
         fontData,
-        { encoding: "utf-8" }
+        {encoding: "utf-8"}
+      );
+
+      const fontTypeData = `declare const fontData: string;\nexport default fontData;\n`;
+      fs.writeFileSync(
+        path.join(exportDir, name.replace(/flf$/, "d.ts")),
+        fontTypeData,
+        {encoding: "utf-8"}
       );
     }
   });

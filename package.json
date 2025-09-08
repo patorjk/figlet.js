@@ -1,6 +1,6 @@
 {
   "name": "figlet",
-  "version": "1.8.2",
+  "version": "1.9.0",
   "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
   "keywords": [
     "figlet",
@@ -23,27 +23,76 @@
     "url": "http://patorjk.com/"
   },
   "license": "MIT",
-  "main": "./lib/node-figlet.js",
-  "browser": "./lib/figlet.js",
-  "devDependencies": {
-    "async": "~3.2.4",
-    "grunt": "^1.6.1",
-    "grunt-contrib-clean": "~2.0.1",
-    "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-nodeunit": "~5.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
-    "prettier": "2.8.7"
+  "type": "module",
+  "main": "./dist/node-figlet.cjs",
+  "module": "./dist/figlet.mjs",
+  "browser": "./dist/figlet.mjs",
+  "types": "./dist/types/figlet.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/figlet.d.ts",
+      "browser": {
+        "import": "./dist/figlet.mjs",
+        "require": "./dist/figlet.js"
+      },
+      "node": {
+        "import": "./dist/node-figlet.mjs",
+        "require": "./dist/node-figlet.cjs"
+      },
+      "import": "./dist/figlet.mjs",
+      "require": "./dist/figlet.js"
+    },
+    "./node": {
+      "types": "./dist/types/node-figlet.d.ts",
+      "import": "./dist/node-figlet.mjs",
+      "require": "./dist/node-figlet.cjs"
+    },
+    "./browser": {
+      "types": "./dist/types/figlet.d.ts",
+      "import": "./dist/figlet.mjs",
+      "require": "./dist/figlet.js"
+    },
+    "./fonts/*": {
+      "types": "./importable-fonts/*.d.ts",
+      "default": "./importable-fonts/*.js"
+    },
+    "./importable-fonts/*": "./importable-fonts/*"
   },
+  "files": [
+    "dist",
+    "fonts",
+    "importable-fonts",
+    "README.md"
+  ],
   "scripts": {
-    "test": "grunt test",
+    "pre-build-scripts": "node utils/create-font-list.js && node utils/flf-to-strings.js",
+    "prebuild": "npm run pre-build-scripts",
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@vitest/ui": "^3.2.4",
+    "async": "~3.2.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 17.0.0"
+  },
+  "lint-staged": {
+    "src/**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
   }
 }

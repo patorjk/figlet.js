@@ -1,4 +1,4 @@
-flf2a$ 2 2 8 -1 25 0 0 0
+flf2a$ 2 2 8 -1 27 0 0 0
 Author : David Dahlberg <D-Mail@gmx.net>
          Markus Gebhard markus@jave.de
 Date   : 2001/9/26 19:57:04
@@ -9,21 +9,23 @@ This font is not pure ASCII!
 It is intended to work with the characters available
 for adding comments to german bank statements.
 
-Those characters are: A..Z 0..9 $%&/`*´+-,.?^
+Those characters are: A..Z 0..9 $%&/`*ï¿½+-,.?^
 
 Font designed by:
   David Dahlberg <D-Mail@gmx.net>
-Converted to FLF by:  
+Converted to FLF by:
   Markus Gebhard <markus@jave.de>
 -------------------------------------------------
-This font has been created using Jave's FIGlet font export assistant 
+This font has been created using Jave's FIGlet font export assistant
 (that will be included in Jave 2.0).
 
 Have a look at: http://www.jave.de
 
 Permission is hereby given to modify this font, as long as the
 modifier's name is placed on a comment line.
-
+-------------------------------------------------
+Converted this file from a text encoding of ISO 8859-1 to UTF-8
+Done by Patrick Gillespie (patorjk) on 2025/08/31
 $ #
 $ ##
 !#
@@ -91,44 +93,44 @@ $#
 @#
  ##
  /1 #
-/´/ ##
- /´1 #
+/Â´/ ##
+ /Â´1 #
 /.I  ##
 /` #
 L- ##
  /`. #
-/.-´ ##
- /.´ #
+/.-Â´ ##
+ /.Â´ #
 /..  ##
- /´´ #
-/´   ##
- /´ #
+ /Â´Â´ #
+/Â´   ##
+ /Â´ #
 /.T ##
  / / #
-/´/  ##
+/Â´/  ##
  / #
 /  ##
-´´/ #
+Â´Â´/ #
 L/  ##
- /.´ #
-/´.  ##
+ /.Â´ #
+/Â´.  ##
  / #
 /. ##
  /1/1 #
 /   1 ##
  /1 / #
 / 1/  ##
- /´/ #
+ /Â´/ #
 /./  ##
- /´/ #
-/´´  ##
- /´/ #
+ /Â´/ #
+/Â´Â´  ##
+ /Â´/ #
 /.X  ##
- /´/ #
+ /Â´/ #
 /`.  ##
- /´´ #
+ /Â´Â´ #
 ../  ##
-´/´ #
+Â´/Â´ #
 /   ##
 / / #
 L/  ##
@@ -140,7 +142,7 @@ L/L/  ##
 /1  ##
 L/ #
 /  ##
-´´/ #
+Â´Â´/ #
 /.. ##
 [#
  ##
@@ -155,44 +157,44 @@ _#
 `#
  ##
  /1 #
-/´/ ##
- /´1 #
+/Â´/ ##
+ /Â´1 #
 /.I  ##
 /` #
 L- ##
  /`. #
-/.-´ ##
- /.´ #
+/.-Â´ ##
+ /.Â´ #
 /..  ##
- /´´ #
-/´   ##
- /´ #
+ /Â´Â´ #
+/Â´   ##
+ /Â´ #
 /.T ##
  / / #
-/´/  ##
+/Â´/  ##
  / #
 /  ##
-´´/ #
+Â´Â´/ #
 L/  ##
- /.´ #
-/´.  ##
+ /.Â´ #
+/Â´.  ##
  / #
 /. ##
  /1/1 #
 /   1 ##
  /1 / #
 / 1/  ##
- /´/ #
+ /Â´/ #
 /./  ##
- /´/ #
-/´´  ##
- /´/ #
+ /Â´/ #
+/Â´Â´  ##
+ /Â´/ #
 /.X  ##
- /´/ #
+ /Â´/ #
 /`.  ##
- /´´ #
+ /Â´Â´ #
 ../  ##
-´/´ #
+Â´/Â´ #
 /   ##
 / / #
 L/  ##
@@ -204,7 +206,7 @@ L/L/  ##
 /1  ##
 L/ #
 /  ##
-´´/ #
+Â´Â´/ #
 /.. ##
 {#
  ##
@@ -215,16 +217,16 @@ L/ #
 ~#
  ##
  /1 #
-/´/ ##
- /´/ #
+/Â´/ ##
+ /Â´/ #
 /./  ##
 / / #
 L/  ##
  /1 #
-/´/ ##
- /´/ #
+/Â´/ ##
+ /Â´/ #
 /./  ##
 / / #
 L/  ##
-ß#
+ÃŸ#
  ##

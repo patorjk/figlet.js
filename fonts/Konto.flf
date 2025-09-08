@@ -1,4 +1,4 @@
-flf2a$ 2 2 8 -1 24 0 0 0
+flf2a$ 2 2 8 -1 27 0 0 0
 Author : Markus Gebhard markus@jave.de
 Date   : 2001/9/26 19:57:04
 Version: 0.2
@@ -8,7 +8,7 @@ This font is NOT pure ASCII!
 It is intended to work with the characters available
 for adding comments to german bank statements.
 
-Those characters are: A..Z 0..9 $%&/`*´+-,.?^
+Those characters are: A..Z 0..9 $%&/`*ï¿½+-,.?^
 
 People who contributed to this font (in order of appearance):
   Markus Gebhard <markus@jave.de>
@@ -16,13 +16,16 @@ People who contributed to this font (in order of appearance):
   Thomas Schuetzkowski <Thomas.Schuetzkowski@alcatel.de>
   Jan Foerster <Jan.Foerster@alcatel.de>:
 -------------------------------------------------
-This font has been created using Jave's FIGlet font export assistant 
+This font has been created using Jave's FIGlet font export assistant
 (that will be included in Jave 2.0).
 
 Have a look at: http://www.jave.de
 
 Permission is hereby given to modify this font, as long as the
 modifier's name is placed on a comment line.
+-------------------------------------------------
+Converted this file from a text encoding of ISO 8859-1 to UTF-8
+Done by Patrick Gillespie (patorjk) on 2025/08/31
 $ #
 $ ##
 I #
@@ -91,25 +94,25 @@ $#
  ##
 .^. #
 I^I ##
-I´D #
+IÂ´D #
 I.D ##
-,´´ #
+,Â´Â´ #
 `.. ##
 I`. #
 I./ ##
 I.` #
 I.. ##
-I´´ #
-I´  ##
-,´´ #
+IÂ´Â´ #
+IÂ´  ##
+,Â´Â´ #
 `.7 ##
 L.J #
 I I ##
 I #
 I ##
   7 #
-`.´ ##
-I,´ #
+`.Â´ ##
+I,Â´ #
 I`. ##
 I   #
 L.. ##
@@ -117,17 +120,17 @@ IVI #
 I I ##
 I`.I #
 I `I ##
-,´`. #
-`..´ ##
-I´´, #
-I´´  ##
-,´`. #
+,Â´`. #
+`..Â´ ##
+IÂ´Â´, #
+IÂ´Â´  ##
+,Â´`. #
 `.`. ##
-I´´, #
-I´`. ##
-/´´ #
+IÂ´Â´, #
+IÂ´`. ##
+/Â´Â´ #
 ..7 ##
-´´T´´ #
+Â´Â´TÂ´Â´ #
   I   ##
 I  I #
 `..I ##
@@ -135,12 +138,12 @@ I  I #
  V  ##
 ` ^ / #
  V V  ##
-`.´ #
+`.Â´ #
 .^. ##
 `./ #
  /  ##
-´´7 #
-/´. ##
+Â´Â´7 #
+/Â´. ##
 [#
  ##
 \#
@@ -155,25 +158,25 @@ _#
  ##
 .^. #
 I^I ##
-I´D #
+IÂ´D #
 I.D ##
-,´´ #
+,Â´Â´ #
 `.. ##
 I`. #
 I./ ##
 I.` #
 I.. ##
-I´´ #
-I´  ##
-,´´ #
+IÂ´Â´ #
+IÂ´  ##
+,Â´Â´ #
 `.7 ##
 L.J #
 I I ##
 I #
 I ##
   7 #
-`.´ ##
-I,´ #
+`.Â´ ##
+I,Â´ #
 I`. ##
 I   #
 L.. ##
@@ -181,17 +184,17 @@ IVI #
 I I ##
 I`.I #
 I `I ##
-,´`. #
+,Â´`. #
 `..' ##
-I´´, #
-I´´  ##
-,´`. #
+IÂ´Â´, #
+IÂ´Â´  ##
+,Â´`. #
 `.`. ##
-I´´, #
-I´`. ##
-/´´ #
+IÂ´Â´, #
+IÂ´`. ##
+/Â´Â´ #
 ..7 ##
-´´T´´ #
+Â´Â´TÂ´Â´ #
   I   ##
 I  I #
 `..I ##
@@ -199,12 +202,12 @@ I  I #
  V  ##
 ` ^ / #
  V V  ##
-`.´ #
+`.Â´ #
 .^. ##
 `./ #
  /  ##
-´´7 #
-/´. ##
+Â´Â´7 #
+/Â´. ##
 {#
  ##
 |#
@@ -215,15 +218,15 @@ I  I #
  ##
 .^. #
 I^I ##
-,´`. #
-`..´ ##
+,Â´`. #
+`..Â´ ##
 I  I #
 `..I ##
 .^. #
 I^I ##
-,´`. #
+,Â´`. #
 `..' ##
 I  I #
 `..I ##
-ß#
+ÃŸ#
  ##
