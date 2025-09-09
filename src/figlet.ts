@@ -1129,7 +1129,12 @@ const figlet: FigletModule = (() => {
     fontMeta: FontMetadata,
     options: FigletOptions,
   ): InternalOptions {
-    let myOpts: InternalOptions = structuredClone(fontMeta) as InternalOptions; // make a copy because we may edit this (see below)
+    let myOpts: InternalOptions;
+    if (typeof structuredClone !== "undefined") {
+      myOpts = structuredClone(fontMeta) as InternalOptions; // make a copy because we may edit this (see below)
+    } else {
+      myOpts = JSON.parse(JSON.stringify(fontMeta)) as InternalOptions; // make a copy because we may edit this (see below)
+    }
 
     myOpts.showHardBlanks = options.showHardBlanks || false;
     myOpts.width = options.width || -1;
@@ -1295,7 +1300,11 @@ const figlet: FigletModule = (() => {
     if (opts && typeof opts === "object") {
       Object.assign(figDefaults, opts);
     }
-    return structuredClone(figDefaults);
+    if (typeof structuredClone !== "undefined") {
+      return structuredClone(figDefaults);
+    } else {
+      return JSON.parse(JSON.stringify(figDefaults));
+    }
   };
 
   /**
