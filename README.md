@@ -330,7 +330,7 @@ import standard from "figlet/fonts/Standard";
 figlet.parseFont("Standard", standard);
 
 async function doStuff() {
-  const text = figlet.text("test", { font: "Standard" });
+  const text = await figlet.text("test", { font: "Standard" });
   console.log(text);
 }
 
@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.09.08 v1.9.1 Adjustment for older versions of node: Added if statement around structuredClone operation.
 - 2025.09.07 v1.9.0 TypeScript refactor. Added Toilet fonts.
 - 2025.07.11 v1.8.2 Added Terrace and Wavescape fonts. Fixed tag validation (https://github.com/patorjk/figlet.js/pull/134) thanks to @deverac
 - 2025.04.11 v1.8.1 Added miniwi font.
