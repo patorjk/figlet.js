@@ -4,9 +4,21 @@ import {resolve} from "path";
 
 export default defineConfig({
   plugins: [
+    // Generate ES module type declarations
     dts({
       include: ["src"],
-      outDir: "dist/types",
+      outDir: "dist/types/esm",
+      tsconfigPath: "tsconfig.esm.json",
+      insertTypesEntry: true,
+      rollupTypes: true,
+      pathsToAliases: true
+
+    }),
+    // Generate CommonJS type declarations
+    dts({
+      include: ["src"],
+      outDir: "dist/types/cjs",
+      tsconfigPath: "tsconfig.cjs.json",
     }),
   ],
   build: {

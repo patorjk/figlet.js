@@ -1,6 +1,6 @@
 {
   "name": "figlet",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Creates ASCII Art from text. A full implementation of the FIGfont spec.",
   "keywords": [
     "figlet",
@@ -27,30 +27,57 @@
   "main": "./dist/node-figlet.cjs",
   "module": "./dist/figlet.mjs",
   "browser": "./dist/figlet.mjs",
-  "types": "./dist/types/figlet.d.ts",
+  "types": "./dist/types/cjs/node-figlet.d.cts",
   "exports": {
     ".": {
-      "types": "./dist/types/figlet.d.ts",
       "browser": {
-        "import": "./dist/figlet.mjs",
-        "require": "./dist/figlet.js"
+        "import": {
+          "types": "./dist/types/esm/figlet.d.ts",
+          "default": "./dist/figlet.mjs"
+        },
+        "require": {
+          "types": "./dist/types/cjs/figlet.d.cts",
+          "default": "./dist/figlet.cjs"
+        }
       },
       "node": {
-        "import": "./dist/node-figlet.mjs",
-        "require": "./dist/node-figlet.cjs"
+        "import": {
+          "types": "./dist/types/esm/node-figlet.d.ts",
+          "default": "./dist/node-figlet.mjs"
+        },
+        "require": {
+          "types": "./dist/types/cjs/node-figlet.d.cts",
+          "default": "./dist/node-figlet.cjs"
+        }
       },
-      "import": "./dist/figlet.mjs",
-      "require": "./dist/figlet.js"
+      "import": {
+        "types": "./dist/types/esm/figlet.d.ts",
+        "default": "./dist/figlet.mjs"
+      },
+      "require": {
+        "types": "./dist/types/cjs/figlet.d.cts",
+        "default": "./dist/figlet.js"
+      }
     },
     "./node": {
-      "types": "./dist/types/node-figlet.d.ts",
-      "import": "./dist/node-figlet.mjs",
-      "require": "./dist/node-figlet.cjs"
+      "import": {
+        "types": "./dist/types/esm/node-figlet.d.ts",
+        "default": "./dist/node-figlet.mjs"
+      },
+      "require": {
+        "types": "./dist/types/cjs/node-figlet.d.cts",
+        "default": "./dist/node-figlet.cjs"
+      }
     },
     "./browser": {
-      "types": "./dist/types/figlet.d.ts",
-      "import": "./dist/figlet.mjs",
-      "require": "./dist/figlet.js"
+      "import": {
+        "types": "./dist/types/esm/figlet.d.ts",
+        "default": "./dist/figlet.mjs"
+      },
+      "require": {
+        "types": "./dist/types/cjs/figlet.d.cts",
+        "default": "./dist/figlet.js"
+      }
     },
     "./fonts/*": {
       "types": "./importable-fonts/*.d.ts",
@@ -67,10 +94,13 @@
   "scripts": {
     "pre-build-scripts": "node utils/create-font-list.js && node utils/flf-to-strings.js",
     "prebuild": "npm run pre-build-scripts",
-    "build": "vite build",
+    "build": "vite build && npm run commonJSFixes",
     "dev": "vite build --watch",
     "test": "vitest run",
+    "commonJSFixes": "node utils/fix-cjs-types.js && node utils/rename-cjs-types.js",
     "type-check": "tsc --noEmit",
+    "type-check:esm": "tsc --noEmit --project tsconfig.esm.json",
+    "type-check:cjs": "tsc --noEmit --project tsconfig.cjs.json && npm run commonJSFixes",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build",
     "prepare": "husky install"
