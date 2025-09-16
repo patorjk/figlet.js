@@ -7,7 +7,14 @@ import * as path from "path";
 
 import figlet from "./figlet";
 import { fileURLToPath } from "url";
-import { FigletModule, FontMetadata } from "./figlet-types";
+import {
+  CallbackFunction,
+  FigletDefaults,
+  FigletModule,
+  FontName,
+  FontMetadata,
+  FigletOptions,
+} from "./figlet-types";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -121,6 +128,14 @@ nodeFiglet.fontsSync = function (): string[] {
   });
 
   return fontList;
+};
+
+export type {
+  FigletOptions,
+  FontMetadata,
+  FontName,
+  CallbackFunction,
+  FigletDefaults,
 };
 
 export default nodeFiglet;
