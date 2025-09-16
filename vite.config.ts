@@ -8,17 +8,11 @@ export default defineConfig({
     dts({
       include: ["src"],
       outDir: "dist/types/esm",
-      tsconfigPath: "tsconfig.esm.json",
+      tsconfigPath: "tsconfig.json",
       insertTypesEntry: true,
       rollupTypes: true,
       pathsToAliases: true
 
-    }),
-    // Generate CommonJS type declarations
-    dts({
-      include: ["src"],
-      outDir: "dist/types/cjs",
-      tsconfigPath: "tsconfig.cjs.json",
     }),
   ],
   build: {

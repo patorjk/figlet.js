@@ -9,8 +9,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declarationDir": "dist/types",
     "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "declarationDir": "dist/types/esm"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

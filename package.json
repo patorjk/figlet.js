@@ -97,10 +97,8 @@
     "build": "vite build && npm run commonJSFixes",
     "dev": "vite build --watch",
     "test": "vitest run",
-    "commonJSFixes": "node utils/fix-cjs-types.js && node utils/rename-cjs-types.js",
+    "commonJSFixes": "node utils/copy-cjs-types.js",
     "type-check": "tsc --noEmit",
-    "type-check:esm": "tsc --noEmit --project tsconfig.esm.json",
-    "type-check:cjs": "tsc --noEmit --project tsconfig.cjs.json && npm run commonJSFixes",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build",
     "prepare": "husky install"
