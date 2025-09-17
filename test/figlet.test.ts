@@ -324,8 +324,10 @@ describe('figlet', () => {
       expect(figlet.loadedFonts()).toStrictEqual([]);
 
       const output = await figlet.text(text, 'Standard');
+      const output2 = await figlet(text, 'Standard');
 
       expect(output).toEqual(expected);
+      expect(output2).toEqual(expected);
       expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
     });
 
@@ -335,6 +337,7 @@ describe('figlet', () => {
       const lastSlashIndex = localPath.lastIndexOf("/");
       const directoryPath = localPath.substring(0, lastSlashIndex);
       const mockCallback = vi.fn();
+      const mockCallback2 = vi.fn();
 
       const mockResponse = {
         ok: true,
@@ -350,11 +353,13 @@ describe('figlet', () => {
 
       expect(figlet.loadedFonts()).toStrictEqual([]);
 
-      figlet.text(text, 'Standard', mockCallback);
+      await figlet.text(text, 'Standard', mockCallback);
+      await figlet(text, 'Standard', mockCallback2);
 
       await new Promise(resolve => setTimeout(resolve, 100)); // give time for the callback to execute
 
       expect(mockCallback).toHaveBeenCalledWith(null, expected);
+      expect(mockCallback2).toHaveBeenCalledWith(null, expected);
       expect(figlet.loadedFonts()).toStrictEqual(['Standard']);
 
     });
@@ -383,8 +388,10 @@ describe('figlet', () => {
       expect(figlet.loadedFonts()).toStrictEqual([]);
 
       const output = await figlet.text(multilineText, 'miniwi');
+      const output2 = await figlet(multilineText, 'miniwi');
 
       expect(output).toEqual(expected);
+      expect(output2).toEqual(expected);
       expect(figlet.loadedFonts()).toStrictEqual(['miniwi']);
     });
   });

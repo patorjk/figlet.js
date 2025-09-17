@@ -27,6 +27,9 @@ declare interface FigletModule {
   clearLoadedFonts: () => void;
   textSync: (text: string, options?: FigletOptions) => string;
   text: (text: string, optionsOrFontOrCallback?: FigletOptions | FontName | CallbackFunction<string>, callback?: CallbackFunction<string>) => Promise<string>;
+
+  (text: string, optionsOrFontOrCallback?: FigletOptions | FontName | CallbackFunction<string>, callback?: CallbackFunction<string>): Promise<string>;
+
   figFonts: Record<string, FigletFont>;
   defaults: (opts?: Partial<FigletDefaults>) => FigletDefaults;
   metadata: (fontName: FontName, callback?: (error: Error | null, fontOptions?: FontMetadata, comment?: string) => void) => Promise<[FontMetadata, string] | null>;
