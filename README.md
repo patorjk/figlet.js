@@ -438,6 +438,8 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.09.17 v1.9.3 Type fix for figlet module base call (when calling figlet as shorthand for figlet.text)
+- 2025.09.15 v1.9.2 Type fix for figlet module for TypeScript with Node
 - 2025.09.08 v1.9.1 Adjustment for older versions of node: Added if statement around structuredClone operation.
 - 2025.09.07 v1.9.0 TypeScript refactor. Added Toilet fonts.
 - 2025.07.11 v1.8.2 Added Terrace and Wavescape fonts. Fixed tag validation (https://github.com/patorjk/figlet.js/pull/134) thanks to @deverac
