@@ -1173,7 +1173,7 @@ const figlet: FigletModule = (() => {
    * A short-cut for the figlet.text method
    *
    * @param txt The text to make into ASCII Art.
-   * @param optionsOrFontOrCallback Options that will override the current font's default options.
+   * @param optionsOrFontOrCallback Options that will override the current font's default options / a font name to use / the callback function
    * @param callback A callback function, it will contain the outputted ASCII Art.
    */
   const me = async function (
