@@ -39,7 +39,9 @@ nodeFiglet.loadFont = function (
 ): Promise<FontMetadata> {
   return new Promise<FontMetadata>((resolve, reject) => {
     if (nodeFiglet.figFonts[name]) {
-      callback?.(null, nodeFiglet.figFonts[name].options);
+      if (callback) {
+        callback(null, nodeFiglet.figFonts[name].options);
+      }
       resolve(nodeFiglet.figFonts[name].options);
       return;
     }
@@ -49,7 +51,9 @@ nodeFiglet.loadFont = function (
       { encoding: "utf-8" },
       (err: NodeJS.ErrnoException | null, fontData: string) => {
         if (err) {
-          callback?.(err);
+          if (callback) {
+            callback(err);
+          }
           reject(err);
           return;
         }
@@ -57,12 +61,16 @@ nodeFiglet.loadFont = function (
         fontData = fontData + "";
         try {
           const font: FontMetadata = nodeFiglet.parseFont(name, fontData);
-          callback?.(null, font);
+          if (callback) {
+            callback(null, font);
+          }
           resolve(font);
         } catch (error) {
           const typedError =
             error instanceof Error ? error : new Error(String(error));
-          callback?.(typedError);
+          if (callback) {
+            callback(typedError);
+          }
           reject(typedError);
         }
       },

@@ -19,6 +19,7 @@ export const fontList = [
   "AMC Untitled",
   "ANSI Regular",
   "ANSI Shadow",
+  "ANSI-Compact",
   "ASCII 12",
   "ASCII 9",
   "ASCII New Roman",

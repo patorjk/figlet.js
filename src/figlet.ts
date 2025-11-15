@@ -394,7 +394,7 @@ const figlet: FigletModule = (() => {
     txt2: string,
     opts: InternalOptions,
   ): "valid" | "end" | "invalid" {
-    if (opts.fittingRules?.vLayout === FULL_WIDTH) {
+    if (opts.fittingRules && opts.fittingRules.vLayout === FULL_WIDTH) {
       return "invalid";
     }
     let ii,
@@ -411,9 +411,12 @@ const figlet: FigletModule = (() => {
       ch1 = txt1.substring(ii, ii + 1);
       ch2 = txt2.substring(ii, ii + 1);
       if (ch1 !== " " && ch2 !== " ") {
-        if (opts.fittingRules?.vLayout === FITTING) {
+        if (opts.fittingRules && opts.fittingRules.vLayout === FITTING) {
           return "invalid";
-        } else if (opts.fittingRules?.vLayout === SMUSHING) {
+        } else if (
+          opts.fittingRules &&
+          opts.fittingRules.vLayout === SMUSHING
+        ) {
           return "end";
         } else {
           if (vRule5_Smush(ch1, ch2)) {
@@ -421,19 +424,20 @@ const figlet: FigletModule = (() => {
             continue;
           } // rule 5 allow for "super" smushing, but only if we're not already ending this smush
           validSmush = false;
-          validSmush = opts.fittingRules?.vRule1
-            ? vRule1_Smush(ch1, ch2)
-            : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule2
+            opts.fittingRules && opts.fittingRules.vRule1
+              ? vRule1_Smush(ch1, ch2)
+              : validSmush;
+          validSmush =
+            !validSmush && opts.fittingRules && opts.fittingRules.vRule2
               ? vRule2_Smush(ch1, ch2)
               : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule3
+            !validSmush && opts.fittingRules && opts.fittingRules.vRule3
               ? vRule3_Smush(ch1, ch2)
               : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule4
+            !validSmush && opts.fittingRules && opts.fittingRules.vRule4
               ? vRule4_Smush(ch1, ch2)
               : validSmush;
           endSmush = true;
@@ -507,33 +511,35 @@ const figlet: FigletModule = (() => {
       result = "",
       validSmush;
 
+    const fittingRules = opts.fittingRules || {};
+
     for (ii = 0; ii < len; ii++) {
       ch1 = line1.substring(ii, ii + 1);
       ch2 = line2.substring(ii, ii + 1);
       if (ch1 !== " " && ch2 !== " ") {
-        if (opts.fittingRules?.vLayout === FITTING) {
+        if (fittingRules.vLayout === FITTING) {
           result += uni_Smush(ch1, ch2);
-        } else if (opts.fittingRules?.vLayout === SMUSHING) {
+        } else if (fittingRules.vLayout === SMUSHING) {
           result += uni_Smush(ch1, ch2);
         } else {
           validSmush = false;
-          validSmush = opts.fittingRules?.vRule5
+          validSmush = fittingRules.vRule5
             ? vRule5_Smush(ch1, ch2)
             : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule1
+            !validSmush && fittingRules.vRule1
               ? vRule1_Smush(ch1, ch2)
               : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule2
+            !validSmush && fittingRules.vRule2
               ? vRule2_Smush(ch1, ch2)
               : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule3
+            !validSmush && fittingRules.vRule3
               ? vRule3_Smush(ch1, ch2)
               : validSmush;
           validSmush =
-            !validSmush && opts.fittingRules?.vRule4
+            !validSmush && fittingRules.vRule4
               ? vRule4_Smush(ch1, ch2)
               : validSmush;
           result += validSmush;
@@ -607,7 +613,8 @@ const figlet: FigletModule = (() => {
     txt2: string,
     opts: InternalOptions,
   ): number {
-    if (opts.fittingRules?.hLayout === FULL_WIDTH) {
+    const fittingRules = opts.fittingRules || {};
+    if (fittingRules.hLayout === FULL_WIDTH) {
       return 0;
     }
     let ii,
@@ -629,10 +636,10 @@ const figlet: FigletModule = (() => {
         ch1 = seg1.substring(ii, ii + 1);
         ch2 = seg2.substring(ii, ii + 1);
         if (ch1 !== " " && ch2 !== " ") {
-          if (opts.fittingRules?.hLayout === FITTING) {
+          if (fittingRules.hLayout === FITTING) {
             curDist = curDist - 1;
             break distCal;
-          } else if (opts.fittingRules?.hLayout === SMUSHING) {
+          } else if (fittingRules.hLayout === SMUSHING) {
             if (ch1 === opts.hardBlank || ch2 === opts.hardBlank) {
               curDist = curDist - 1; // universal smushing does not smush hardblanks
             }
@@ -642,14 +649,12 @@ const figlet: FigletModule = (() => {
 
             // the below checks will let us know if we can smush these characters
             const validSmush =
-              (opts.fittingRules?.hRule1 &&
-                hRule1_Smush(ch1, ch2, opts?.hardBlank)) ||
-              (opts.fittingRules?.hRule2 && hRule2_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule3 && hRule3_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule4 && hRule4_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule5 && hRule5_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule6 &&
-                hRule6_Smush(ch1, ch2, opts?.hardBlank));
+              (fittingRules.hRule1 && hRule1_Smush(ch1, ch2, opts.hardBlank)) ||
+              (fittingRules.hRule2 && hRule2_Smush(ch1, ch2)) ||
+              (fittingRules.hRule3 && hRule3_Smush(ch1, ch2)) ||
+              (fittingRules.hRule4 && hRule4_Smush(ch1, ch2)) ||
+              (fittingRules.hRule5 && hRule5_Smush(ch1, ch2)) ||
+              (fittingRules.hRule6 && hRule6_Smush(ch1, ch2, opts.hardBlank));
 
             if (!validSmush) {
               curDist = curDist - 1;
@@ -684,6 +689,8 @@ const figlet: FigletModule = (() => {
       txt1,
       txt2;
 
+    const fittingRules = opts.fittingRules || {};
+
     if (typeof opts.height !== "number") {
       throw new Error("height is not defined.");
     }
@@ -708,21 +715,19 @@ const figlet: FigletModule = (() => {
 
         if (ch1 !== " " && ch2 !== " ") {
           if (
-            opts.fittingRules?.hLayout === FITTING ||
-            opts.fittingRules?.hLayout === SMUSHING
+            fittingRules.hLayout === FITTING ||
+            fittingRules.hLayout === SMUSHING
           ) {
             piece2 += uni_Smush(ch1, ch2, opts.hardBlank);
           } else {
             // Controlled Smushing
             const nextCh =
-              (opts.fittingRules?.hRule1 &&
-                hRule1_Smush(ch1, ch2, opts.hardBlank)) ||
-              (opts.fittingRules?.hRule2 && hRule2_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule3 && hRule3_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule4 && hRule4_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule5 && hRule5_Smush(ch1, ch2)) ||
-              (opts.fittingRules?.hRule6 &&
-                hRule6_Smush(ch1, ch2, opts.hardBlank)) ||
+              (fittingRules.hRule1 && hRule1_Smush(ch1, ch2, opts.hardBlank)) ||
+              (fittingRules.hRule2 && hRule2_Smush(ch1, ch2)) ||
+              (fittingRules.hRule3 && hRule3_Smush(ch1, ch2)) ||
+              (fittingRules.hRule4 && hRule4_Smush(ch1, ch2)) ||
+              (fittingRules.hRule5 && hRule5_Smush(ch1, ch2)) ||
+              (fittingRules.hRule6 && hRule6_Smush(ch1, ch2, opts.hardBlank)) ||
               uni_Smush(ch1, ch2, opts.hardBlank);
 
             piece2 += nextCh;
@@ -831,6 +836,7 @@ const figlet: FigletModule = (() => {
     }
 
     outputFigText = newFigChar(height);
+    const fittingRules = opts.fittingRules || {};
 
     if (opts.printDirection === 1) {
       txt = txt.split("").reverse().join("");
@@ -842,7 +848,7 @@ const figlet: FigletModule = (() => {
       figChar = figChars[char.charCodeAt(0)];
       textFigLine = null;
       if (figChar) {
-        if (opts.fittingRules?.hLayout !== FULL_WIDTH) {
+        if (fittingRules.hLayout !== FULL_WIDTH) {
           overlap = 10000; // a value too high to be the overlap
           for (row = 0; row < height; row++) {
             overlap = Math.min(
@@ -979,15 +985,16 @@ const figlet: FigletModule = (() => {
     options: FontMetadata,
   ): Partial<FittingRules> | undefined {
     let params: Partial<FittingRules>;
+    const fittingRules = options.fittingRules || {};
     if (layout === "default") {
       params = {
-        hLayout: options.fittingRules?.hLayout,
-        hRule1: options.fittingRules?.hRule1,
-        hRule2: options.fittingRules?.hRule2,
-        hRule3: options.fittingRules?.hRule3,
-        hRule4: options.fittingRules?.hRule4,
-        hRule5: options.fittingRules?.hRule5,
-        hRule6: options.fittingRules?.hRule6,
+        hLayout: fittingRules.hLayout,
+        hRule1: fittingRules.hRule1,
+        hRule2: fittingRules.hRule2,
+        hRule3: fittingRules.hRule3,
+        hRule4: fittingRules.hRule4,
+        hRule5: fittingRules.hRule5,
+        hRule6: fittingRules.hRule6,
       };
     } else if (layout === "full") {
       params = {
@@ -1040,14 +1047,15 @@ const figlet: FigletModule = (() => {
     options: FontMetadata,
   ): Partial<FittingRules> | undefined {
     let params: Partial<FittingRules> = {};
+    const fittingRules = options.fittingRules || {};
     if (layout === "default") {
       params = {
-        vLayout: options.fittingRules?.vLayout,
-        vRule1: options.fittingRules?.vRule1,
-        vRule2: options.fittingRules?.vRule2,
-        vRule3: options.fittingRules?.vRule3,
-        vRule4: options.fittingRules?.vRule4,
-        vRule5: options.fittingRules?.vRule5,
+        vLayout: fittingRules.vLayout,
+        vRule1: fittingRules.vRule1,
+        vRule2: fittingRules.vRule2,
+        vRule3: fittingRules.vRule3,
+        vRule4: fittingRules.vRule4,
+        vRule5: fittingRules.vRule5,
       };
     } else if (layout === "full") {
       params = {
@@ -1161,7 +1169,10 @@ const figlet: FigletModule = (() => {
       }
     }
 
-    myOpts.printDirection = options.printDirection ?? fontMeta.printDirection;
+    myOpts.printDirection =
+      options.printDirection !== null && options.printDirection !== undefined
+        ? options.printDirection
+        : fontMeta.printDirection;
 
     return myOpts;
   }
@@ -1219,7 +1230,9 @@ const figlet: FigletModule = (() => {
         ? generateText(fontName, _reworkFontOpts(fontOpts, options), txt)
         : "";
 
-      next?.(null, generatedTxt);
+      if (next) {
+        next(null, generatedTxt);
+      }
       return generatedTxt;
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
@@ -1277,10 +1290,12 @@ const figlet: FigletModule = (() => {
       if (!fontOpts) {
         throw new Error("Error loading font.");
       }
-      const font = figFonts[fontName];
-      const result: [FontMetadata, string] = [fontOpts, font?.comment || ""];
+      const font = figFonts[fontName] || {};
+      const result: [FontMetadata, string] = [fontOpts, font.comment || ""];
 
-      callback?.(null, fontOpts, font?.comment);
+      if (callback) {
+        callback(null, fontOpts, font.comment);
+      }
       return result;
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
@@ -1352,8 +1367,9 @@ const figlet: FigletModule = (() => {
     } as FontMetadata;
 
     // Validate header
+    const hardBlank = opts.hardBlank || "";
     if (
-      opts.hardBlank?.length !== 1 ||
+      hardBlank.length !== 1 ||
       [
         opts.height,
         opts.baseline,
@@ -1496,7 +1512,9 @@ const figlet: FigletModule = (() => {
   ): Promise<FontMetadata | null> {
     if (figFonts[fontName]) {
       const result = figFonts[fontName].options;
-      callback?.(null, result);
+      if (callback) {
+        callback(null, result);
+      }
       return Promise.resolve(result);
     }
 
@@ -1514,7 +1532,9 @@ const figlet: FigletModule = (() => {
       const text = await response.text();
       const result = me.parseFont(fontName, text);
 
-      callback?.(null, result);
+      if (callback) {
+        callback(null, result);
+      }
       return result;
     } catch (error) {
       const err = error instanceof Error ? error : new Error(String(error));
@@ -1564,7 +1584,9 @@ const figlet: FigletModule = (() => {
         me.parseFont(name, data);
       }
 
-      callback?.();
+      if (callback) {
+        callback();
+      }
     } catch (error) {
       const err = error instanceof Error ? error : new Error(String(error));
       if (callback) {
@@ -1586,7 +1608,9 @@ const figlet: FigletModule = (() => {
   ): Promise<FontName[]> {
     return new Promise(function (resolve, reject) {
       resolve(fontList);
-      callback?.(null, fontList);
+      if (callback) {
+        callback(null, fontList);
+      }
     });
   };
 
