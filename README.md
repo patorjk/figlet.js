@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.11.15 v1.9.4 Added the "ANSI-Compact" font and adjustments for older versions of Node
 - 2025.09.17 v1.9.3 Type fix for figlet module base call (when calling figlet as shorthand for figlet.text)
 - 2025.09.15 v1.9.2 Type fix for figlet module for TypeScript with Node
 - 2025.09.08 v1.9.1 Adjustment for older versions of node: Added if statement around structuredClone operation.
