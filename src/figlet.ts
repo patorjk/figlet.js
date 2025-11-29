@@ -30,6 +30,7 @@ import {
   PrintDirection,
 } from "./figlet-types";
 import { fontList } from "./font-list";
+import { getFontName } from "./renamed-fonts.js";
 
 // helper method
 function escapeRegExpChar(char: string): string {
@@ -1510,8 +1511,10 @@ const figlet: FigletModule = (() => {
     fontName: FontName,
     callback?: CallbackFunction<FontMetadata>,
   ): Promise<FontMetadata | null> {
-    if (figFonts[fontName]) {
-      const result = figFonts[fontName].options;
+    const actualFontName = getFontName(fontName);
+
+    if (figFonts[actualFontName]) {
+      const result = figFonts[actualFontName].options;
       if (callback) {
         callback(null, result);
       }
@@ -1520,17 +1523,19 @@ const figlet: FigletModule = (() => {
 
     try {
       if (!figDefaults.fetchFontIfMissing) {
-        throw new Error(`Font is not loaded: ${fontName}`);
+        throw new Error(`Font is not loaded: ${actualFontName}`);
       }
 
-      const response = await fetch(`${figDefaults.fontPath}/${fontName}.flf`);
+      const response = await fetch(
+        `${figDefaults.fontPath}/${actualFontName}.flf`,
+      );
 
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }
 
       const text = await response.text();
-      const result = me.parseFont(fontName, text);
+      const result = me.parseFont(actualFontName, text);
 
       if (callback) {
         callback(null, result);
@@ -1552,8 +1557,10 @@ const figlet: FigletModule = (() => {
    * @param name
    */
   me.loadFontSync = function (name: FontName): FontMetadata {
-    if (figFonts[name]) {
-      return figFonts[name].options;
+    const actualFontName = getFontName(name);
+
+    if (figFonts[actualFontName]) {
+      return figFonts[actualFontName].options;
     }
     throw new Error(
       "Synchronous font loading is not implemented for the browser, it will only work for fonts already loaded.",
@@ -1573,15 +1580,18 @@ const figlet: FigletModule = (() => {
     try {
       // Load fonts sequentially
       for (const name of fonts) {
-        const response = await fetch(`${figDefaults.fontPath}/${name}.flf`);
+        const actualFontName = getFontName(name);
+        const response = await fetch(
+          `${figDefaults.fontPath}/${actualFontName}.flf`,
+        );
         if (!response.ok) {
           throw new Error(
-            `Failed to preload fonts. Error fetching font: ${name}, status code: ${response.statusText}`,
+            `Failed to preload fonts. Error fetching font: ${actualFontName}, status code: ${response.statusText}`,
           );
         }
 
         const data = await response.text();
-        me.parseFont(name, data);
+        me.parseFont(actualFontName, data);
       }
 
       if (callback) {
