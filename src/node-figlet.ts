@@ -63,7 +63,6 @@ nodeFiglet.loadFont = function (
 
         fontData = fontData + "";
         try {
-          console.log(name, actualFontName);
           const font: FontMetadata = nodeFiglet.parseFont(
             actualFontName,
             fontData,
