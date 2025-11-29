@@ -73,6 +73,8 @@ export const fontList = [
   "Chiseled",
   "Chunky",
   "Circle",
+  "Classy",
+  "Coder Mini",
   "Coinstak",
   "Cola",
   "Colossal",
