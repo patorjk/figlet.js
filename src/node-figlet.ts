@@ -15,6 +15,7 @@ import {
   FontMetadata,
   FigletOptions,
 } from "./figlet-types";
+import { getFontName } from "./renamed-fonts.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,17 +38,19 @@ nodeFiglet.loadFont = function (
   name: string,
   callback?: (err: Error | null, font?: FontMetadata) => void,
 ): Promise<FontMetadata> {
+  const actualFontName = getFontName(name);
+
   return new Promise<FontMetadata>((resolve, reject) => {
-    if (nodeFiglet.figFonts[name]) {
+    if (nodeFiglet.figFonts[actualFontName]) {
       if (callback) {
-        callback(null, nodeFiglet.figFonts[name].options);
+        callback(null, nodeFiglet.figFonts[actualFontName].options);
       }
-      resolve(nodeFiglet.figFonts[name].options);
+      resolve(nodeFiglet.figFonts[actualFontName].options);
       return;
     }
 
     fs.readFile(
-      path.join(nodeFiglet.defaults().fontPath, name + ".flf"),
+      path.join(nodeFiglet.defaults().fontPath, actualFontName + ".flf"),
       { encoding: "utf-8" },
       (err: NodeJS.ErrnoException | null, fontData: string) => {
         if (err) {
@@ -60,7 +63,10 @@ nodeFiglet.loadFont = function (
 
         fontData = fontData + "";
         try {
-          const font: FontMetadata = nodeFiglet.parseFont(name, fontData);
+          const font: FontMetadata = nodeFiglet.parseFont(
+            actualFontName,
+            fontData,
+          );
           if (callback) {
             callback(null, font);
           }
@@ -85,16 +91,21 @@ nodeFiglet.loadFont = function (
  - name (string): Name of the font to load.
  */
 nodeFiglet.loadFontSync = function (font: string): FontMetadata {
-  if (nodeFiglet.figFonts[font]) {
-    return nodeFiglet.figFonts[font].options;
+  const actualFontName = getFontName(font);
+
+  if (nodeFiglet.figFonts[actualFontName]) {
+    return nodeFiglet.figFonts[actualFontName].options;
   }
 
   const fontData: string =
-    fs.readFileSync(path.join(nodeFiglet.defaults().fontPath, font + ".flf"), {
-      encoding: "utf-8",
-    }) + "";
+    fs.readFileSync(
+      path.join(nodeFiglet.defaults().fontPath, actualFontName + ".flf"),
+      {
+        encoding: "utf-8",
+      },
+    ) + "";
 
-  return nodeFiglet.parseFont(font, fontData);
+  return nodeFiglet.parseFont(actualFontName, fontData);
 };
 
 /*

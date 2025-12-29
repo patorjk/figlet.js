@@ -8,7 +8,13 @@ import fontData from "../importable-fonts/Standard"; // Import from src instead 
 describe('node-figlet', () => {
   // Helper function to read expected output files
   const readExpected = (filename: string): string => {
-    return fs.readFileSync(path.join(__dirname, `expected/${filename}`), 'utf8');
+    let data = fs.readFileSync(path.join(__dirname, `expected/${filename}`), 'utf8');
+
+    if (data.endsWith('\n')) {
+      data = data.slice(0, -1);
+    }
+
+    return data;
   };
 
   const getMaxWidth = (input: string) => {
@@ -231,6 +237,39 @@ describe('node-figlet', () => {
       } catch (err: any) {
         expect(err?.message).toContain('Font');
       }
+    });
+  });
+
+  describe('renamed fonts', () => {
+    it('should use correct font for "ASCII-Compact"', async () => {
+      const actual = await figlet.text("this is a test", {
+        font: "ANSI-Compact",
+      });
+
+      const expected = readExpected('ansiCompact');
+      expect(actual).toBe(expected);
+
+      const metadata = await figlet.metadata("ANSI-Compact");
+      expect(Array.isArray(metadata)).toBe(true);
+      const info = Array.isArray(metadata) && metadata.length > 0 ? metadata[1] : '';
+
+      expect(info.indexOf('Loic')).toBe(13);
+
+    });
+
+    it('should use correct font for "ASCII Compact"', async () => {
+      const actual = await figlet.text("this is a test", {
+        font: "ANSI Compact",
+      });
+
+      const expected = readExpected('ansiCompact');
+      expect(actual).toBe(expected);
+
+      const metadata = await figlet.metadata("ANSI Compact");
+      expect(Array.isArray(metadata)).toBe(true);
+      const info = Array.isArray(metadata) && metadata.length > 0 ? metadata[1] : '';
+
+      expect(info.indexOf('Loic')).toBe(13);
     });
   });
 
