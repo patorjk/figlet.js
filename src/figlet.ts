@@ -1113,13 +1113,14 @@ const figlet: FigletModule = (() => {
     txt: string,
   ): string {
     txt = txt.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+    const actualFontName = getFontName(fontName);
     let lines = txt.split("\n");
     let figLines: string[][] = [];
     let ii, len, output;
     len = lines.length;
     for (ii = 0; ii < len; ii++) {
       figLines = figLines.concat(
-        generateFigTextLines(lines[ii], figFonts[fontName], options),
+        generateFigTextLines(lines[ii], figFonts[actualFontName], options),
       );
     }
     len = figLines.length;
@@ -1291,7 +1292,8 @@ const figlet: FigletModule = (() => {
       if (!fontOpts) {
         throw new Error("Error loading font.");
       }
-      const font = figFonts[fontName] || {};
+      const actualFontName = getFontName(fontName);
+      const font = figFonts[actualFontName] || {};
       const result: [FontMetadata, string] = [fontOpts, font.comment || ""];
 
       if (callback) {
