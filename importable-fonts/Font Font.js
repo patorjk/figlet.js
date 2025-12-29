@@ -4,17 +4,17 @@ Font Author: Oscar Cole
 This font is free to use and distribute / MIT License
 
 FIGFont created with: http://patorjk.com/figfont-editor
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@
-$  $@@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@
+$    $@@
 font$@
 font$@
 font$@
