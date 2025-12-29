@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2025.12.25 v1.10.0 Renamed "ANSI-Compact" to "ANSI Compact" (with backward compatibility). Added the fonts: Classy, Coder Mini, and Font Font. Fixed the "U" characters in the "Isometric 4" font. 
 - 2025.11.15 v1.9.4 Added the "ANSI-Compact" font and adjustments for older versions of Node
 - 2025.09.17 v1.9.3 Type fix for figlet module base call (when calling figlet as shorthand for figlet.text)
 - 2025.09.15 v1.9.2 Type fix for figlet module for TypeScript with Node
