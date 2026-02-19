@@ -132,6 +132,7 @@ export const fontList = [
   "Fraktur",
   "Fun Face",
   "Fun Faces",
+  "Future Thin",
   "Future",
   "Fuzzy",
   "Georgi16",
