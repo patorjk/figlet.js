@@ -1,6 +1,6 @@
-export default `tlf2a 3 3 8 -1 22 0 0 0
+export default `tlf2a 3 3 8 -1 28 0 0 0
 ===============================================================================
-  This is "Future Smooth" (Future Smooth.flf), based on “Future” (future.tlf) by Sam Hocevar.
+  This is "Future Smooth" (Future Smooth.flf), based on "Future" (future.tlf) by Sam Hocevar. This variant uses arcs instead of sharp corners to smooth out the font. Because heavy arc characters don't exist, the font uses light box drawings instead of heavy ones for consistency.
 
   2006/10/01 -- Sam Hocevar <sam@hocevar.net>
                 font creation
@@ -337,7 +337,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
    @
 ───@
    @@
-0x2501 ─ BOX DRAWINGS HEAVY HORIZONTAL
+0x2501 ━ BOX DRAWINGS HEAVY HORIZONTAL
    @
 ■■■@
    @@
@@ -345,39 +345,39 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
  │ @
  │ @
  │@@
-0x2503 │ BOX DRAWINGS HEAVY VERTICAL
+0x2503 ┃ BOX DRAWINGS HEAVY VERTICAL
  █ @
  █ @
  █@@
-0x250C ╭ BOX DRAWINGS LIGHT DOWN AND RIGHT
+0x250C ┌ BOX DRAWINGS LIGHT DOWN AND RIGHT
    @
  ╭─@
  │ @@
-0x250F ╭ BOX DRAWINGS HEAVY DOWN AND RIGHT
+0x250F ┏ BOX DRAWINGS HEAVY DOWN AND RIGHT
    @
  ▄■@
  █ @@
-0x2510 ╮ BOX DRAWINGS LIGHT DOWN AND LEFT
+0x2510 ┐ BOX DRAWINGS LIGHT DOWN AND LEFT
    @
 ─╮ @
  │@@
-0x2513 ╮ BOX DRAWINGS HEAVY DOWN AND LEFT
+0x2513 ┓ BOX DRAWINGS HEAVY DOWN AND LEFT
    @
 ■▄ @
  █@@
-0x2514 ╰ BOX DRAWINGS LIGHT UP AND RIGHT
+0x2514 └ BOX DRAWINGS LIGHT UP AND RIGHT
  │ @
  ╰─@
    @@
-0x2517 ╰ BOX DRAWINGS HEAVY UP AND RIGHT
+0x2517 ┗ BOX DRAWINGS HEAVY UP AND RIGHT
  █ @
  ▀■@
    @@
-0x2518 ╯ BOX DRAWINGS LIGHT UP AND LEFT
+0x2518 ┘ BOX DRAWINGS LIGHT UP AND LEFT
  │ @
 ─╯ @
   @@
-0x251B ╯ BOX DRAWINGS HEAVY UP AND LEFT
+0x251B ┛ BOX DRAWINGS HEAVY UP AND LEFT
  █ @
 ■▀ @
   @@
@@ -385,7 +385,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
  │ @
  ├─@
  │ @@
-0x2523 ├ BOX DRAWINGS HEAVY VERTICAL AND RIGHT
+0x2523 ┣ BOX DRAWINGS HEAVY VERTICAL AND RIGHT
  █ @
  █■@
  █ @@
@@ -393,7 +393,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
  │ @
 ─┤ @
  │@@
-0x252B ┤ BOX DRAWINGS HEAVY VERTICAL AND LEFT
+0x252B ┫ BOX DRAWINGS HEAVY VERTICAL AND LEFT
  █ @
 ■█ @
  █@@
@@ -401,7 +401,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
    @
 ─┬─@
  │ @@
-0x2533 ┬ BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
+0x2533 ┳ BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
    @
 ■▄■@
  █ @@
@@ -409,7 +409,7 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
  │ @
 ─┴─@
    @@
-0x253B ┴ BOX DRAWINGS HEAVY UP AND HORIZONTAL
+0x253B ┻ BOX DRAWINGS HEAVY UP AND HORIZONTAL
  █ @
 ■▀■@
    @@
@@ -417,23 +417,23 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
  │ @
 ─┼─@
  │ @@
-0x254B ┼ BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
+0x254B ╋ BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
  █ @
 ■█■@
  █ @@
-0x2578 ╴ BOX DRAWINGS HEAVY LEFT
+0x2578 ╸ BOX DRAWINGS HEAVY LEFT
    @
 ■■ @
   @@
-0x2579 ╵ BOX DRAWINGS HEAVY UP
+0x2579 ╹ BOX DRAWINGS HEAVY UP
  █ @
  ▀ @
   @@
-0x257A ╶ BOX DRAWINGS HEAVY RIGHT
+0x257A ╺ BOX DRAWINGS HEAVY RIGHT
    @
  ■■@
    @@
-0x257B ╷ BOX DRAWINGS HEAVY DOWN
+0x257B ╻ BOX DRAWINGS HEAVY DOWN
    @
  ▄ @
  █@@
