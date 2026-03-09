@@ -25,8 +25,7 @@ fs.readdir(fontDir, function (err, files) {
   const outputPath = path.join(srcDir, "font-list.ts");
   fs.writeFileSync(
     outputPath,
-    `
-export const fontList = [\n  ${fontList.join(",\n  ")},\n];
+    `export const fontList = [\n  ${fontList.join(",\n  ")},\n];
 `,
     "utf8"
   );
