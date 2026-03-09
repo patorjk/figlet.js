@@ -4,10 +4,10 @@ export default `tlf2a 3 3 8 -1 28 0 0 0
 
   2006/10/01 -- Sam Hocevar <sam@hocevar.net>
                 font creation
-                still missing: # % ( ) * / < > \ ^ ~
+                still missing: # % ( ) * / < > \\ ^ ~
   2006/10/02 -- Sam Hocevar <sam@hocevar.net>
                 added Unicode block and line glyphs
-                added: % ( ) * / \ ~
+                added: % ( ) * / \\ ~
                 fixed: & 2 5 X
   2026/02/19 -- John Goodliff <johng.io>
                 replaced ┏ with ╭
@@ -207,9 +207,9 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
 ╭─ [
 │  [
 ╰─ [[
-╷ \
-╰╮\
- ╵\\
+╷ \\
+╰╮\\
+ ╵\\\\
  ─╮]
   │]
  ─╯]]
@@ -219,9 +219,9 @@ on the TOIlet website at http://caca.zoy.org/wiki/toilet
    _
    _
 ╶─╴__
- ╮`
-  `
-  ``
+ ╮\`
+  \`
+  \`\`
 ╭─╮a
 ├─┤a
 ╵ ╵aa
