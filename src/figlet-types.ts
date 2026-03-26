@@ -1,4 +1,6 @@
 // Type definitions inspired by @types/figlet
+type CustomFont = string & {};
+
 export type FontName =
   | "1Row"
   | "3-D"
@@ -21,7 +23,7 @@ export type FontName =
   | "Small"
   | "Speed"
   | "Tinker-Toy"
-  | string; // Allow custom fonts
+  | CustomFont;
 
 export type KerningMethods =
   | "default"
