@@ -427,6 +427,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
       <td align="center" valign="top" width="14.28%"><a href="https://www.t1st3.com/"><img src="https://avatars.githubusercontent.com/u/1469638?v=4?s=100" width="100px;" alt="t1st3"/><br /><sub><b>t1st3</b></sub></a><br /><a href="#code-t1st3" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/timhudson"><img src="https://avatars.githubusercontent.com/u/122594?v=4?s=100" width="100px;" alt="Tim Hudson"/><br /><sub><b>Tim Hudson</b></sub></a><br /><a href="#code-timhudson" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lev-Shapiro"><img src="https://avatars.githubusercontent.com/u/96536068?v=4?s=100" width="100px;" alt="Lev-Shapiro"/><br /><sub><b>Lev-Shapiro</b></sub></a><br /><a href="#code-Lev-Shapiro" title="Code">💻</a> <a href="#example-Lev-Shapiro" title="Examples">💡</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://dub.sh/hrsh"><img src="https://avatars.githubusercontent.com/u/28556055?v=4?s=100" width="100px;" alt="Harsh Pareek"/><br /><sub><b>Harsh Pareek</b></sub></a><br /><a href="#code-harshtalks" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
