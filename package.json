@@ -105,14 +105,14 @@
   },
   "devDependencies": {
     "@types/node": "^24.2.0",
-    "@vitest/ui": "^3.2.4",
+    "@vitest/ui": "^4.1.10",
     "async": "~3.2.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "typescript": "^5.9.2",
     "vite": "^7.0.6",
     "vite-plugin-dts": "^4.5.4",
-    "vitest": "^3.2.4"
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">= 17.0.0"
