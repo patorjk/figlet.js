@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2026.07.11 v1.11.1 Added TypeScript autocomplete enhancement for font names (https://github.com/patorjk/figlet.js/pull/155), thanks to @harshtalks
 - 2026.03.08 v1.11.0 Added Future Thin and Future Smooth fonts.
 - 2025.12.25 v1.10.0 Renamed "ANSI-Compact" to "ANSI Compact" (with backward compatibility). Added the fonts: Classy, Coder Mini, and Font Font. Fixed the "U" characters in the "Isometric 4" font. 
 - 2025.11.15 v1.9.4 Added the "ANSI-Compact" font and adjustments for older versions of Node
