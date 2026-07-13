@@ -17,10 +17,15 @@ import {
 } from "./figlet-types";
 import { getFontName } from "./renamed-fonts.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// In the CJS bundle the bundler replaces `import.meta` with `{}`, so
+// `import.meta.url` is only usable in the ESM build; CJS falls back to
+// the real __dirname global (our local must not shadow it).
+const moduleDirname: string =
+  typeof __dirname !== "undefined"
+    ? __dirname
+    : path.dirname(fileURLToPath(import.meta.url));
 
-const fontPath: string = path.join(__dirname, "/../fonts/");
+const fontPath: string = path.join(moduleDirname, "/../fonts/");
 
 // Type assertion for the figlet module
 const nodeFiglet = figlet as FigletModule;
