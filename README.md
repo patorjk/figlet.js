@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2026.07.20 v1.11.3 Bug fix for invalid input that can lead to infinite loop
 - 2026.07.13 v1.11.2 Fix for CommonJS import issue 
 - 2026.07.11 v1.11.1 Added TypeScript autocomplete enhancement for font names (https://github.com/patorjk/figlet.js/pull/155), thanks to @harshtalks
 - 2026.03.08 v1.11.0 Added Future Thin and Future Smooth fonts.
