@@ -804,6 +804,16 @@ const figlet: FigletModule = (() => {
         };
       }
     }
+    // No break point fits within opts.width, which happens when a single
+    // character is wider than the requested width. Emit the first character
+    // on its own line so the caller always makes forward progress; otherwise
+    // the while-loop in generateFigTextLines would spin forever.
+    if (figChars.length > 0) {
+      return {
+        outputFigText: joinFigArray([figChars[0]], len, opts),
+        chars: figChars.slice(1),
+      };
+    }
     return { outputFigText: newFigChar(len), chars: figChars };
   }
 
@@ -1192,9 +1202,7 @@ const figlet: FigletModule = (() => {
   const me = async function (
     txt: string,
     optionsOrFontOrCallback?:
-      | FigletOptions
-      | FontName
-      | CallbackFunction<string>,
+      FigletOptions | FontName | CallbackFunction<string>,
     callback?: CallbackFunction<string>,
   ): Promise<string> {
     return me.text(txt, optionsOrFontOrCallback, callback);
@@ -1202,9 +1210,7 @@ const figlet: FigletModule = (() => {
   me.text = async function (
     txt: string,
     optionsOrFontOrCallback?:
-      | FigletOptions
-      | FontName
-      | CallbackFunction<string>,
+      FigletOptions | FontName | CallbackFunction<string>,
     callback?: CallbackFunction<string>,
   ): Promise<string> {
     txt = txt + ""; // ensure string
@@ -1385,6 +1391,17 @@ const figlet: FigletModule = (() => {
     }
 
     if (opts.height == null || opts.numCommentLines == null) {
+      throw new Error("FIGlet header contains invalid values.");
+    }
+
+    // Counts and dimensions must not be negative, and the font must have at
+    // least one row.
+    if (
+      opts.height < 1 ||
+      opts.baseline! < 0 ||
+      opts.maxLength! < 0 ||
+      opts.numCommentLines < 0
+    ) {
       throw new Error("FIGlet header contains invalid values.");
     }
 
