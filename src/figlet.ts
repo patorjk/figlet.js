@@ -806,8 +806,7 @@ const figlet: FigletModule = (() => {
     }
     // No break point fits within opts.width, which happens when a single
     // character is wider than the requested width. Emit the first character
-    // on its own line so the caller always makes forward progress; otherwise
-    // the while-loop in generateFigTextLines would spin forever.
+    // on its own line.
     if (figChars.length > 0) {
       return {
         outputFigText: joinFigArray([figChars[0]], len, opts),
