@@ -110,6 +110,7 @@
     "async": "~3.2.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
+    "prettier": "^3.9.5",
     "typescript": "^5.9.2",
     "vite": "^8.1.4",
     "vite-plugin-dts": "^4.5.4",

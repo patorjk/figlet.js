@@ -151,6 +151,39 @@ describe('node-figlet', () => {
       const expected = readExpected('wrapWhitespaceLogString');
       expect(actual).toBe(expected);
     });
+
+    it('should terminate when width is smaller than a single character (word break)', async () => {
+      const actual = await figlet.text("AB", {
+        font: "Standard",
+        width: 1,
+        whitespaceBreak: true,
+      });
+
+      expect(typeof actual).toBe("string");
+      expect(actual.length).toBeGreaterThan(0);
+    });
+
+    it('should terminate for single-character input when width is smaller than a character', async () => {
+      const actual = await figlet.text("A", {
+        font: "Standard",
+        width: 1,
+        whitespaceBreak: true,
+      });
+
+      expect(typeof actual).toBe("string");
+      expect(actual.length).toBeGreaterThan(0);
+    });
+
+    it('should terminate for multi-word input when width is smaller than a character', async () => {
+      const actual = await figlet.text("hi there world", {
+        font: "Standard",
+        width: 1,
+        whitespaceBreak: true,
+      });
+
+      expect(typeof actual).toBe("string");
+      expect(actual.length).toBeGreaterThan(0);
+    });
   });
 
 
@@ -237,6 +270,27 @@ describe('node-figlet', () => {
       } catch (err: any) {
         expect(err?.message).toContain('Font');
       }
+    });
+
+    it('should reject a font header with a negative height', () => {
+      expect(() =>
+        figlet.parseFont("NegHeightFont", "flf2a$ -2 -2 8 -1 0\n"),
+      ).toThrow("FIGlet header contains invalid values.");
+      expect(figlet.loadedFonts()).not.toContain("NegHeightFont");
+    });
+
+    it('should reject a font header with a zero height', () => {
+      expect(() =>
+        figlet.parseFont("ZeroHeightFont", "flf2a$ 0 0 8 -1 0\n"),
+      ).toThrow("FIGlet header contains invalid values.");
+      expect(figlet.loadedFonts()).not.toContain("ZeroHeightFont");
+    });
+
+    it('should reject a font header with a negative comment-line count', () => {
+      expect(() =>
+        figlet.parseFont("NegCommentFont", "flf2a$ 8 6 8 -1 -3\n"),
+      ).toThrow("FIGlet header contains invalid values.");
+      expect(figlet.loadedFonts()).not.toContain("NegCommentFont");
     });
   });
 
