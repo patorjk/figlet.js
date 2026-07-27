@@ -24,14 +24,24 @@ assert.ok(
   'node-figlet.cjs: textSync produced no output',
 );
 
-// ESM build
-const figletEsm = (
-  await import(pathToFileURL(path.join(distDir, 'node-figlet.mjs')).href)
-).default;
-const esmOutput = figletEsm.textSync('ok');
-assert.ok(
-  typeof esmOutput === 'string' && esmOutput.trim().length > 0,
-  'node-figlet.mjs: textSync produced no output',
-);
+// ESM build. Some libraries `globalThis.__dirname`
+globalThis.__dirname = path.join(distDir, 'bogus', 'polluted-dirname');
+try {
+  const figletEsm = (
+    await import(pathToFileURL(path.join(distDir, 'node-figlet.mjs')).href)
+  ).default;
+  assert.strictEqual(
+    figletEsm.defaults().fontPath,
+    path.join(distDir, '../fonts/'),
+    'node-figlet.mjs: fontPath was resolved from a polluted globalThis.__dirname instead of import.meta.url',
+  );
+  const esmOutput = figletEsm.textSync('ok');
+  assert.ok(
+    typeof esmOutput === 'string' && esmOutput.trim().length > 0,
+    'node-figlet.mjs: textSync produced no output',
+  );
+} finally {
+  delete globalThis.__dirname;
+}
 
 console.log('dist smoke test passed (node-figlet.cjs, node-figlet.mjs)');

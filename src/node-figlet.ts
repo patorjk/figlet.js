@@ -19,11 +19,14 @@ import { getFontName } from "./renamed-fonts.js";
 
 // In the CJS bundle the bundler replaces `import.meta` with `{}`, so
 // `import.meta.url` is only usable in the ESM build; CJS falls back to
-// the real __dirname global (our local must not shadow it).
+// the __dirname global.
+// `import.meta.url` must be preferred over `__dirname`: some libraries
+// assign `globalThis.__dirname`, which the ESM build would otherwise
+// pick up and resolve fonts relative to the wrong package.
 const moduleDirname: string =
-  typeof __dirname !== "undefined"
-    ? __dirname
-    : path.dirname(fileURLToPath(import.meta.url));
+  typeof import.meta !== "undefined" && import.meta.url
+    ? path.dirname(fileURLToPath(import.meta.url))
+    : __dirname;
 
 const fontPath: string = path.join(moduleDirname, "/../fonts/");
 
