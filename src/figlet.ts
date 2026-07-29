@@ -848,14 +848,19 @@ const figlet: FigletModule = (() => {
     outputFigText = newFigChar(height);
     const fittingRules = opts.fittingRules || {};
 
+    // iterate code points rather than UTF-16 code units so characters outside
+    // the Basic Multilingual Plane (BMP), ex: emojis, aren't split into surrogate halves
+    const txtChars = [...txt];
     if (opts.printDirection === 1) {
-      txt = txt.split("").reverse().join("");
+      txtChars.reverse();
     }
-    len = txt.length;
+    len = txtChars.length;
     for (charIndex = 0; charIndex < len; charIndex++) {
-      char = txt.substring(charIndex, charIndex + 1);
+      char = txtChars[charIndex];
       isSpace = char.match(/\s/);
-      figChar = figChars[char.charCodeAt(0)];
+      // FIGcharacter 0 is the "missing character", the spec's fallback for
+      // characters the font doesn't define
+      figChar = figChars[char.codePointAt(0) as number] ?? figChars[0];
       textFigLine = null;
       if (figChar) {
         if (fittingRules.hLayout !== FULL_WIDTH) {
