@@ -395,4 +395,77 @@ describe('figlet', () => {
       expect(figlet.loadedFonts()).toStrictEqual(['miniwi']);
     });
   });
+
+  describe('code point rendering', () => {
+
+    // Builds a minimal 3-line font where every required character renders as
+    // itself padded to 3 columns, plus (optionally) two code-tagged extras:
+    // an emoji (outside the BMP) and the code-0 "missing character" glyph.
+    const buildTestFont = (withMissingCharGlyph: boolean): string => {
+      const required: number[] = [];
+      for (let i = 32; i <= 126; i++) required.push(i);
+      required.push(196, 214, 220, 228, 246, 252, 223);
+
+      const glyph = (art: string): string => {
+        const line = (art + '   ').slice(0, 3);
+        return `${line}@\n${line}@\n${line}@@\n`;
+      };
+
+      const codeTagCount = withMissingCharGlyph ? 2 : 1;
+      let out = `flf2a$ 3 3 5 -1 1 0 0 ${codeTagCount}\n`;
+      out += 'code point rendering test font\n';
+      for (const code of required) {
+        out += glyph(String.fromCodePoint(code));
+      }
+      out += '0x1F604 grinning face\n' + glyph(':-D');
+      if (withMissingCharGlyph) {
+        out += '0 missing character\n' + glyph('???');
+      }
+      return out;
+    };
+
+    const trimmed = (txt: string): string[] =>
+      txt.split('\n').map((line) => line.trimEnd());
+
+    // beforeEach (not beforeAll): the suite-wide afterEach clears loaded fonts
+    beforeEach(() => {
+      figlet.parseFont('CodePointTest', buildTestFont(true));
+      figlet.parseFont('CodePointTestNoFallback', buildTestFont(false));
+    });
+
+    it('renders characters outside the BMP (emoji)', () => {
+      const output = figlet.textSync('😄', { font: 'CodePointTest' });
+      expect(trimmed(output)).toEqual([':-D', ':-D', ':-D']);
+    });
+
+    it('renders emoji mixed with BMP text without splitting surrogate pairs', () => {
+      const output = figlet.textSync('A😄B', { font: 'CodePointTest' });
+      expect(trimmed(output)).toEqual(['A  :-DB', 'A  :-DB', 'A  :-DB']);
+    });
+
+    it('reverses by code point when printDirection is right-to-left', () => {
+      const output = figlet.textSync('A😄', {
+        font: 'CodePointTest',
+        printDirection: 1,
+      });
+      expect(trimmed(output)).toEqual([':-DA', ':-DA', ':-DA']);
+    });
+
+    it('falls back to the code-0 missing character glyph', () => {
+      const output = figlet.textSync('Ω', { font: 'CodePointTest' });
+      expect(trimmed(output)).toEqual(['???', '???', '???']);
+    });
+
+    it('uses the fallback glyph only for the characters that are missing', () => {
+      const output = figlet.textSync('AΩ', { font: 'CodePointTest' });
+      expect(trimmed(output)).toEqual(['A  ???', 'A  ???', 'A  ???']);
+    });
+
+    it('still skips unknown characters when the font has no code-0 glyph', () => {
+      const output = figlet.textSync('AΩB', {
+        font: 'CodePointTestNoFallback',
+      });
+      expect(trimmed(output)).toEqual(['A  B', 'A  B', 'A  B']);
+    });
+  });
 });
