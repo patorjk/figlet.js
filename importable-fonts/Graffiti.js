@@ -1,4 +1,4 @@
-export default `flf2a$ 6 5 32 15 10
+export default `flf2a$ 6 5 32 15 12
 Font name is graffiti.flf
 This figlet font designed by Leigh Purdie (purdie@zeus.usq.edu.au)
 'fig-fonted' by Leigh Purdie and Tim Maggio (tim@claremont.com)
@@ -9,6 +9,8 @@ Date: 5 Mar 1994
 Font modified May 20, 2012 by patorjk 
 - Changed the hardblanks around certain punctuation characters (., and -) to improve smushing.
 - Added the 0xCA0 character
+
+Updated 2026.09.19 by patorjk. Added characters: Ã ã Õ õ Â â Ê ê Ô ô À à Ç ç Á É Í Ó Ú Ü Ñ á é í ó ú ü ñ ¡ ¿ ß ö ä
 $@
 $@
 $@
