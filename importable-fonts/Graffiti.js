@@ -1,4 +1,4 @@
-export default `flf2a$ 6 5 32 15 10
+export default `flf2a$ 6 5 32 15 12
 Font name is graffiti.flf
 This figlet font designed by Leigh Purdie (purdie@zeus.usq.edu.au)
 'fig-fonted' by Leigh Purdie and Tim Maggio (tim@claremont.com)
@@ -9,6 +9,8 @@ Date: 5 Mar 1994
 Font modified May 20, 2012 by patorjk 
 - Changed the hardblanks around certain punctuation characters (., and -) to improve smushing.
 - Added the 0xCA0 character
+
+Updated 2026.09.19 by patorjk. Added characters: Ã ã Õ õ Â â Ê ê Ô ô À à Ç ç Á É Í Ó Ú Ü Ñ á é í ó ú ü ñ ¡ ¿ ß ö ä
 $@
 $@
 $@
@@ -579,48 +581,244 @@ $\\/ \\___/$@
 $        $@
 $        $@
 $        $@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
-@
-@
-@
-@
-@
-@@
+   _O_O_   @
+  /  _  \\  @
+ /  /_\\  \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+___O__O_   @
+\\_____  \\  @
+ /   |   \\ @
+/    |    \\@
+\\_______  /@
+        \\/ @@
+ _O__ _O_ @
+|    |   \\@
+|    |   /@
+|    |  / @
+|______/  @
+          @@
+ o o    @
+_____   @
+\\__  \\  @
+ / __ \\_@
+(____  /@
+     \\/ @@
+  o  o  @
+  ____  @
+ /  _ \\ @
+(  <_> )@
+ \\____/ @
+        @@
+  o o  @
+ __ __ @
+|  |  \\@
+|  |  /@
+|____/ @
+       @@
+   ___ @
+  / _ \\@
+ | |/ /@
+ | |\\ \\@
+ | ||_/@
+ |_|   @@
+161  INVERTED EXCLAMATION MARK
+/\\ @
+‾‾ @
+|\\ @
+| |@
+| |@
+˙‾˙@@
+191  INVERTED QUESTION MARK
+   <‾‾‾>  @
+   |‾‾‾|  @
+   |   |  @
+/‾‾   /   @
+\\   ‾‾‾‾‾\\@
+ ‾‾‾‾‾‾‾‾‾@@
+192  LATIN CAPITAL LETTER A WITH GRAVE
+   _ \\ _   @
+  /  _  \\  @
+ /  /_\\  \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+193  LATIN CAPITAL LETTER A WITH ACUTE
+   _ / _   @
+  /  _  \\  @
+ /  /_\\  \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+194  LATIN CAPITAL LETTER A WITH CIRCUMFLEX
+   _ ^ _   @
+  /  _  \\  @
+ /  /_\\  \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+195  LATIN CAPITAL LETTER A WITH TILDE
+   _ ~ _   @
+  /  _  \\  @
+ /  /_\\  \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+199  LATIN CAPITAL LETTER C WITH CEDILLA
+_________  @
+\\_   ___ \\ @
+/    \\  \\/ @
+\\     \\____@
+ \\____  __/@
+     )_/   @@
+201  LATIN CAPITAL LETTER E WITH ACUTE
+____ / ____@
+\\_   _____/@
+ |    __)_ @
+ |        \\@
+/_______  /@
+        \\/ @@
+202  LATIN CAPITAL LETTER E WITH CIRCUMFLEX
+____ ^ ____@
+\\_   _____/@
+ |    __)_ @
+ |        \\@
+/_______  /@
+        \\/ @@
+205  LATIN CAPITAL LETTER I WITH ACUTE
+._/_ @
+|   |@
+|   |@
+|   |@
+|___|@
+     @@
+209  LATIN CAPITAL LETTER N WITH TILDE
+ __ ~ __   @
+ \\      \\  @
+ /   |   \\ @
+/    |    \\@
+\\____|__  /@
+        \\/ @@
+211  LATIN CAPITAL LETTER O WITH ACUTE
+___ / __   @
+\\_____  \\  @
+ /   |   \\ @
+/    |    \\@
+\\_______  /@
+        \\/ @@
+212  LATIN CAPITAL LETTER O WITH CIRCUMFLEX
+___ ^ __   @
+\\_____  \\  @
+ /   |   \\ @
+/    |    \\@
+\\_______  /@
+        \\/ @@
+213  LATIN CAPITAL LETTER O WITH TILDE
+___ ~ __   @
+\\_____  \\  @
+ /   |   \\ @
+/    |    \\@
+\\_______  /@
+        \\/ @@
+218  LATIN CAPITAL LETTER U WITH ACUTE
+ __ / ___ @
+|    |   \\@
+|    |   /@
+|    |  / @
+|______/  @
+          @@
+224  LATIN SMALL LETTER A WITH GRAVE
+   \\    @
+_____   @
+\\__  \\  @
+ / __ \\_@
+(____  /@
+     \\/ @@
+225  LATIN SMALL LETTER A WITH ACUTE
+   /    @
+_____   @
+\\__  \\  @
+ / __ \\_@
+(____  /@
+     \\/ @@
+226  LATIN SMALL LETTER A WITH CIRCUMFLEX
+  /\\    @
+_____   @
+\\__  \\  @
+ / __ \\_@
+(____  /@
+     \\/ @@
+227  LATIN SMALL LETTER A WITH TILDE
+ /\\/    @
+_____   @
+\\__  \\  @
+ / __ \\_@
+(____  /@
+     \\/ @@
+231  LATIN SMALL LETTER C WITH CEDILLA
+        @
+  ____  @
+_/ ___\\ @
+\\  \\___ @
+ \\__ __>@
+   )_/  @@
+233  LATIN SMALL LETTER E WITH ACUTE
+    /   @
+  ____  @
+_/ __ \\ @
+\\  ___/ @
+ \\___  >@
+     \\/ @@
+234  LATIN SMALL LETTER E WITH CIRCUMFLEX
+   /\\   @
+  ____  @
+_/ __ \\ @
+\\  ___/ @
+ \\___  >@
+     \\/ @@
+237  LATIN SMALL LETTER I WITH ACUTE
+./_ @
+|__|@
+|  |@
+|  |@
+|__|@
+    @@
+241  LATIN SMALL LETTER N WITH TILDE
+   /\\/  @
+  ____  @
+ /    \\ @
+|   |  \\@
+|___|  /@
+     \\/ @@
+243  LATIN SMALL LETTER O WITH ACUTE
+    /   @
+  ____  @
+ /  _ \\ @
+(  <_> )@
+ \\____/ @
+        @@
+244  LATIN SMALL LETTER O WITH CIRCUMFLEX
+   /\\   @
+  ____  @
+ /  _ \\ @
+(  <_> )@
+ \\____/ @
+        @@
+245  LATIN SMALL LETTER O WITH TILDE
+   /\\/  @
+  ____  @
+ /  _ \\ @
+(  <_> )@
+ \\____/ @
+        @@
+250  LATIN SMALL LETTER U WITH ACUTE
+   /   @
+ __ __ @
+|  |  \\@
+|  |  /@
+|____/ @
+       @@
 0xCA0  KANNADA LETTER TTHA
   _____)@
  /_____/@
