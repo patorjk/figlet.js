@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2026.09.27 v1.12.0 Added 4 new fonts (Linguaholic fonts, https://github.com/patorjk/figlet.js/pull/180), added characters to Graffiti (https://github.com/patorjk/figlet.js/pull/181), and added support for emojis and the fallback character (https://github.com/patorjk/figlet.js/pull/174)
 - 2026.07.27 v1.11.4 Bug fix for ESM builds that overwrite __dirname
 - 2026.07.20 v1.11.3 Bug fix for invalid input that can lead to infinite loop
 - 2026.07.13 v1.11.2 Fix for CommonJS import issue 
