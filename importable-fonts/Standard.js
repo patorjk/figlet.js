@@ -1,4 +1,4 @@
-export default `flf2a$ 6 5 16 15 13 0 24463 229
+export default `flf2a$ 6 5 16 15 15 0 24463 238
 Standard by Glenn Chappell & Ian Chai 3/93 -- based on Frank's .sig
 Includes ISO Latin-1
 figlet release 2.1 -- 12 Aug 1994
@@ -12,6 +12,8 @@ supported by FIGlet and FIGWin.  May also be slightly modified for better use
 of new full-width/kern/smush alternatives, but default output is NOT changed.
 
 Font modified May 20, 2012 by patorjk to add the 0xCA0 character
+
+Updated 2026.11.19 by Kkkermit. Added characters: ‘ ’ “ ” – — … • €
  $@
  $@
  $@
@@ -2234,4 +2236,67 @@ Font modified May 20, 2012 by patorjk to add the 0xCA0 character
  | (_) | @
  $\\___/$ @
          @@
+0x2013  EN DASH
+          @
+          @
+  _______ @
+ |_______|@
+     $    @
+          @@
+0x2014  EM DASH
+              @
+              @
+  ___________ @
+ |___________|@
+       $      @
+              @@
+0x2018  LEFT SINGLE QUOTATION MARK
+    @
+  /|@
+ (_)@
+  $ @
+  $ @
+    @@
+0x2019  RIGHT SINGLE QUOTATION MARK
+  _ @
+ ( )@
+ |/ @
+  $ @
+  $ @
+    @@
+0x201C  LEFT DOUBLE QUOTATION MARK
+      @
+  /|/|@
+ (_|_)@
+   $  @
+   $  @
+      @@
+0x201D  RIGHT DOUBLE QUOTATION MARK
+  _ _ @
+ ( | )@
+ |/|/ @
+   $  @
+   $  @
+      @@
+0x2022  BULLET
+     @
+  __ @
+ /  \\@
+ \\__/@
+  $  @
+     @@
+0x2026  HORIZONTAL ELLIPSIS
+        @
+        @
+        @
+  _ _ _ @
+ (_|_|_)@
+        @@
+0x20AC  EURO SIGN
+     ____ @
+ ___/ ___|@
+ __| |    @
+   | |___ @
+    \\____|@
+          @@
          `
