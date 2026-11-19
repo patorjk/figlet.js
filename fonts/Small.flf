@@ -1,4 +1,4 @@
-flf2a$ 5 4 13 15 10 0 22415
+flf2a$ 5 4 13 15 11 0 22415
 Small by Glenn Chappell 4/93 -- based on Standard
 Includes ISO Latin-1
 figlet release 2.1 -- 12 Aug 1994
@@ -9,6 +9,7 @@ Modified by Paul Burton <solution@earthlink.net> 12/96 to include new parameter
 supported by FIGlet and FIGWin.  May also be slightly modified for better use
 of new full-width/kern/smush alternatives, but default output is NOT changed.
 
+Updated 2026.11.19 by Kkkermit. Added characters: ‘ ’ “ ” – — … • €
  $@
  $@
  $@
@@ -1095,3 +1096,57 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
  | || |@
   \_, |@
   |__/ @@
+0x2013  EN DASH
+        @
+  _____ @
+ |_____|@
+    $   @
+        @@
+0x2014  EM DASH
+           @
+  ________ @
+ |________|@
+      $    @
+           @@
+0x2018  LEFT SINGLE QUOTATION MARK
+    @
+  /|@
+ (_)@
+  $ @
+    @@
+0x2019  RIGHT SINGLE QUOTATION MARK
+  _ @
+ ( )@
+ |/ @
+  $ @
+    @@
+0x201C  LEFT DOUBLE QUOTATION MARK
+      @
+  /|/|@
+ (_|_)@
+   $  @
+      @@
+0x201D  RIGHT DOUBLE QUOTATION MARK
+  _ _ @
+ ( | )@
+ |/|/ @
+   $  @
+      @@
+0x2022  BULLET
+     @
+  __ @
+ (__)@
+  $  @
+     @@
+0x2026  HORIZONTAL ELLIPSIS
+        @
+        @
+  _ _ _ @
+ (_|_|_)@
+        @@
+0x20AC  EURO SIGN
+     ___ @
+ ___/ __|@
+ __| (__ @
+    \___|@
+         @@

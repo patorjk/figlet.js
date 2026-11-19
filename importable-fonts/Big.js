@@ -1,4 +1,4 @@
-export default `flf2a$ 8 6 59 15 10 0 24463
+export default `flf2a$ 8 6 59 15 12 0 24463
 Big by Glenn Chappell 4/93 -- based on Standard
 Includes ISO Latin-1
 Greek characters by Bruce Jakeway <pbjakeway@neumann.uwaterloo.ca>
@@ -9,6 +9,8 @@ modifier's name is placed on a comment line.
 Modified by Paul Burton <solution@earthlink.net> 12/96 to include new parameter
 supported by FIGlet and FIGWin.  May also be slightly modified for better use
 of new full-width/kern/smush alternatives, but default output is NOT changed.
+
+Updated 2026.11.19 by Kkkermit. Added characters: ‘ ’ “ ” – — … • €
  $@
  $@
  $@
@@ -2193,6 +2195,87 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   \\___^___/ @
             @
             @@
+0x2013  EN DASH
+           @
+           @
+  ________ @
+ |________|@
+      $    @
+      $    @
+           @
+           @@
+0x2014  EM DASH
+                 @
+                 @
+  ______________ @
+ |______________|@
+         $       @
+         $       @
+                 @
+                 @@
+0x2018  LEFT SINGLE QUOTATION MARK
+    @
+  /|@
+ (_)@
+  $ @
+  $ @
+  $ @
+    @
+    @@
+0x2019  RIGHT SINGLE QUOTATION MARK
+  _ @
+ ( )@
+ |/ @
+  $ @
+  $ @
+  $ @
+    @
+    @@
+0x201C  LEFT DOUBLE QUOTATION MARK
+      @
+  /|/|@
+ (_|_)@
+   $  @
+   $  @
+   $  @
+      @
+      @@
+0x201D  RIGHT DOUBLE QUOTATION MARK
+  _ _ @
+ ( | )@
+ |/|/ @
+   $  @
+   $  @
+   $  @
+      @
+      @@
+0x2022  BULLET
+     @
+     @
+  __ @
+ /  \\@
+ \\__/@
+  $  @
+     @
+     @@
+0x2026  HORIZONTAL ELLIPSIS
+        @
+        @
+        @
+        @
+  _ _ _ @
+ (_|_|_)@
+        @
+        @@
+0x20AC  EURO SIGN
+     _____ @
+    / ____|@
+ __| | $   @
+ __| | $   @
+   | |____ @
+    \\_____|@
+           @
+           @@
 -0x0005  
 alpha = a, beta = b, gamma = g, delta = d, epsilon = e   @
 zeta = z, eta = h, theta = q, iota = i, lamda = l, mu = m@

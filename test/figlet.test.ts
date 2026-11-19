@@ -148,10 +148,10 @@ describe('figlet', () => {
       baseline: 5,
       maxLength: 16,
       oldLayout: 15,
-      numCommentLines: 13,
+      numCommentLines: 15,
       printDirection: 0,
       fullLayout: 24463,
-      codeTagCount: 229,
+      codeTagCount: 238,
       fittingRules: {
         vLayout: 3,
         vRule5: true,
