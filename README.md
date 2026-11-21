@@ -438,6 +438,7 @@ Thanks goes to these people: ([emoji key](https://allcontributors.org/docs/en/em
 
 ## Release History
 
+- 2026.11.21 v1.13.0 Added nine "smart punctuation" characters to the Standard, Slant, Small and Big fonts: ‘ ’ “ ” – — … • € (https://github.com/patorjk/figlet.js/pull/185) thanks to @Kkkermit, Removed BOM character from Font Font (https://github.com/patorjk/figlet.js/pull/186)
 - 2026.09.27 v1.12.0 Added 4 new fonts (Linguaholic fonts, https://github.com/patorjk/figlet.js/pull/180), added characters to Graffiti (https://github.com/patorjk/figlet.js/pull/181), and added support for emojis and the fallback character (https://github.com/patorjk/figlet.js/pull/174)
 - 2026.07.27 v1.11.4 Bug fix for ESM builds that overwrite __dirname
 - 2026.07.20 v1.11.3 Bug fix for invalid input that can lead to infinite loop
