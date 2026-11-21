@@ -151,7 +151,7 @@ describe('figlet', () => {
       numCommentLines: 15,
       printDirection: 0,
       fullLayout: 24463,
-      codeTagCount: 238,
+      codeTagCount: 239,
       fittingRules: {
         vLayout: 3,
         vRule5: true,
