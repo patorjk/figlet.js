@@ -59,6 +59,15 @@ describe('node-figlet', () => {
       const expected = readExpected('standard');
       expect(actual).toBe(expected);
     });
+
+    it('should render smart punctuation with standard font', () => {
+      const actual = figlet.textSync("• “Hi” – ‘ok’ — €5…", {
+        font: "Standard",
+      });
+
+      const expected = readExpected('standardSmartPunctuation');
+      expect(actual).toBe(expected);
+    });
   });
 
   describe('graffiti font tests', () => {
