@@ -182,6 +182,16 @@
         "code",
         "example"
       ]
+    },
+    {
+      "login": "Kkkermit",
+      "name": "Kkermit.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132657029?v=4",
+      "profile": "https://joshetn.dev",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ]
 }
